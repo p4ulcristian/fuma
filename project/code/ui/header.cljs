@@ -1,6 +1,7 @@
 (ns ui.header
   (:require
    [ui.button :as button]
+   [ui.theme :as theme]
    [zero.frontend.re-frame :as rf]
    [parquery.frontend.request :as parquery]
    [router.frontend.zero :as router]
@@ -70,38 +71,89 @@
 (defn language-toggle
   "Language toggle between English and Hungarian"
   []
-  (let [current-language (rf/subscribe [:header/current-language])]
+  (let [current-language (rf/subscribe [:header/current-language])
+        current-theme (rf/subscribe [:header/current-theme])
+        theme-colors (theme/get-theme-colors @current-theme)]
     [:div.language-toggle
-     [button/view
-      {:type :secondary
-       :class "language-toggle-btn"
-       :on-click #(handle-language-toggle @current-language)}
+     [:button
+      {:style {:background (get-in theme-colors [:background :tertiary])
+               :color (get-in theme-colors [:text :primary])
+               :border (str "1px solid " (get-in theme-colors [:border :secondary]))
+               :border-radius "6px"
+               :padding "0.5rem 0.75rem"
+               :font-size "0.875rem"
+               :font-weight "500"
+               :cursor "pointer"
+               :transition "all 0.2s ease"
+               :box-shadow (get-in theme-colors [:shadow :light])}
+       :on-click #(handle-language-toggle @current-language)
+       :on-mouse-enter (fn [e]
+                         (set! (.-background (.-style (.-target e)))
+                               (get-in theme-colors [:accent :primary])))
+       :on-mouse-leave (fn [e]
+                         (set! (.-background (.-style (.-target e)))
+                               (get-in theme-colors [:background :tertiary])))}
       (if (= @current-language :en) "EN" "HU")]]))
 
 (defn theme-toggle
   "Theme toggle between light and dark mode"
   []
-  (let [current-theme (rf/subscribe [:header/current-theme])]
+  (let [current-theme (rf/subscribe [:header/current-theme])
+        theme-colors (theme/get-theme-colors @current-theme)]
     [:div.theme-toggle
-     [button/view
-      {:type :secondary
-       :class "theme-toggle-btn"
-       :on-click #(handle-theme-toggle @current-theme)}
+     [:button
+      {:style {:background (get-in theme-colors [:background :tertiary])
+               :color (get-in theme-colors [:text :primary])
+               :border (str "1px solid " (get-in theme-colors [:border :secondary]))
+               :border-radius "6px"
+               :padding "0.5rem 0.75rem"
+               :font-size "0.875rem"
+               :font-weight "500"
+               :cursor "pointer"
+               :transition "all 0.2s ease"
+               :box-shadow (get-in theme-colors [:shadow :light])}
+       :on-click #(handle-theme-toggle @current-theme)
+       :on-mouse-enter (fn [e]
+                         (set! (.-background (.-style (.-target e)))
+                               (get-in theme-colors [:accent :primary])))
+       :on-mouse-leave (fn [e]
+                         (set! (.-background (.-style (.-target e)))
+                               (get-in theme-colors [:background :tertiary])))}
       (if (= @current-theme :light) "🌙" "☀️")]]))
 
 (defn header
   "Main application header with logo, language toggle, and logout button"
   []
-  [:header.app-header
-   [:div.header-content
-    [:div.header-left
-     {:on-click handle-logo-click
-      :style {:cursor "pointer" :display "flex" :align-items "center"}}
-     [:img.logo {:src "/logo/logo-256.webp" :alt "Logo"}]
-     [:span.brand-name (tr/tr :header/brand)]]
-    [:div.header-right
-     [theme-toggle]
-     [language-toggle]]]])
+  (let [current-theme @(rf/subscribe [:header/current-theme])
+        theme-colors (theme/get-theme-colors current-theme)]
+    [:header.app-header
+     {:style {:background (get-in theme-colors [:background :secondary])
+              :border-bottom (str "1px solid " (get-in theme-colors [:border :primary]))
+              :box-shadow (get-in theme-colors [:shadow :light])
+              :padding "1rem 2rem"
+              :position "sticky"
+              :top "0"
+              :z-index "1000"}}
+     [:div.header-content
+      {:style {:display "flex"
+               :justify-content "space-between"
+               :align-items "center"
+               :max-width "1200px"
+               :margin "0 auto"}}
+      [:div.header-left
+       {:on-click handle-logo-click
+        :style {:cursor "pointer" :display "flex" :align-items "center" :gap "0.5rem"}}
+       [:img.logo {:src "/logo/logo-256.webp" :alt "Logo"
+                   :style {:height "32px" :width "32px"}}]
+       [:span.brand-name
+        {:style {:font-size "1.25rem"
+                 :font-weight "600"
+                 :color (get-in theme-colors [:text :primary])}}
+        (tr/tr :header/brand)]]
+      [:div.header-right
+       {:style {:display "flex" :align-items "center" :gap "0.75rem"}}
+       [theme-toggle]
+       [language-toggle]]]]))
 
 (defn view
   "Header component view function"

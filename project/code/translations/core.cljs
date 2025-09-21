@@ -79,6 +79,17 @@
         :homepage/service-wedding-hair "Wedding Hair"
         :homepage/service-special-events "Special Events"
 
+        ;; Homepage Contact Section
+        :homepage/contact-title "Get In Touch"
+        :homepage/contact-description "Ready for a fresh new look? Contact us today to book your appointment or ask any questions."
+        :homepage/contact-info-title "Contact Information"
+        :homepage/contact-info-phone "Phone"
+        :homepage/contact-social-title "Follow Us"
+        :homepage/contact-social-description "Stay updated with our latest styles and offers"
+        :homepage/contact-location-title "Visit Our Salon"
+        :homepage/contact-location-address "Color Me Crazy Szeged"
+        :homepage/contact-location-hours "Monday - Saturday: 9:00 AM - 6:00 PM"
+
         ;; Pricing Section
         :pricing/page-title "Pricing - Color Me Crazy"
         :pricing/hero-title "Our Pricing"
@@ -468,6 +479,17 @@
         :homepage/service-hair-styling "Hajformázás"
         :homepage/service-wedding-hair "Menyasszonyi Frizura"
         :homepage/service-special-events "Különleges Alkalmak"
+
+        ;; Homepage Contact Section
+        :homepage/contact-title "Lépjen Kapcsolatba Velünk"
+        :homepage/contact-description "Készen áll egy friss új megjelenésre? Lépjen velünk kapcsolatba még ma, hogy lefoglalja időpontját vagy tegyen fel kérdéseket."
+        :homepage/contact-info-title "Kapcsolati Információk"
+        :homepage/contact-info-phone "Telefon"
+        :homepage/contact-social-title "Kövessen Minket"
+        :homepage/contact-social-description "Maradjon naprakész legújabb stílusainkkal és ajánlatainkkal"
+        :homepage/contact-location-title "Látogasson El Szalonunkba"
+        :homepage/contact-location-address "Color Me Crazy Szeged"
+        :homepage/contact-location-hours "Hétfő - Szombat: 9:00 - 18:00"
 
         ;; Pricing Section
         :pricing/page-title "Árak - Color Me Crazy"

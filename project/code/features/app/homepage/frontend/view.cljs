@@ -85,12 +85,13 @@
    (tr/tr :homepage/description)])
 
 (defn hero-button [theme-colors]
-  [:a {:href "/login"
-       :style {:display "inline-block" :padding "12px 24px"
-               :background (get-in theme-colors [:accent :gradient])
-               :color (get-in theme-colors [:text :primary]) :text-decoration "none"
-               :border-radius "8px" :font-weight "600" :font-size "1.125rem"
-               :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
+  [:button {:on-click #(.scrollIntoView (.getElementById js/document "contact-section") #js {:behavior "smooth"})
+            :style {:display "inline-block" :padding "12px 24px"
+                    :background (get-in theme-colors [:accent :gradient])
+                    :color (get-in theme-colors [:text :primary]) :text-decoration "none"
+                    :border-radius "8px" :font-weight "600" :font-size "1.125rem"
+                    :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])
+                    :border "none" :cursor "pointer"}}
    (tr/tr :homepage/contact-button)])
 
 (defn team-preview-card [member theme-colors]
@@ -274,6 +275,97 @@
      [hours-location-section theme-colors]]
     [footer-bottom-bar theme-colors]]])
 
+(defn- contact-info-card [theme-colors]
+  [:div {:style {:background (get-in theme-colors [:background :secondary])
+                 :border-radius "20px" :padding "2.5rem" :text-align "center"
+                 :box-shadow (get-in theme-colors [:shadow :medium])
+                 :min-height "280px" :display "flex" :flex-direction "column"
+                 :justify-content "center" :align-items "center"
+                 :transition "transform 0.3s ease, box-shadow 0.3s ease"}
+         :on-mouse-enter #(do (set! (.-transform (.-style (.-target %))) "translateY(-5px)")
+                              (set! (.-boxShadow (.-style (.-target %))) (get-in theme-colors [:shadow :heavy])))
+         :on-mouse-leave #(do (set! (.-transform (.-style (.-target %))) "translateY(0px)")
+                              (set! (.-boxShadow (.-style (.-target %))) (get-in theme-colors [:shadow :medium])))}
+   [:div {:style {:font-size "3.5rem" :margin-bottom "1.5rem"}} "📞"]
+   [:h3 {:style {:font-size "1.5rem" :font-weight "600" :color (get-in theme-colors [:text :primary])
+                 :margin "0 0 1.5rem 0"}} (tr/tr :homepage/contact-info-title)]
+   [:div {:style {:display "flex" :flex-direction "column" :gap "0.75rem" :width "100%"}}
+    [:a {:href "tel:+36209237975"
+         :style {:color (get-in theme-colors [:accent :primary]) :text-decoration "none"
+                 :font-size "1.125rem" :font-weight "500" :padding "0.5rem"
+                 :border-radius "8px" :transition "background-color 0.2s"}}
+     "+36 20 923 7975 (AnTi)"]
+    [:a {:href "tel:+36300894587"
+         :style {:color (get-in theme-colors [:accent :primary]) :text-decoration "none"
+                 :font-size "1.125rem" :font-weight "500" :padding "0.5rem"
+                 :border-radius "8px" :transition "background-color 0.2s"}}
+     "+36 30 089 4587 (Felícia)"]]])
+
+(defn- social-media-card [theme-colors]
+  [:div {:style {:background (get-in theme-colors [:background :secondary])
+                 :border-radius "20px" :padding "2.5rem" :text-align "center"
+                 :box-shadow (get-in theme-colors [:shadow :medium])
+                 :min-height "280px" :display "flex" :flex-direction "column"
+                 :justify-content "center" :align-items "center"
+                 :transition "transform 0.3s ease, box-shadow 0.3s ease"}
+         :on-mouse-enter #(do (set! (.-transform (.-style (.-target %))) "translateY(-5px)")
+                              (set! (.-boxShadow (.-style (.-target %))) (get-in theme-colors [:shadow :heavy])))
+         :on-mouse-leave #(do (set! (.-transform (.-style (.-target %))) "translateY(0px)")
+                              (set! (.-boxShadow (.-style (.-target %))) (get-in theme-colors [:shadow :medium])))}
+   [:div {:style {:font-size "3.5rem" :margin-bottom "1.5rem"}} "📱"]
+   [:h3 {:style {:font-size "1.5rem" :font-weight "600" :color (get-in theme-colors [:text :primary])
+                 :margin "0 0 1rem 0"}} (tr/tr :homepage/contact-social-title)]
+   [:p {:style {:color (get-in theme-colors [:text :secondary]) :font-size "0.875rem"
+                :margin "0 0 1.5rem 0"}} (tr/tr :homepage/contact-social-description)]
+   [:div {:style {:display "flex" :flex-direction "column" :gap "0.75rem" :width "100%"}}
+    [:a {:href "https://www.instagram.com/colorme_c_hair/" :target "_blank"
+         :style {:color (get-in theme-colors [:accent :primary]) :text-decoration "none"
+                 :font-size "1.125rem" :font-weight "500" :padding "0.5rem"
+                 :border-radius "8px" :transition "background-color 0.2s"}}
+     "📱 @colorme_c_hair"]
+    [:a {:href "https://www.instagram.com/haircraftbygitta/" :target "_blank"
+         :style {:color (get-in theme-colors [:accent :primary]) :text-decoration "none"
+                 :font-size "1.125rem" :font-weight "500" :padding "0.5rem"
+                 :border-radius "8px" :transition "background-color 0.2s"}}
+     "📱 @haircraftbygitta"]]])
+
+(defn- location-card [theme-colors]
+  [:div {:style {:background (get-in theme-colors [:background :secondary])
+                 :border-radius "20px" :padding "2.5rem" :text-align "center"
+                 :box-shadow (get-in theme-colors [:shadow :medium])
+                 :min-height "280px" :display "flex" :flex-direction "column"
+                 :justify-content "center" :align-items "center"
+                 :transition "transform 0.3s ease, box-shadow 0.3s ease"}
+         :on-mouse-enter #(do (set! (.-transform (.-style (.-target %))) "translateY(-5px)")
+                              (set! (.-boxShadow (.-style (.-target %))) (get-in theme-colors [:shadow :heavy])))
+         :on-mouse-leave #(do (set! (.-transform (.-style (.-target %))) "translateY(0px)")
+                              (set! (.-boxShadow (.-style (.-target %))) (get-in theme-colors [:shadow :medium])))}
+   [:div {:style {:font-size "3.5rem" :margin-bottom "1.5rem"}} "📍"]
+   [:h3 {:style {:font-size "1.5rem" :font-weight "600" :color (get-in theme-colors [:text :primary])
+                 :margin "0 0 1.5rem 0"}} (tr/tr :homepage/contact-location-title)]
+   [:p {:style {:color (get-in theme-colors [:text :secondary]) :font-size "1.125rem"
+                :margin "0 0 1rem 0" :font-weight "500"}} (tr/tr :homepage/contact-location-address)]
+   [:p {:style {:color (get-in theme-colors [:text :secondary]) :font-size "1rem"
+                :margin "0"}} (tr/tr :homepage/contact-location-hours)]])
+
+(defn contact-section [theme-colors]
+  [:section {:id "contact-section"
+             :style {:width "100%" :padding "4rem 2rem" :text-align "center"
+                     :background (get-in theme-colors [:background :primary])}}
+   [:div {:style {:max-width "1200px" :margin "0 auto"}}
+    [:h2 {:style {:font-size "3rem" :font-weight "700" :color (get-in theme-colors [:text :primary])
+                  :margin "0 0 1rem 0" :font-family "'Dancing Script', cursive"}}
+     (tr/tr :homepage/contact-title)]
+    [:p {:style {:font-size "1.25rem" :color (get-in theme-colors [:text :secondary])
+                 :margin "0 0 4rem 0" :max-width "600px" :margin-left "auto" :margin-right "auto"}}
+     (tr/tr :homepage/contact-description)]
+    [:div {:style {:display "grid"
+                   :grid-template-columns "repeat(auto-fit, minmax(350px, 1fr))"
+                   :gap "2.5rem" :justify-items "center" :align-items "stretch"
+                   :padding "0 1rem"}}
+     [contact-info-card theme-colors]
+     [social-media-card theme-colors]
+     [location-card theme-colors]]]])
 
 (defn view []
   (let [current-theme @(rf/subscribe [:header/current-theme])
@@ -286,4 +378,5 @@
      [team-section theme-colors]
      [salon-section theme-colors]
      [pricing-section theme-colors]
+     [contact-section theme-colors]
      [footer-section theme-colors]]))

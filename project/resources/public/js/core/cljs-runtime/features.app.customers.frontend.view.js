@@ -1,91 +1,91 @@
 goog.provide('features.app.customers.frontend.view');
-var G__28016_28247 = new cljs.core.Keyword("customers","data","customers/data",1379089132);
-var G__28017_28248 = (function (db,_){
+var G__35989_36308 = new cljs.core.Keyword("customers","data","customers/data",1379089132);
+var G__35990_36309 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"data","data",-232669377)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"customers","customers",635915531),cljs.core.PersistentVector.EMPTY,new cljs.core.Keyword(null,"pagination","pagination",-1553654604),cljs.core.PersistentArrayMap.EMPTY], null));
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28016_28247,G__28017_28248) : zero.frontend.re_frame.reg_sub.call(null,G__28016_28247,G__28017_28248));
-var G__28018_28249 = new cljs.core.Keyword("customers","loading?","customers/loading?",1369533542);
-var G__28019_28250 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__35989_36308,G__35990_36309) : zero.frontend.re_frame.reg_sub.call(null,G__35989_36308,G__35990_36309));
+var G__35992_36310 = new cljs.core.Keyword("customers","loading?","customers/loading?",1369533542);
+var G__35993_36311 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),false);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28018_28249,G__28019_28250) : zero.frontend.re_frame.reg_sub.call(null,G__28018_28249,G__28019_28250));
-var G__28022_28251 = new cljs.core.Keyword("customers","modal-customer","customers/modal-customer",298623272);
-var G__28023_28252 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__35992_36310,G__35993_36311) : zero.frontend.re_frame.reg_sub.call(null,G__35992_36310,G__35993_36311));
+var G__35994_36312 = new cljs.core.Keyword("customers","modal-customer","customers/modal-customer",298623272);
+var G__35995_36313 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-customer","modal-customer",1910250705)], null),null);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28022_28251,G__28023_28252) : zero.frontend.re_frame.reg_sub.call(null,G__28022_28251,G__28023_28252));
-var G__28025_28253 = new cljs.core.Keyword("customers","modal-is-new?","customers/modal-is-new?",-2029346257);
-var G__28026_28254 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__35994_36312,G__35995_36313) : zero.frontend.re_frame.reg_sub.call(null,G__35994_36312,G__35995_36313));
+var G__35996_36315 = new cljs.core.Keyword("customers","modal-is-new?","customers/modal-is-new?",-2029346257);
+var G__35997_36316 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-is-new?","modal-is-new?",-1493686812)], null),false);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28025_28253,G__28026_28254) : zero.frontend.re_frame.reg_sub.call(null,G__28025_28253,G__28026_28254));
-var G__28027_28255 = new cljs.core.Keyword("customers","modal-form","customers/modal-form",1904790370);
-var G__28028_28256 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__35996_36315,G__35997_36316) : zero.frontend.re_frame.reg_sub.call(null,G__35996_36315,G__35997_36316));
+var G__35999_36320 = new cljs.core.Keyword("customers","modal-form","customers/modal-form",1904790370);
+var G__36000_36321 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-form","modal-form",293545775)], null),cljs.core.PersistentArrayMap.EMPTY);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28027_28255,G__28028_28256) : zero.frontend.re_frame.reg_sub.call(null,G__28027_28255,G__28028_28256));
-var G__28029_28257 = new cljs.core.Keyword("customers","modal-errors","customers/modal-errors",333024903);
-var G__28030_28258 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__35999_36320,G__36000_36321) : zero.frontend.re_frame.reg_sub.call(null,G__35999_36320,G__36000_36321));
+var G__36003_36323 = new cljs.core.Keyword("customers","modal-errors","customers/modal-errors",333024903);
+var G__36004_36324 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-errors","modal-errors",868747852)], null),cljs.core.PersistentArrayMap.EMPTY);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28029_28257,G__28030_28258) : zero.frontend.re_frame.reg_sub.call(null,G__28029_28257,G__28030_28258));
-var G__28035_28259 = new cljs.core.Keyword("customers","modal-loading?","customers/modal-loading?",-662281099);
-var G__28036_28260 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36003_36323,G__36004_36324) : zero.frontend.re_frame.reg_sub.call(null,G__36003_36323,G__36004_36324));
+var G__36005_36326 = new cljs.core.Keyword("customers","modal-loading?","customers/modal-loading?",-662281099);
+var G__36006_36327 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-loading?","modal-loading?",-122625782)], null),false);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28035_28259,G__28036_28260) : zero.frontend.re_frame.reg_sub.call(null,G__28035_28259,G__28036_28260));
-var G__28039_28261 = new cljs.core.Keyword("customers","set-loading","customers/set-loading",-1849639212);
-var G__28040_28262 = (function (db,p__28041){
-var vec__28044 = p__28041;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28044,(0),null);
-var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28044,(1),null);
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36005_36326,G__36006_36327) : zero.frontend.re_frame.reg_sub.call(null,G__36005_36326,G__36006_36327));
+var G__36007_36340 = new cljs.core.Keyword("customers","set-loading","customers/set-loading",-1849639212);
+var G__36008_36341 = (function (db,p__36009){
+var vec__36010 = p__36009;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36010,(0),null);
+var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36010,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),loading_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28039_28261,G__28040_28262) : zero.frontend.re_frame.reg_event_db.call(null,G__28039_28261,G__28040_28262));
-var G__28049_28263 = new cljs.core.Keyword("customers","load-success","customers/load-success",1611517444);
-var G__28050_28264 = (function (db,p__28051){
-var vec__28054 = p__28051;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28054,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28054,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36007_36340,G__36008_36341) : zero.frontend.re_frame.reg_event_db.call(null,G__36007_36340,G__36008_36341));
+var G__36017_36343 = new cljs.core.Keyword("customers","load-success","customers/load-success",1611517444);
+var G__36018_36344 = (function (db,p__36019){
+var vec__36021 = p__36019;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36021,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36021,(1),null);
 return cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"data","data",-232669377)], null),data),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),false);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28049_28263,G__28050_28264) : zero.frontend.re_frame.reg_event_db.call(null,G__28049_28263,G__28050_28264));
-var G__28059_28265 = new cljs.core.Keyword("customers","open-modal","customers/open-modal",-659641739);
-var G__28060_28266 = (function (db,p__28061){
-var vec__28064 = p__28061;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28064,(0),null);
-var customer = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28064,(1),null);
-var is_new_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28064,(2),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36017_36343,G__36018_36344) : zero.frontend.re_frame.reg_event_db.call(null,G__36017_36343,G__36018_36344));
+var G__36024_36355 = new cljs.core.Keyword("customers","open-modal","customers/open-modal",-659641739);
+var G__36025_36356 = (function (db,p__36026){
+var vec__36027 = p__36026;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36027,(0),null);
+var customer = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36027,(1),null);
+var is_new_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36027,(2),null);
 return cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-customer","modal-customer",1910250705)], null),customer),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-is-new?","modal-is-new?",-1493686812)], null),is_new_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28059_28265,G__28060_28266) : zero.frontend.re_frame.reg_event_db.call(null,G__28059_28265,G__28060_28266));
-var G__28071_28267 = new cljs.core.Keyword("customers","close-modal","customers/close-modal",-270494804);
-var G__28072_28268 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36024_36355,G__36025_36356) : zero.frontend.re_frame.reg_event_db.call(null,G__36024_36355,G__36025_36356));
+var G__36030_36360 = new cljs.core.Keyword("customers","close-modal","customers/close-modal",-270494804);
+var G__36031_36361 = (function (db,_){
 return cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-customer","modal-customer",1910250705)], null),null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-is-new?","modal-is-new?",-1493686812)], null),false),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-form","modal-form",293545775)], null),cljs.core.PersistentArrayMap.EMPTY),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-errors","modal-errors",868747852)], null),cljs.core.PersistentArrayMap.EMPTY);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28071_28267,G__28072_28268) : zero.frontend.re_frame.reg_event_db.call(null,G__28071_28267,G__28072_28268));
-var G__28077_28269 = new cljs.core.Keyword("customers","update-form-field","customers/update-form-field",-1190443065);
-var G__28080_28270 = (function (db,p__28082){
-var vec__28083 = p__28082;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28083,(0),null);
-var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28083,(1),null);
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28083,(2),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36030_36360,G__36031_36361) : zero.frontend.re_frame.reg_event_db.call(null,G__36030_36360,G__36031_36361));
+var G__36032_36375 = new cljs.core.Keyword("customers","update-form-field","customers/update-form-field",-1190443065);
+var G__36033_36376 = (function (db,p__36034){
+var vec__36035 = p__36034;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36035,(0),null);
+var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36035,(1),null);
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36035,(2),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-form","modal-form",293545775),field_key], null),value);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28077_28269,G__28080_28270) : zero.frontend.re_frame.reg_event_db.call(null,G__28077_28269,G__28080_28270));
-var G__28089_28271 = new cljs.core.Keyword("customers","set-form-errors","customers/set-form-errors",-1442447768);
-var G__28090_28272 = (function (db,p__28094){
-var vec__28095 = p__28094;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28095,(0),null);
-var errors = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28095,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36032_36375,G__36033_36376) : zero.frontend.re_frame.reg_event_db.call(null,G__36032_36375,G__36033_36376));
+var G__36038_36388 = new cljs.core.Keyword("customers","set-form-errors","customers/set-form-errors",-1442447768);
+var G__36039_36389 = (function (db,p__36040){
+var vec__36041 = p__36040;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36041,(0),null);
+var errors = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36041,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-errors","modal-errors",868747852)], null),errors);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28089_28271,G__28090_28272) : zero.frontend.re_frame.reg_event_db.call(null,G__28089_28271,G__28090_28272));
-var G__28100_28273 = new cljs.core.Keyword("customers","init-form","customers/init-form",1952231623);
-var G__28101_28274 = (function (db,p__28102){
-var vec__28103 = p__28102;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28103,(0),null);
-var customer_data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28103,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36038_36388,G__36039_36389) : zero.frontend.re_frame.reg_event_db.call(null,G__36038_36388,G__36039_36389));
+var G__36046_36391 = new cljs.core.Keyword("customers","init-form","customers/init-form",1952231623);
+var G__36047_36392 = (function (db,p__36048){
+var vec__36050 = p__36048;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36050,(0),null);
+var customer_data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36050,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-form","modal-form",293545775)], null),(function (){var or__5025__auto__ = customer_data;
 if(cljs.core.truth_(or__5025__auto__)){
 return or__5025__auto__;
@@ -94,15 +94,15 @@ return cljs.core.PersistentArrayMap.EMPTY;
 }
 })());
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28100_28273,G__28101_28274) : zero.frontend.re_frame.reg_event_db.call(null,G__28100_28273,G__28101_28274));
-var G__28115_28275 = new cljs.core.Keyword("customers","set-modal-loading","customers/set-modal-loading",630275244);
-var G__28116_28276 = (function (db,p__28117){
-var vec__28118 = p__28117;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28118,(0),null);
-var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28118,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36046_36391,G__36047_36392) : zero.frontend.re_frame.reg_event_db.call(null,G__36046_36391,G__36047_36392));
+var G__36054_36396 = new cljs.core.Keyword("customers","set-modal-loading","customers/set-modal-loading",630275244);
+var G__36055_36397 = (function (db,p__36056){
+var vec__36057 = p__36056;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36057,(0),null);
+var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36057,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"customers","customers",635915531),new cljs.core.Keyword(null,"modal-loading?","modal-loading?",-122625782)], null),loading_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28115_28275,G__28116_28276) : zero.frontend.re_frame.reg_event_db.call(null,G__28115_28275,G__28116_28276));
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36054_36396,G__36055_36397) : zero.frontend.re_frame.reg_event_db.call(null,G__36054_36396,G__36055_36397));
 /**
  * Get workspace ID from router parameters
  */
@@ -123,15 +123,15 @@ return workspace_id;
 features.app.customers.frontend.view.load_customers_query = (function features$app$customers$frontend$view$load_customers_query(workspace_id,params){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG load-customers-query called with params:",params], 0));
 
-var G__28139_28277 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-loading","customers/set-loading",-1849639212),true], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28139_28277) : zero.frontend.re_frame.dispatch.call(null,G__28139_28277));
+var G__36061_36406 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-loading","customers/set-loading",-1849639212),true], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36061_36406) : zero.frontend.re_frame.dispatch.call(null,G__36061_36406));
 
 return parquery.frontend.request.send_queries(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"queries","queries",1446291995),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("workspace-customers","get-paginated","workspace-customers/get-paginated",1760066817),params], null),new cljs.core.Keyword("parquery","context","parquery/context",661391038),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435),workspace_id], null),new cljs.core.Keyword(null,"callback","callback",-705136228),(function (response){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG load-customers-query response:",response], 0));
 
 var result = new cljs.core.Keyword("workspace-customers","get-paginated","workspace-customers/get-paginated",1760066817).cljs$core$IFn$_invoke$arity$1(response);
-var G__28140 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","load-success","customers/load-success",1611517444),result], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28140) : zero.frontend.re_frame.dispatch.call(null,G__28140));
+var G__36062 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","load-success","customers/load-success",1611517444),result], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36062) : zero.frontend.re_frame.dispatch.call(null,G__36062));
 })], null));
 });
 /**
@@ -157,8 +157,8 @@ cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$c
 (callback.cljs$core$IFn$_invoke$arity$0 ? callback.cljs$core$IFn$_invoke$arity$0() : callback.call(null));
 
 if(cljs.core.truth_(new cljs.core.Keyword(null,"success","success",1890645906).cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$2(response,query_type)))){
-var G__28145_28279 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","close-modal","customers/close-modal",-270494804)], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28145_28279) : zero.frontend.re_frame.dispatch.call(null,G__28145_28279));
+var G__36077_36414 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","close-modal","customers/close-modal",-270494804)], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36077_36414) : zero.frontend.re_frame.dispatch.call(null,G__36077_36414));
 
 return (load_customers.cljs$core$IFn$_invoke$arity$0 ? load_customers.cljs$core$IFn$_invoke$arity$0() : load_customers.call(null));
 } else {
@@ -208,26 +208,26 @@ features.app.customers.frontend.view.validate_customer = (function features$app$
 var errors = cljs.core.PersistentArrayMap.EMPTY;
 var name = new cljs.core.Keyword("customer","name","customer/name",-1039810549).cljs$core$IFn$_invoke$arity$1(customer);
 var email = new cljs.core.Keyword("customer","email","customer/email",679814628).cljs$core$IFn$_invoke$arity$1(customer);
-var G__28154 = errors;
-var G__28154__$1 = ((features.app.customers.frontend.view.validate_name(name))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__28154,new cljs.core.Keyword("customer","name","customer/name",-1039810549),translations.core.tr(new cljs.core.Keyword("customers","error-name","customers/error-name",-2070974658))):G__28154);
+var G__36096 = errors;
+var G__36096__$1 = ((features.app.customers.frontend.view.validate_name(name))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__36096,new cljs.core.Keyword("customer","name","customer/name",-1039810549),translations.core.tr(new cljs.core.Keyword("customers","error-name","customers/error-name",-2070974658))):G__36096);
 if(cljs.core.truth_(features.app.customers.frontend.view.validate_email(email))){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__28154__$1,new cljs.core.Keyword("customer","email","customer/email",679814628),translations.core.tr(new cljs.core.Keyword("customers","error-email","customers/error-email",1487301853)));
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__36096__$1,new cljs.core.Keyword("customer","email","customer/email",679814628),translations.core.tr(new cljs.core.Keyword("customers","error-email","customers/error-email",1487301853)));
 } else {
-return G__28154__$1;
+return G__36096__$1;
 }
 });
 features.app.customers.frontend.view.field_label = (function features$app$customers$frontend$view$field_label(label,field_key,has_error_QMARK_){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"letter-spacing","letter-spacing",-948993767),"0.025em",new cljs.core.Keyword(null,"color","color",1011675173),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#374151")], null)], null),label,(cljs.core.truth_((function (){var fexpr__28156 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("customer","name","customer/name",-1039810549),null], null), null);
-return (fexpr__28156.cljs$core$IFn$_invoke$arity$1 ? fexpr__28156.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__28156.call(null,field_key));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"letter-spacing","letter-spacing",-948993767),"0.025em",new cljs.core.Keyword(null,"color","color",1011675173),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#374151")], null)], null),label,(cljs.core.truth_((function (){var fexpr__36106 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("customer","name","customer/name",-1039810549),null], null), null);
+return (fexpr__36106.cljs$core$IFn$_invoke$arity$1 ? fexpr__36106.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__36106.call(null,field_key));
 })())?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"color","color",1011675173),"#ef4444",new cljs.core.Keyword(null,"margin-left","margin-left",2015598377),"0.25rem"], null)], null),"*"], null):null)], null);
 });
 /**
  * Base properties for input fields
  */
 features.app.customers.frontend.view.input_base_props = (function features$app$customers$frontend$view$input_base_props(field_key,form_data,has_error_QMARK_,attrs){
-return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(form_data,field_key,"")),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__28158_SHARP_){
-var G__28159 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","update-form-field","customers/update-form-field",-1190443065),field_key,p1__28158_SHARP_.target.value], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28159) : zero.frontend.re_frame.dispatch.call(null,G__28159));
+return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(form_data,field_key,"")),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__36107_SHARP_){
+var G__36110 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","update-form-field","customers/update-form-field",-1190443065),field_key,p1__36107_SHARP_.target.value], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36110) : zero.frontend.re_frame.dispatch.call(null,G__36110));
 }),new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"line-height","line-height",1870784992),new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),new cljs.core.Keyword(null,"font-size","font-size",-1847940346),new cljs.core.Keyword(null,"transition","transition",765692007),new cljs.core.Keyword(null,"width","width",-384071477),new cljs.core.Keyword(null,"padding","padding",1660304693),new cljs.core.Keyword(null,"outline","outline",793464534),new cljs.core.Keyword(null,"border","border",1444987323),new cljs.core.Keyword(null,"border-radius","border-radius",419594011)],["1.5",(cljs.core.truth_(has_error_QMARK_)?"0 0 0 3px rgba(220, 53, 69, 0.1)":"0 1px 2px 0 rgba(0, 0, 0, 0.05)"),"1rem","border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out","100%","0.75rem 1rem","none",(cljs.core.truth_(has_error_QMARK_)?"2px solid #dc3545":"1px solid #d1d5db"),"8px"]),new cljs.core.Keyword(null,"style","style",-496642736).cljs$core$IFn$_invoke$arity$1(attrs),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"focus","focus",234677911),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"border-color","border-color",-2059162761),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#3b82f6"),new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),(cljs.core.truth_(has_error_QMARK_)?"0 0 0 3px rgba(220, 53, 69, 0.1)":"0 0 0 3px rgba(59, 130, 246, 0.1)")], null)], null)], 0))], null);
 });
 /**
@@ -278,38 +278,38 @@ return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMP
 features.app.customers.frontend.view.handle_save_click = (function features$app$customers$frontend$view$handle_save_click(form_data,is_new_QMARK_,on_save){
 var validation_errors = features.app.customers.frontend.view.validate_customer(form_data);
 if(cljs.core.empty_QMARK_(validation_errors)){
-var G__28180_28284 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-form-errors","customers/set-form-errors",-1442447768),cljs.core.PersistentArrayMap.EMPTY], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28180_28284) : zero.frontend.re_frame.dispatch.call(null,G__28180_28284));
+var G__36131_36457 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-form-errors","customers/set-form-errors",-1442447768),cljs.core.PersistentArrayMap.EMPTY], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36131_36457) : zero.frontend.re_frame.dispatch.call(null,G__36131_36457));
 
-var G__28182_28285 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-modal-loading","customers/set-modal-loading",630275244),true], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28182_28285) : zero.frontend.re_frame.dispatch.call(null,G__28182_28285));
+var G__36133_36458 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-modal-loading","customers/set-modal-loading",630275244),true], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36133_36458) : zero.frontend.re_frame.dispatch.call(null,G__36133_36458));
 
-var G__28184 = form_data;
-var G__28185 = (function (){
-var G__28189 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-modal-loading","customers/set-modal-loading",630275244),false], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28189) : zero.frontend.re_frame.dispatch.call(null,G__28189));
+var G__36134 = form_data;
+var G__36135 = (function (){
+var G__36139 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-modal-loading","customers/set-modal-loading",630275244),false], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36139) : zero.frontend.re_frame.dispatch.call(null,G__36139));
 });
-return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__28184,G__28185) : on_save.call(null,G__28184,G__28185));
+return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__36134,G__36135) : on_save.call(null,G__36134,G__36135));
 } else {
-var G__28190 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-form-errors","customers/set-form-errors",-1442447768),validation_errors], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28190) : zero.frontend.re_frame.dispatch.call(null,G__28190));
+var G__36140 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","set-form-errors","customers/set-form-errors",-1442447768),validation_errors], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36140) : zero.frontend.re_frame.dispatch.call(null,G__36140));
 }
 });
 /**
  * Modal for creating/editing customers using new UI components
  */
 features.app.customers.frontend.view.customer_modal = (function features$app$customers$frontend$view$customer_modal(customer_data,is_new_QMARK_,on_save,on_cancel){
-var form_data = (function (){var G__28192 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-form","customers/modal-form",1904790370)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28192) : zero.frontend.re_frame.subscribe.call(null,G__28192));
+var form_data = (function (){var G__36147 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-form","customers/modal-form",1904790370)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36147) : zero.frontend.re_frame.subscribe.call(null,G__36147));
 })();
-var errors = (function (){var G__28193 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-errors","customers/modal-errors",333024903)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28193) : zero.frontend.re_frame.subscribe.call(null,G__28193));
+var errors = (function (){var G__36148 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-errors","customers/modal-errors",333024903)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36148) : zero.frontend.re_frame.subscribe.call(null,G__36148));
 })();
-var loading_QMARK_ = (function (){var G__28194 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-loading?","customers/modal-loading?",-662281099)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28194) : zero.frontend.re_frame.subscribe.call(null,G__28194));
+var loading_QMARK_ = (function (){var G__36150 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-loading?","customers/modal-loading?",-662281099)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36150) : zero.frontend.re_frame.subscribe.call(null,G__36150));
 })();
-var G__28198_28288 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","init-form","customers/init-form",1952231623),customer_data], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28198_28288) : zero.frontend.re_frame.dispatch.call(null,G__28198_28288));
+var G__36154_36463 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","init-form","customers/init-form",1952231623),customer_data], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36154_36463) : zero.frontend.re_frame.dispatch.call(null,G__36154_36463));
 
 return (function (customer_data__$1,is_new_QMARK___$1,on_save__$1,on_cancel__$1){
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"on-close","on-close",-761178394),on_cancel__$1,new cljs.core.Keyword(null,"close-on-backdrop?","close-on-backdrop?",313135575),true], null),cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal_header,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"title","title",636505583),(cljs.core.truth_(is_new_QMARK___$1)?translations.core.tr(new cljs.core.Keyword("customers","modal-add-title","customers/modal-add-title",-64785610)):translations.core.tr(new cljs.core.Keyword("customers","modal-edit-title","customers/modal-edit-title",282991707))),new cljs.core.Keyword(null,"subtitle","subtitle",-1614524363),(cljs.core.truth_(is_new_QMARK___$1)?translations.core.tr(new cljs.core.Keyword("customers","modal-add-subtitle","customers/modal-add-subtitle",1855643621)):translations.core.tr(new cljs.core.Keyword("customers","modal-edit-subtitle","customers/modal-edit-subtitle",-688178144)))], null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),"header"], null)),cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.customers.frontend.view.form_fields,cljs.core.deref(form_data),cljs.core.deref(errors)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),"form"], null)),cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal_footer,cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.enhanced_button.enhanced_button,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"secondary","secondary",-669381460),new cljs.core.Keyword(null,"on-click","on-click",1632826543),on_cancel__$1,new cljs.core.Keyword(null,"text","text",-1790561697),translations.core.tr(new cljs.core.Keyword("customers","cancel","customers/cancel",712962051))], null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),"cancel"], null)),cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.enhanced_button.enhanced_button,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"primary","primary",817773892),new cljs.core.Keyword(null,"loading?","loading?",1905707049),cljs.core.deref(loading_QMARK_),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
@@ -351,14 +351,14 @@ return cljs.core.PersistentArrayMap.EMPTY;
 }
 })(),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword(null,"edit","edit",-1641834166),new cljs.core.Keyword(null,"label","label",1718410804),translations.core.tr(new cljs.core.Keyword("customers","action-edit","customers/action-edit",-1738456914)),new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"primary","primary",817773892),new cljs.core.Keyword(null,"on-click","on-click",1632826543),on_edit], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword(null,"delete","delete",-1768633620),new cljs.core.Keyword(null,"label","label",1718410804),translations.core.tr(new cljs.core.Keyword("customers","action-delete","customers/action-delete",-232492900)),new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"danger","danger",-624338030),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (row){
 if(cljs.core.truth_(confirm(translations.core.tr(new cljs.core.Keyword("customers","confirm-delete","customers/confirm-delete",958382532))))){
-var G__28228 = new cljs.core.Keyword("customer","id","customer/id",-1990317450).cljs$core$IFn$_invoke$arity$1(row);
-return (on_delete.cljs$core$IFn$_invoke$arity$1 ? on_delete.cljs$core$IFn$_invoke$arity$1(G__28228) : on_delete.call(null,G__28228));
+var G__36218 = new cljs.core.Keyword("customer","id","customer/id",-1990317450).cljs$core$IFn$_invoke$arity$1(row);
+return (on_delete.cljs$core$IFn$_invoke$arity$1 ? on_delete.cljs$core$IFn$_invoke$arity$1(G__36218) : on_delete.call(null,G__36218));
 } else {
 return null;
 }
 })], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("customer","name","customer/name",-1039810549),new cljs.core.Keyword(null,"label","label",1718410804),translations.core.tr(new cljs.core.Keyword("customers","table-header-customer","customers/table-header-customer",1948818615)),new cljs.core.Keyword(null,"render","render",-1408033454),features.app.customers.frontend.view.customer_name_render,new cljs.core.Keyword(null,"sortable?","sortable?",291547474),true], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("customer","contact-person","customer/contact-person",-430247081),new cljs.core.Keyword(null,"label","label",1718410804),translations.core.tr(new cljs.core.Keyword("customers","table-header-contact","customers/table-header-contact",886252592)),new cljs.core.Keyword(null,"render","render",-1408033454),features.app.customers.frontend.view.contact_render,new cljs.core.Keyword(null,"sortable?","sortable?",291547474),true], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("customer","active","customer/active",-723544586),new cljs.core.Keyword(null,"label","label",1718410804),translations.core.tr(new cljs.core.Keyword("customers","table-header-status","customers/table-header-status",-1918570200)),new cljs.core.Keyword(null,"render","render",-1408033454),features.app.customers.frontend.view.status_render,new cljs.core.Keyword(null,"sortable?","sortable?",291547474),false], null)], null),true,(function (result){
-var G__28229 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","load-success","customers/load-success",1611517444),result], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28229) : zero.frontend.re_frame.dispatch.call(null,G__28229));
+var G__36228 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","load-success","customers/load-success",1611517444),result], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36228) : zero.frontend.re_frame.dispatch.call(null,G__36228));
 }),true])], null)], null);
 });
 /**
@@ -366,8 +366,8 @@ return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.fro
  */
 features.app.customers.frontend.view.customers_page_header = (function features$app$customers$frontend$view$customers_page_header(){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.page_header.page_header,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"title","title",636505583),translations.core.tr(new cljs.core.Keyword("customers","page-title","customers/page-title",1769404958)),new cljs.core.Keyword(null,"description","description",-1428560544),translations.core.tr(new cljs.core.Keyword("customers","page-description","customers/page-description",636324744)),new cljs.core.Keyword(null,"action-button","action-button",1805783365),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.enhanced_button.enhanced_button,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"success","success",1890645906),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__28231 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","open-modal","customers/open-modal",-659641739),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("customer","active","customer/active",-723544586),true], null),true], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28231) : zero.frontend.re_frame.dispatch.call(null,G__28231));
+var G__36237 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","open-modal","customers/open-modal",-659641739),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("customer","active","customer/active",-723544586),true], null),true], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36237) : zero.frontend.re_frame.dispatch.call(null,G__36237));
 }),new cljs.core.Keyword(null,"text","text",-1790561697),translations.core.tr(new cljs.core.Keyword("customers","add-new-customer","customers/add-new-customer",792813328))], null)], null)], null)], null);
 });
 /**
@@ -375,24 +375,24 @@ return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.fro
  */
 features.app.customers.frontend.view.customers_content = (function features$app$customers$frontend$view$customers_content(customers,loading_QMARK_,delete_customer,query_fn){
 return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.customers.frontend.view.customers_table,customers,loading_QMARK_,(function (customer){
-var G__28232 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","open-modal","customers/open-modal",-659641739),customer,false], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28232) : zero.frontend.re_frame.dispatch.call(null,G__28232));
+var G__36255 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","open-modal","customers/open-modal",-659641739),customer,false], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36255) : zero.frontend.re_frame.dispatch.call(null,G__36255));
 }),delete_customer,query_fn], null);
 });
 /**
  * Render modal when customer is selected
  */
 features.app.customers.frontend.view.modal_when_open = (function features$app$customers$frontend$view$modal_when_open(save_customer){
-var modal_customer = (function (){var G__28234 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-customer","customers/modal-customer",298623272)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28234) : zero.frontend.re_frame.subscribe.call(null,G__28234));
+var modal_customer = (function (){var G__36268 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-customer","customers/modal-customer",298623272)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36268) : zero.frontend.re_frame.subscribe.call(null,G__36268));
 })();
-var modal_is_new_QMARK_ = (function (){var G__28235 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-is-new?","customers/modal-is-new?",-2029346257)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28235) : zero.frontend.re_frame.subscribe.call(null,G__28235));
+var modal_is_new_QMARK_ = (function (){var G__36269 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-is-new?","customers/modal-is-new?",-2029346257)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36269) : zero.frontend.re_frame.subscribe.call(null,G__36269));
 })();
 if(cljs.core.truth_(cljs.core.deref(modal_customer))){
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.customers.frontend.view.customer_modal,cljs.core.deref(modal_customer),cljs.core.deref(modal_is_new_QMARK_),save_customer,(function (){
-var G__28236 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","close-modal","customers/close-modal",-270494804)], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__28236) : zero.frontend.re_frame.dispatch.call(null,G__28236));
+var G__36273 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","close-modal","customers/close-modal",-270494804)], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36273) : zero.frontend.re_frame.dispatch.call(null,G__36273));
 })], null);
 } else {
 return null;
@@ -400,14 +400,14 @@ return null;
 });
 features.app.customers.frontend.view.view = (function features$app$customers$frontend$view$view(){
 var workspace_id = features.app.customers.frontend.view.get_workspace_id();
-var customers_data = (function (){var G__28243 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","data","customers/data",1379089132)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28243) : zero.frontend.re_frame.subscribe.call(null,G__28243));
+var customers_data = (function (){var G__36275 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","data","customers/data",1379089132)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36275) : zero.frontend.re_frame.subscribe.call(null,G__36275));
 })();
-var loading_QMARK_ = (function (){var G__28245 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","loading?","customers/loading?",1369533542)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28245) : zero.frontend.re_frame.subscribe.call(null,G__28245));
+var loading_QMARK_ = (function (){var G__36276 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","loading?","customers/loading?",1369533542)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36276) : zero.frontend.re_frame.subscribe.call(null,G__36276));
 })();
-var modal_is_new_QMARK_ = (function (){var G__28246 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-is-new?","customers/modal-is-new?",-2029346257)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__28246) : zero.frontend.re_frame.subscribe.call(null,G__28246));
+var modal_is_new_QMARK_ = (function (){var G__36277 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("customers","modal-is-new?","customers/modal-is-new?",-2029346257)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36277) : zero.frontend.re_frame.subscribe.call(null,G__36277));
 })();
 var load_customers = (function (params){
 return features.app.customers.frontend.view.load_customers_query(workspace_id,(function (){var or__5025__auto__ = params;

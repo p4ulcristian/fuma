@@ -78,6 +78,7 @@
         :login/username-min-length "Username must be at least 3 characters"
 
         ;; Homepage
+        :homepage/page-title "Color Me Crazy - Professional Hair Salon"
         :homepage/title "Color Me Crazy"
         :homepage/subtitle "Hair Salon - Coming Soon"
         :homepage/description "Get ready to transform your look! Our amazing hair salon is coming soon to bring you the latest styles, vibrant colors, and professional care. Stay tuned for our grand opening!"
@@ -89,6 +90,62 @@
         :homepage/service-hair-styling "Hair Styling"
         :homepage/service-wedding-hair "Wedding Hair"
         :homepage/service-special-events "Special Events"
+
+        ;; Pricing Section
+        :pricing/title "Our Prices"
+        :pricing/subtitle "Professional hair services with transparent pricing"
+        :pricing/employee-prices "Employee Prices"
+        :pricing/master-prices "Master Hairdresser - Pintér Felicia"
+        :pricing/note "Master hairdresser prices are higher due to premium expertise"
+
+        ;; Women's Hair Services
+        :pricing/womens-haircut "Women's Haircut"
+        :pricing/short "Short"
+        :pricing/medium "Medium Length"
+        :pricing/long "Long"
+        :pricing/extra-long "Extra Long"
+        :pricing/dry-cut "Dry Cut"
+
+        ;; Men's Hair Services
+        :pricing/mens-haircut "Men's Haircut"
+        :pricing/short-cut "Short Cut"
+        :pricing/medium-cut "Medium Length"
+        :pricing/long-cut "Long Cut"
+        :pricing/clipper-only "Clipper Only"
+        :pricing/beard-trim "Beard Trim"
+        :pricing/wash "Hair Wash"
+
+        ;; Coloring Services
+        :pricing/coloring "Coloring/Dyeing (+ Materials)"
+        :pricing/bleaching "Bleaching Services"
+        :pricing/root-bleach "Root Bleaching"
+        :pricing/full-bleach "Full Bleaching"
+        :pricing/balayage "Balayage"
+        :pricing/highlights "Highlights"
+        :pricing/correction "Color Correction"
+
+        ;; Materials
+        :pricing/materials "Materials (per gram)"
+        :pricing/permanent-dye "Permanent Dye"
+        :pricing/semi-permanent "Semi-Permanent Color"
+        :pricing/physical-color "Physical Color"
+        :pricing/toner "Toner"
+        :pricing/bleach "Bleach"
+        :pricing/bond-strengthener "Bond Strengthening Bleach"
+        :pricing/pigment-remover "Pigment Remover"
+
+        ;; Additional Services
+        :pricing/additional "Additional Services"
+        :pricing/head-massage "Head Massage"
+        :pricing/steampod "Steampod Service"
+        :pricing/curling-straightening "Hair Curling/Straightening"
+        :pricing/occasion-styles "Occasion Styles & Updos"
+
+        ;; Units
+        :pricing/per-hour "/hour"
+        :pricing/per-gram "/g"
+        :pricing/per-package "/package"
+        :pricing/from "from"
 
         ;; Footer
         :footer/company-description "Professional hair styling and beauty services. Creating beautiful looks that enhance your natural beauty and boost your confidence."
@@ -384,6 +441,7 @@
         :login/username-min-length "A felhasználónév legalább 3 karakter hosszú legyen"
 
         ;; Homepage
+        :homepage/page-title "Color Me Crazy - Professzionális Fodrászszalon"
         :homepage/title "Color Me Crazy"
         :homepage/subtitle "Fodrászszalon - Hamarosan"
         :homepage/description "Készülj fel a nagy változásra! Csodálatos fodrászszalonunk hamarosan megnyílik, hogy a legújabb stílusokat, élénk színeket és professzionális gondoskodást hozza neked. Maradj velünk a nagy nyitás bejelentéséért!"
@@ -395,6 +453,62 @@
         :homepage/service-hair-styling "Hajformázás"
         :homepage/service-wedding-hair "Menyasszonyi Frizura"
         :homepage/service-special-events "Különleges Alkalmak"
+
+        ;; Pricing Section
+        :pricing/title "Áraink"
+        :pricing/subtitle "Professzionális hajszolgáltatások átlátható árazással"
+        :pricing/employee-prices "Munkatársi Árak"
+        :pricing/master-prices "Mesterfodrász - Pintér Felicia"
+        :pricing/note "A mesterfodrászsz árai magasabbak a prémium szakértelem miatt"
+
+        ;; Women's Hair Services
+        :pricing/womens-haircut "Női Hajvágás"
+        :pricing/short "Rövid"
+        :pricing/medium "Félhosszú"
+        :pricing/long "Hosszú"
+        :pricing/extra-long "Extra Hosszú"
+        :pricing/dry-cut "Száraz Hajvágás"
+
+        ;; Men's Hair Services
+        :pricing/mens-haircut "Férfi Hajvágás"
+        :pricing/short-cut "Rövid Hajvágás"
+        :pricing/medium-cut "Közép Hosszú"
+        :pricing/long-cut "Férfi Hosszú"
+        :pricing/clipper-only "Csak Géppel"
+        :pricing/beard-trim "Szakáll Igazítás"
+        :pricing/wash "Mosás"
+
+        ;; Coloring Services
+        :pricing/coloring "Festés/Színezés (+ Felhasznált Anyag)"
+        :pricing/bleaching "Szőkítés"
+        :pricing/root-bleach "Tő Szőkítés"
+        :pricing/full-bleach "Teljes Szőkítés"
+        :pricing/balayage "Balayage"
+        :pricing/highlights "Melír"
+        :pricing/correction "Korrekció"
+
+        ;; Materials
+        :pricing/materials "Anyagok (grammonként)"
+        :pricing/permanent-dye "Tartós Festék"
+        :pricing/semi-permanent "Féltartós Színező"
+        :pricing/physical-color "Fizikai Színező"
+        :pricing/toner "Toner"
+        :pricing/bleach "Szőkítő"
+        :pricing/bond-strengthener "Kötés Erősítő Szőkítő"
+        :pricing/pigment-remover "Pigment Eltávolító"
+
+        ;; Additional Services
+        :pricing/additional "További Szolgáltatások"
+        :pricing/head-massage "Fejmasszázs"
+        :pricing/steampod "Steampod Szolgáltatás"
+        :pricing/curling-straightening "Hajgöndörítés/Vasalás"
+        :pricing/occasion-styles "Alkalmi Kontyok, Frizurák"
+
+        ;; Units
+        :pricing/per-hour "/óra"
+        :pricing/per-gram "/g"
+        :pricing/per-package "/csomag"
+        :pricing/from "-tól"
 
         ;; Footer
         :footer/company-description "Professzionális hajformázás és szépségápolási szolgáltatások. Gyönyörű frizurákat alkotunk, amelyek kiemelik természetes szépséged és növelik önbizalmad."

@@ -2,8 +2,8 @@ goog.provide('clerk.core');
 clerk.core.current_path = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(location.pathname);
 clerk.core.deferred_navigation_chan = cljs.core.async.chan.cljs$core$IFn$_invoke$arity$1(cljs.core.async.sliding_buffer((1)));
 clerk.core.debounce = (function clerk$core$debounce(var_args){
-var G__25697 = arguments.length;
-switch (G__25697) {
+var G__23030 = arguments.length;
+switch (G__23030) {
 case 1:
 return clerk.core.debounce.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -110,14 +110,14 @@ if(cljs.core.truth_(clerk.core.browser_supports_manual_restoration_QMARK_)){
 return (history.scrollRestoration = "manual");
 } else {
 return goog.events.listen(window,goog.events.EventType.POPSTATE,(function (event){
-var temp__5821__auto___25724 = event.state;
-if(cljs.core.truth_(temp__5821__auto___25724)){
-var state_25725 = temp__5821__auto___25724;
-var temp__5823__auto___25726 = (state_25725["scroll-top"]);
-if(cljs.core.truth_(temp__5823__auto___25726)){
-var scroll_top_25727 = temp__5823__auto___25726;
+var temp__5821__auto___23115 = event.state;
+if(cljs.core.truth_(temp__5821__auto___23115)){
+var state_23116 = temp__5821__auto___23115;
+var temp__5823__auto___23117 = (state_23116["scroll-top"]);
+if(cljs.core.truth_(temp__5823__auto___23117)){
+var scroll_top_23118 = temp__5823__auto___23117;
 goog.events.listenOnce(window,goog.events.EventType.SCROLL,(function (){
-scrollTo((0),scroll_top_25727);
+scrollTo((0),scroll_top_23118);
 
 return null;
 }));
@@ -136,9 +136,9 @@ return null;
  */
 clerk.core.install_scroll_saver = (function clerk$core$install_scroll_saver(){
 return goog.events.listen(window,goog.events.EventType.SCROLL,clerk.core.debounce.cljs$core$IFn$_invoke$arity$2((function (event){
-var scroll_top_25741 = clerk.core.get_scroll_top();
-var state_25742 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"scroll-top","scroll-top",-46723100),scroll_top_25741], null);
-history.replaceState(cljs.core.clj__GT_js(state_25742),document.title);
+var scroll_top_23119 = clerk.core.get_scroll_top();
+var state_23120 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"scroll-top","scroll-top",-46723100),scroll_top_23119], null);
+history.replaceState(cljs.core.clj__GT_js(state_23120),document.title);
 
 return null;
 }),(200)));
@@ -169,14 +169,14 @@ return null;
  */
 clerk.core.navigate_page_BANG_ = (function clerk$core$navigate_page_BANG_(var_args){
 var args__5755__auto__ = [];
-var len__5749__auto___25744 = arguments.length;
-var i__5750__auto___25745 = (0);
+var len__5749__auto___23130 = arguments.length;
+var i__5750__auto___23131 = (0);
 while(true){
-if((i__5750__auto___25745 < len__5749__auto___25744)){
-args__5755__auto__.push((arguments[i__5750__auto___25745]));
+if((i__5750__auto___23131 < len__5749__auto___23130)){
+args__5755__auto__.push((arguments[i__5750__auto___23131]));
 
-var G__25746 = (i__5750__auto___25745 + (1));
-i__5750__auto___25745 = G__25746;
+var G__23133 = (i__5750__auto___23131 + (1));
+i__5750__auto___23131 = G__23133;
 continue;
 } else {
 }
@@ -187,9 +187,9 @@ var argseq__5756__auto__ = ((((1) < args__5755__auto__.length))?(new cljs.core.I
 return clerk.core.navigate_page_BANG_.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__5756__auto__);
 });
 
-(clerk.core.navigate_page_BANG_.cljs$core$IFn$_invoke$arity$variadic = (function (url,p__25714){
-var vec__25716 = p__25714;
-var top_element_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__25716,(0),null);
+(clerk.core.navigate_page_BANG_.cljs$core$IFn$_invoke$arity$variadic = (function (url,p__23090){
+var vec__23093 = p__23090;
+var top_element_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__23093,(0),null);
 if(typeof url === 'string'){
 } else {
 throw (new Error("Assert failed: (string? url)"));
@@ -235,11 +235,11 @@ return clerk.core.scroll_to((y - y_translation));
 (clerk.core.navigate_page_BANG_.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(clerk.core.navigate_page_BANG_.cljs$lang$applyTo = (function (seq25711){
-var G__25712 = cljs.core.first(seq25711);
-var seq25711__$1 = cljs.core.next(seq25711);
+(clerk.core.navigate_page_BANG_.cljs$lang$applyTo = (function (seq23085){
+var G__23086 = cljs.core.first(seq23085);
+var seq23085__$1 = cljs.core.next(seq23085);
 var self__5734__auto__ = this;
-return self__5734__auto__.cljs$core$IFn$_invoke$arity$variadic(G__25712,seq25711__$1);
+return self__5734__auto__.cljs$core$IFn$_invoke$arity$variadic(G__23086,seq23085__$1);
 }));
 
 /**

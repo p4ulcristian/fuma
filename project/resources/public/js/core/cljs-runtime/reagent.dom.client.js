@@ -3,8 +3,8 @@ goog.provide('reagent.dom.client');
  * Create a React Root connected to given container DOM element.
  */
 reagent.dom.client.create_root = (function reagent$dom$client$create_root(var_args){
-var G__27820 = arguments.length;
-switch (G__27820) {
+var G__28666 = arguments.length;
+switch (G__28666) {
 case 1:
 return reagent.dom.client.create_root.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -37,30 +37,30 @@ return root.unmount();
 });
 reagent.dom.client.reagent_root = (function reagent$dom$client$reagent_root(js_props){
 shadow.js.shim.module$react.useEffect((function (){
-var _STAR_always_update_STAR__orig_val__27843 = reagent.impl.util._STAR_always_update_STAR_;
-var _STAR_always_update_STAR__temp_val__27844 = false;
-(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__temp_val__27844);
+var _STAR_always_update_STAR__orig_val__28671 = reagent.impl.util._STAR_always_update_STAR_;
+var _STAR_always_update_STAR__temp_val__28672 = false;
+(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__temp_val__28672);
 
 try{reagent.impl.batching.flush_after_render();
 
 return undefined;
-}finally {(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__orig_val__27843);
+}finally {(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__orig_val__28671);
 }}));
 
-var _STAR_always_update_STAR__orig_val__27845 = reagent.impl.util._STAR_always_update_STAR_;
-var _STAR_always_update_STAR__temp_val__27846 = true;
-(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__temp_val__27846);
+var _STAR_always_update_STAR__orig_val__28676 = reagent.impl.util._STAR_always_update_STAR_;
+var _STAR_always_update_STAR__temp_val__28678 = true;
+(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__temp_val__28678);
 
 try{return shadow.js.shim.module$react.createElement(js_props.comp);
-}finally {(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__orig_val__27845);
+}finally {(reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR__orig_val__28676);
 }});
 /**
  * Render the given Reagent element (i.e. Hiccup data)
  *   into a given React root.
  */
 reagent.dom.client.render = (function reagent$dom$client$render(var_args){
-var G__27848 = arguments.length;
-switch (G__27848) {
+var G__28684 = arguments.length;
+switch (G__28684) {
 case 2:
 return reagent.dom.client.render.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -94,8 +94,8 @@ return root.render(shadow.js.shim.module$react.createElement(reagent.dom.client.
 (reagent.dom.client.render.cljs$lang$maxFixedArity = 3);
 
 reagent.dom.client.hydrate_root = (function reagent$dom$client$hydrate_root(var_args){
-var G__27868 = arguments.length;
-switch (G__27868) {
+var G__28708 = arguments.length;
+switch (G__28708) {
 case 2:
 return reagent.dom.client.hydrate_root.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -114,12 +114,12 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 return reagent.dom.client.hydrate_root.cljs$core$IFn$_invoke$arity$3(container,el,null);
 }));
 
-(reagent.dom.client.hydrate_root.cljs$core$IFn$_invoke$arity$3 = (function (container,el,p__27870){
-var map__27872 = p__27870;
-var map__27872__$1 = cljs.core.__destructure_map(map__27872);
-var compiler = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__27872__$1,new cljs.core.Keyword(null,"compiler","compiler",-267926731),reagent.impl.template._STAR_current_default_compiler_STAR_);
-var on_recoverable_error = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27872__$1,new cljs.core.Keyword(null,"on-recoverable-error","on-recoverable-error",1651056576));
-var identifier_prefix = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27872__$1,new cljs.core.Keyword(null,"identifier-prefix","identifier-prefix",1929840008));
+(reagent.dom.client.hydrate_root.cljs$core$IFn$_invoke$arity$3 = (function (container,el,p__28721){
+var map__28724 = p__28721;
+var map__28724__$1 = cljs.core.__destructure_map(map__28724);
+var compiler = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__28724__$1,new cljs.core.Keyword(null,"compiler","compiler",-267926731),reagent.impl.template._STAR_current_default_compiler_STAR_);
+var on_recoverable_error = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28724__$1,new cljs.core.Keyword(null,"on-recoverable-error","on-recoverable-error",1651056576));
+var identifier_prefix = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28724__$1,new cljs.core.Keyword(null,"identifier-prefix","identifier-prefix",1929840008));
 (reagent.impl.batching.react_flush = shadow.js.shim.module$react_dom.flushSync);
 
 var js_props = ({});

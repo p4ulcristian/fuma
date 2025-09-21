@@ -95,25 +95,25 @@ features.app.material_templates.frontend.view.validate_material_template = (func
 var errors = cljs.core.PersistentArrayMap.EMPTY;
 var name = new cljs.core.Keyword("material-template","name","material-template/name",-1467705719).cljs$core$IFn$_invoke$arity$1(template);
 var unit = new cljs.core.Keyword("material-template","unit","material-template/unit",1417436647).cljs$core$IFn$_invoke$arity$1(template);
-var G__16481 = errors;
-var G__16481__$1 = ((features.app.material_templates.frontend.view.validate_name(name))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__16481,new cljs.core.Keyword("material-template","name","material-template/name",-1467705719),translations.core.tr(new cljs.core.Keyword("material-templates","error-name","material-templates/error-name",1727596800))):G__16481);
+var G__28015 = errors;
+var G__28015__$1 = ((features.app.material_templates.frontend.view.validate_name(name))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__28015,new cljs.core.Keyword("material-template","name","material-template/name",-1467705719),translations.core.tr(new cljs.core.Keyword("material-templates","error-name","material-templates/error-name",1727596800))):G__28015);
 if(features.app.material_templates.frontend.view.validate_unit(unit)){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__16481__$1,new cljs.core.Keyword("material-template","unit","material-template/unit",1417436647),translations.core.tr(new cljs.core.Keyword("material-templates","error-unit","material-templates/error-unit",1812615048)));
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__28015__$1,new cljs.core.Keyword("material-template","unit","material-template/unit",1417436647),translations.core.tr(new cljs.core.Keyword("material-templates","error-unit","material-templates/error-unit",1812615048)));
 } else {
-return G__16481__$1;
+return G__28015__$1;
 }
 });
 features.app.material_templates.frontend.view.field_label = (function features$app$material_templates$frontend$view$field_label(label,field_key,has_error_QMARK_){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"letter-spacing","letter-spacing",-948993767),"0.025em",new cljs.core.Keyword(null,"color","color",1011675173),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#374151")], null)], null),label,(cljs.core.truth_((function (){var fexpr__16494 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("material-template","unit","material-template/unit",1417436647),null,new cljs.core.Keyword("material-template","name","material-template/name",-1467705719),null], null), null);
-return (fexpr__16494.cljs$core$IFn$_invoke$arity$1 ? fexpr__16494.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__16494.call(null,field_key));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"letter-spacing","letter-spacing",-948993767),"0.025em",new cljs.core.Keyword(null,"color","color",1011675173),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#374151")], null)], null),label,(cljs.core.truth_((function (){var fexpr__28020 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("material-template","unit","material-template/unit",1417436647),null,new cljs.core.Keyword("material-template","name","material-template/name",-1467705719),null], null), null);
+return (fexpr__28020.cljs$core$IFn$_invoke$arity$1 ? fexpr__28020.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__28020.call(null,field_key));
 })())?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"color","color",1011675173),"#ef4444",new cljs.core.Keyword(null,"margin-left","margin-left",2015598377),"0.25rem"], null)], null),"*"], null):null)], null);
 });
 /**
  * Base properties for input fields
  */
 features.app.material_templates.frontend.view.input_base_props = (function features$app$material_templates$frontend$view$input_base_props(field_key,template,has_error_QMARK_,attrs){
-return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(template),field_key,"")),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__16495_SHARP_){
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(template,cljs.core.assoc,field_key,p1__16495_SHARP_.target.value);
+return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(template),field_key,"")),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__28021_SHARP_){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(template,cljs.core.assoc,field_key,p1__28021_SHARP_.target.value);
 }),new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"line-height","line-height",1870784992),new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),new cljs.core.Keyword(null,"font-size","font-size",-1847940346),new cljs.core.Keyword(null,"transition","transition",765692007),new cljs.core.Keyword(null,"width","width",-384071477),new cljs.core.Keyword(null,"padding","padding",1660304693),new cljs.core.Keyword(null,"outline","outline",793464534),new cljs.core.Keyword(null,"border","border",1444987323),new cljs.core.Keyword(null,"border-radius","border-radius",419594011)],["1.5",(cljs.core.truth_(has_error_QMARK_)?"0 0 0 3px rgba(220, 53, 69, 0.1)":"0 1px 2px 0 rgba(0, 0, 0, 0.05)"),"1rem","border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out","100%","0.75rem 1rem","none",(cljs.core.truth_(has_error_QMARK_)?"2px solid #dc3545":"1px solid #d1d5db"),"8px"]),new cljs.core.Keyword(null,"style","style",-496642736).cljs$core$IFn$_invoke$arity$1(attrs),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"focus","focus",234677911),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"border-color","border-color",-2059162761),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#3b82f6"),new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),(cljs.core.truth_(has_error_QMARK_)?"0 0 0 3px rgba(220, 53, 69, 0.1)":"0 0 0 3px rgba(59, 130, 246, 0.1)")], null)], null)], 0))], null);
 });
 /**
@@ -168,11 +168,11 @@ cljs.core.reset_BANG_(loading_QMARK_,true);
 
 cljs.core.reset_BANG_(errors,cljs.core.PersistentArrayMap.EMPTY);
 
-var G__16625 = cljs.core.deref(template);
-var G__16626 = (function (){
+var G__28163 = cljs.core.deref(template);
+var G__28164 = (function (){
 return cljs.core.reset_BANG_(loading_QMARK_,false);
 });
-return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__16625,G__16626) : on_save.call(null,G__16625,G__16626));
+return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__28163,G__28164) : on_save.call(null,G__28163,G__28164));
 } else {
 return cljs.core.reset_BANG_(errors,validation_errors);
 }
@@ -223,8 +223,8 @@ cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$c
 
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.data_table.server_side_data_table,cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"id-key","id-key",-1881730044),new cljs.core.Keyword(null,"table-id","table-id",-766649466),new cljs.core.Keyword(null,"query-fn","query-fn",-646736760),new cljs.core.Keyword(null,"loading?","loading?",1905707049),new cljs.core.Keyword(null,"empty-message","empty-message",-1625491415),new cljs.core.Keyword(null,"data-source","data-source",-658934676),new cljs.core.Keyword(null,"actions","actions",-812656882),new cljs.core.Keyword(null,"headers","headers",-835030129),new cljs.core.Keyword(null,"show-search?","show-search?",684663920),new cljs.core.Keyword(null,"data-key","data-key",1775480631),new cljs.core.Keyword(null,"show-pagination?","show-pagination?",1857367515)],[new cljs.core.Keyword("material-template","id","material-template/id",1625256948),new cljs.core.Keyword(null,"material-templates-table","material-templates-table",2031510260),query_fn,loading_QMARK_,translations.core.tr(new cljs.core.Keyword("material-templates","no-templates-found","material-templates/no-templates-found",-340217770)),templates_data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword(null,"edit","edit",-1641834166),new cljs.core.Keyword(null,"label","label",1718410804),translations.core.tr(new cljs.core.Keyword("material-templates","action-edit","material-templates/action-edit",721105392)),new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"primary","primary",817773892),new cljs.core.Keyword(null,"href","href",-793805698),on_edit], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword(null,"delete","delete",-1768633620),new cljs.core.Keyword(null,"label","label",1718410804),translations.core.tr(new cljs.core.Keyword("material-templates","action-delete","material-templates/action-delete",-347227554)),new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"danger","danger",-624338030),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (row){
 if(cljs.core.truth_(confirm(translations.core.tr(new cljs.core.Keyword("material-templates","confirm-delete","material-templates/confirm-delete",1368013954))))){
-var G__16635 = new cljs.core.Keyword("material-template","id","material-template/id",1625256948).cljs$core$IFn$_invoke$arity$1(row);
-return (on_delete.cljs$core$IFn$_invoke$arity$1 ? on_delete.cljs$core$IFn$_invoke$arity$1(G__16635) : on_delete.call(null,G__16635));
+var G__28206 = new cljs.core.Keyword("material-template","id","material-template/id",1625256948).cljs$core$IFn$_invoke$arity$1(row);
+return (on_delete.cljs$core$IFn$_invoke$arity$1 ? on_delete.cljs$core$IFn$_invoke$arity$1(G__28206) : on_delete.call(null,G__28206));
 } else {
 return null;
 }
@@ -262,8 +262,8 @@ return cljs.core.reset_BANG_(modal_template,null);
 return null;
 }
 });
-var G__16637_16722 = new cljs.core.Keyword("material-templates","data","material-templates/data",1989788974);
-var G__16638_16723 = (function (db,_){
+var G__28212_28325 = new cljs.core.Keyword("material-templates","data","material-templates/data",1989788974);
+var G__28213_28326 = (function (db,_){
 var raw_data = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),new cljs.core.Keyword(null,"data","data",-232669377)], null));
 var ___$1 = cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG: subscription raw-data:",raw_data], 0));
 if(cljs.core.truth_((function (){var and__5023__auto__ = raw_data;
@@ -278,28 +278,28 @@ return raw_data;
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),cljs.core.PersistentVector.EMPTY,new cljs.core.Keyword(null,"pagination","pagination",-1553654604),cljs.core.PersistentArrayMap.EMPTY], null);
 }
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__16637_16722,G__16638_16723) : zero.frontend.re_frame.reg_sub.call(null,G__16637_16722,G__16638_16723));
-var G__16640_16725 = new cljs.core.Keyword("material-templates","loading?","material-templates/loading?",-469844440);
-var G__16641_16726 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28212_28325,G__28213_28326) : zero.frontend.re_frame.reg_sub.call(null,G__28212_28325,G__28213_28326));
+var G__28214_28327 = new cljs.core.Keyword("material-templates","loading?","material-templates/loading?",-469844440);
+var G__28215_28328 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),false);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__16640_16725,G__16641_16726) : zero.frontend.re_frame.reg_sub.call(null,G__16640_16725,G__16641_16726));
-var G__16642_16728 = new cljs.core.Keyword("material-templates","set-loading","material-templates/set-loading",-2078783214);
-var G__16643_16729 = (function (db,p__16644){
-var vec__16645 = p__16644;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16645,(0),null);
-var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16645,(1),null);
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__28214_28327,G__28215_28328) : zero.frontend.re_frame.reg_sub.call(null,G__28214_28327,G__28215_28328));
+var G__28216_28329 = new cljs.core.Keyword("material-templates","set-loading","material-templates/set-loading",-2078783214);
+var G__28217_28330 = (function (db,p__28218){
+var vec__28219 = p__28218;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28219,(0),null);
+var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28219,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),loading_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__16642_16728,G__16643_16729) : zero.frontend.re_frame.reg_event_db.call(null,G__16642_16728,G__16643_16729));
-var G__16648_16730 = new cljs.core.Keyword("material-templates","load-success","material-templates/load-success",1454720962);
-var G__16649_16731 = (function (db,p__16650){
-var vec__16651 = p__16650;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16651,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16651,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28216_28329,G__28217_28330) : zero.frontend.re_frame.reg_event_db.call(null,G__28216_28329,G__28217_28330));
+var G__28222_28331 = new cljs.core.Keyword("material-templates","load-success","material-templates/load-success",1454720962);
+var G__28223_28332 = (function (db,p__28224){
+var vec__28225 = p__28224;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28225,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28225,(1),null);
 return cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),new cljs.core.Keyword(null,"data","data",-232669377)], null),data),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),false);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__16648_16730,G__16649_16731) : zero.frontend.re_frame.reg_event_db.call(null,G__16648_16730,G__16649_16731));
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__28222_28331,G__28223_28332) : zero.frontend.re_frame.reg_event_db.call(null,G__28222_28331,G__28223_28332));
 features.app.material_templates.frontend.view.view = (function features$app$material_templates$frontend$view$view(){
 var workspace_id = features.app.material_templates.frontend.view.get_workspace_id();
 var loading_QMARK_ = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(false);

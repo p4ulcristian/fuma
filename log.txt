@@ -1,13 +1,42 @@
-=== Development server started at Sun Sep 21 18:16:07 CEST 2025 ===
+=== Development server started at Sun Sep 21 18:22:47 CEST 2025 ===
 [SHADOW-CLJS] shadow-cljs - config: /Users/paul/projects/colormecrazy/shadow-cljs.edn
-[WEBPACK] [webpack-cli] Configuration with the name "flex" was not found. Configuration with the name "site" was not found. Configuration with the name "labs" was not found.
-[SHADOW-CLJS] shadow-cljs - updating dependencies
-[SHADOW-CLJS] shadow-cljs - dependencies updated
-[BACKEND] Downloading: org/clojure/clojure/maven-metadata.xml from central
-[SHADOW-CLJS] No config for build "flex" found.
-[SHADOW-CLJS] No config for build "site" found.
-[SHADOW-CLJS] No config for build "labs" found.
-[SHADOW-CLJS] Build id required.
+[WEBPACK] app:
+[WEBPACK]   asset app.js 197 KiB [compared for emit] [minimized] (name: app) 1 related asset
+[WEBPACK]   runtime modules 891 bytes 4 modules
+[WEBPACK]   modules by path ./node_modules/ 571 KiB
+[WEBPACK]     modules by path ./node_modules/@babel/runtime/helpers/*.js 6.63 KiB 15 modules
+[WEBPACK]     modules by path ./node_modules/react-dom/ 522 KiB 6 modules
+[WEBPACK]     modules by path ./node_modules/prop-types/ 2.6 KiB
+[WEBPACK]       ./node_modules/prop-types/index.js 710 bytes [built] [code generated]
+[WEBPACK]       + 2 modules
+[WEBPACK]     modules by path ./node_modules/react/ 16.9 KiB
+[WEBPACK]       ./node_modules/react/index.js 186 bytes [built] [code generated]
+[WEBPACK]       ./node_modules/react/cjs/react.production.js 16.7 KiB [built] [code generated]
+[WEBPACK]     ./node_modules/react-signature-canvas/dist/index.umd.min.js 3.98 KiB [built] [code generated]
+[WEBPACK]     ./node_modules/signature_pad/dist/signature_pad.mjs 17.5 KiB [built] [code generated]
+[WEBPACK]     ./node_modules/trim-canvas/build/index.js 1.15 KiB [built] [code generated]
+[WEBPACK]   ./target/app_libs.js 566 bytes [built] [code generated]
+[WEBPACK] 
+[WEBPACK]   WARNING in configuration
+[WEBPACK]   The 'mode' option has not been set, webpack will fallback to 'production' for this value.
+[WEBPACK]   Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+[WEBPACK]   You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+[WEBPACK] 
+[WEBPACK]   app (webpack 5.101.0) compiled with 1 warning in 2293 ms
+[SHADOW-CLJS] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[SHADOW-CLJS] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.jboss.threads.JBossExecutors (file:/Users/paul/.m2/repository/org/jboss/threads/jboss-threads/3.5.0.Final/jboss-threads-3.5.0.Final.jar)
+[SHADOW-CLJS] WARNING: Please consider reporting this to the maintainers of class org.jboss.threads.JBossExecutors
+[SHADOW-CLJS] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[SHADOW-CLJS] WARNING: A restricted method in java.lang.System has been called
+[SHADOW-CLJS] WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/Users/paul/.m2/repository/net/java/dev/jna/jna/5.16.0/jna-5.16.0.jar)
+[SHADOW-CLJS] WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+[SHADOW-CLJS] WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+[SHADOW-CLJS] 
+[SHADOW-CLJS] shadow-cljs - server version: 3.1.8 running at http://localhost:9630
+[SHADOW-CLJS] shadow-cljs - nREPL server started on port 50385
+[SHADOW-CLJS] shadow-cljs - watching build :app
+[SHADOW-CLJS] [:app] Configuring build.
+[SHADOW-CLJS] [:app] Compiling ...
 [BACKEND] nrepl port saved to 7888 -> ./.nrepl-port
 [BACKEND] WARNING: A restricted method in java.lang.System has been called
 [BACKEND] WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/Users/paul/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar)
@@ -16,6 +45,33 @@
 [BACKEND] 
 [BACKEND] Starting server...
 [BACKEND] [94m🚀 Server starting on port 3002[0m
+[SHADOW-CLJS] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+[SHADOW-CLJS] SLF4J: Defaulting to no-operation (NOP) logger implementation
+[SHADOW-CLJS] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[SHADOW-CLJS] [:app] Build completed. (289 files, 146 compiled, 0 warnings, 6.21s)
+[WEBPACK] app:
+[WEBPACK]   asset app.js 197 KiB [emitted] [minimized] (name: app) 1 related asset
+[WEBPACK]   runtime modules 891 bytes 4 modules
+[WEBPACK]   modules by path ./node_modules/ 571 KiB
+[WEBPACK]     modules by path ./node_modules/@babel/runtime/helpers/*.js 6.63 KiB 15 modules
+[WEBPACK]     modules by path ./node_modules/react-dom/ 522 KiB 6 modules
+[WEBPACK]     modules by path ./node_modules/prop-types/ 2.6 KiB
+[WEBPACK]       ./node_modules/prop-types/index.js 710 bytes [built] [code generated]
+[WEBPACK]       + 2 modules
+[WEBPACK]     modules by path ./node_modules/react/ 16.9 KiB
+[WEBPACK]       ./node_modules/react/index.js 186 bytes [built] [code generated]
+[WEBPACK]       ./node_modules/react/cjs/react.production.js 16.7 KiB [built] [code generated]
+[WEBPACK]     ./node_modules/react-signature-canvas/dist/index.umd.min.js 3.98 KiB [built] [code generated]
+[WEBPACK]     ./node_modules/signature_pad/dist/signature_pad.mjs 17.5 KiB [built] [code generated]
+[WEBPACK]     ./node_modules/trim-canvas/build/index.js 1.15 KiB [built] [code generated]
+[WEBPACK]   ./target/app_libs.js 566 bytes [built] [code generated]
+[WEBPACK] 
+[WEBPACK]   WARNING in configuration
+[WEBPACK]   The 'mode' option has not been set, webpack will fallback to 'production' for this value.
+[WEBPACK]   Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+[WEBPACK]   You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+[WEBPACK] 
+[WEBPACK]   app (webpack 5.101.0) compiled with 1 warning in 1123 ms
 [CHROME] Failed to connect to Chrome DevTools Protocol
 [CHROME] Make sure Chrome is running with: --remote-debugging-port=9222
 [CHROME] Error: No inspectable targets

@@ -1,23 +1,23 @@
 goog.provide('ui.address_search');
-re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("ui","address-search","ui/address-search",-1610282242),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (db,p__16213){
-var vec__16214 = p__16213;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16214,(0),null);
-var component_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16214,(1),null);
+re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("ui","address-search","ui/address-search",-1610282242),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (db,p__28334){
+var vec__28335 = p__28334;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28335,(0),null);
+var component_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28335,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"ui","ui",-469653645),new cljs.core.Keyword(null,"address-search","address-search",-1610284950),component_id], null));
 })], 0));
-re_frame.core.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("ui","address-search-set-state","ui/address-search-set-state",-325756243),(function (db,p__16217){
-var vec__16218 = p__16217;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16218,(0),null);
-var component_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16218,(1),null);
-var state = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16218,(2),null);
+re_frame.core.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("ui","address-search-set-state","ui/address-search-set-state",-325756243),(function (db,p__28338){
+var vec__28339 = p__28338;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28339,(0),null);
+var component_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28339,(1),null);
+var state = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28339,(2),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"ui","ui",-469653645),new cljs.core.Keyword(null,"address-search","address-search",-1610284950),component_id], null),state);
 }));
-re_frame.core.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("ui","address-search-update","ui/address-search-update",1967522077),(function (db,p__16222){
-var vec__16223 = p__16222;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16223,(0),null);
-var component_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16223,(1),null);
-var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16223,(2),null);
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__16223,(3),null);
+re_frame.core.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("ui","address-search-update","ui/address-search-update",1967522077),(function (db,p__28342){
+var vec__28343 = p__28342;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28343,(0),null);
+var component_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28343,(1),null);
+var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28343,(2),null);
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28343,(3),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"ui","ui",-469653645),new cljs.core.Keyword(null,"address-search","address-search",-1610284950),component_id,key], null),value);
 }));
 ui.address_search.debounced_search = (function ui$address_search$debounced_search(search_fn,delay){
@@ -47,15 +47,15 @@ ui.address_search.debounced_search_addresses = ui.address_search.debounced_searc
 /**
  * Searchable address dropdown component
  */
-ui.address_search.address_search_dropdown = (function ui$address_search$address_search_dropdown(p__16232){
-var map__16233 = p__16232;
-var map__16233__$1 = cljs.core.__destructure_map(map__16233);
-var component_id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16233__$1,new cljs.core.Keyword(null,"component-id","component-id",1551113783));
-var workspace_id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16233__$1,new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435));
-var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16233__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var on_select = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16233__$1,new cljs.core.Keyword(null,"on-select","on-select",-192407950));
-var placeholder = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16233__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
-var disabled = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16233__$1,new cljs.core.Keyword(null,"disabled","disabled",-1529784218));
+ui.address_search.address_search_dropdown = (function ui$address_search$address_search_dropdown(p__28346){
+var map__28347 = p__28346;
+var map__28347__$1 = cljs.core.__destructure_map(map__28347);
+var component_id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28347__$1,new cljs.core.Keyword(null,"component-id","component-id",1551113783));
+var workspace_id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28347__$1,new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435));
+var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28347__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var on_select = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28347__$1,new cljs.core.Keyword(null,"on-select","on-select",-192407950));
+var placeholder = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28347__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
+var disabled = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28347__$1,new cljs.core.Keyword(null,"disabled","disabled",-1529784218));
 if(cljs.core.truth_(cljs.core.deref(re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("ui","address-search","ui/address-search",-1610282242),component_id], null))))){
 } else {
 re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("ui","address-search-set-state","ui/address-search-set-state",-325756243),component_id,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"search-term","search-term",356193544),"",new cljs.core.Keyword(null,"addresses","addresses",-559529694),cljs.core.PersistentVector.EMPTY,new cljs.core.Keyword(null,"loading?","loading?",1905707049),false,new cljs.core.Keyword(null,"show-dropdown?","show-dropdown?",1118104354),false,new cljs.core.Keyword(null,"selected-address","selected-address",763318752),(function (){var or__5025__auto__ = value;
@@ -67,15 +67,15 @@ return cljs.core.PersistentArrayMap.EMPTY;
 })()], null)], null));
 }
 
-return (function (p__16235){
-var map__16236 = p__16235;
-var map__16236__$1 = cljs.core.__destructure_map(map__16236);
-var component_id__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16236__$1,new cljs.core.Keyword(null,"component-id","component-id",1551113783));
-var workspace_id__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16236__$1,new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435));
-var value__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16236__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var on_select__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16236__$1,new cljs.core.Keyword(null,"on-select","on-select",-192407950));
-var placeholder__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16236__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
-var disabled__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__16236__$1,new cljs.core.Keyword(null,"disabled","disabled",-1529784218));
+return (function (p__28348){
+var map__28349 = p__28348;
+var map__28349__$1 = cljs.core.__destructure_map(map__28349);
+var component_id__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28349__$1,new cljs.core.Keyword(null,"component-id","component-id",1551113783));
+var workspace_id__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28349__$1,new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435));
+var value__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28349__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var on_select__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28349__$1,new cljs.core.Keyword(null,"on-select","on-select",-192407950));
+var placeholder__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28349__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
+var disabled__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28349__$1,new cljs.core.Keyword(null,"disabled","disabled",-1529784218));
 var state = cljs.core.deref(re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("ui","address-search","ui/address-search",-1610282242),component_id__$1], null)));
 var search_term = (function (){var or__5025__auto__ = new cljs.core.Keyword(null,"search-term","search-term",356193544).cljs$core$IFn$_invoke$arity$1(state);
 if(cljs.core.truth_(or__5025__auto__)){
@@ -184,22 +184,22 @@ return cljs.core.seq(search_term);
 } else {
 return and__5023__auto__;
 }
-})())?new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"class","class",-2030961996),"address-search-dropdown",new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),new cljs.core.Keyword(null,"max-height","max-height",-612563804),new cljs.core.Keyword(null,"top","top",-1856271961),new cljs.core.Keyword(null,"background","background",-863952629),new cljs.core.Keyword(null,"z-index","z-index",1892827090),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"border","border",1444987323),new cljs.core.Keyword(null,"border-top","border-top",-158897573),new cljs.core.Keyword(null,"overflow-y","overflow-y",-1436589285),new cljs.core.Keyword(null,"border-radius","border-radius",419594011),new cljs.core.Keyword(null,"left","left",-399115937)],["0 2px 8px rgba(0,0,0,0.1)","200px","100%","#fff",(1000),"0","absolute","1px solid #ccc","none","auto","0 0 4px 4px","0"])], null),(cljs.core.truth_(loading_QMARK_)?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"12px",new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center",new cljs.core.Keyword(null,"color","color",1011675173),"#666"], null)], null),translations.core.tr(new cljs.core.Keyword("address-search","searching","address-search/searching",-177718722))], null):null),((((cljs.core.not(loading_QMARK_)) && (((cljs.core.empty_QMARK_(addresses)) && (cljs.core.seq(search_term))))))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"12px",new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center",new cljs.core.Keyword(null,"color","color",1011675173),"#666"], null)], null),translations.core.tr(new cljs.core.Keyword("address-search","no-results","address-search/no-results",1995157051))], null):null),(function (){var iter__5503__auto__ = (function ui$address_search$address_search_dropdown_$_iter__16245(s__16246){
+})())?new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"class","class",-2030961996),"address-search-dropdown",new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),new cljs.core.Keyword(null,"max-height","max-height",-612563804),new cljs.core.Keyword(null,"top","top",-1856271961),new cljs.core.Keyword(null,"background","background",-863952629),new cljs.core.Keyword(null,"z-index","z-index",1892827090),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"border","border",1444987323),new cljs.core.Keyword(null,"border-top","border-top",-158897573),new cljs.core.Keyword(null,"overflow-y","overflow-y",-1436589285),new cljs.core.Keyword(null,"border-radius","border-radius",419594011),new cljs.core.Keyword(null,"left","left",-399115937)],["0 2px 8px rgba(0,0,0,0.1)","200px","100%","#fff",(1000),"0","absolute","1px solid #ccc","none","auto","0 0 4px 4px","0"])], null),(cljs.core.truth_(loading_QMARK_)?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"12px",new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center",new cljs.core.Keyword(null,"color","color",1011675173),"#666"], null)], null),translations.core.tr(new cljs.core.Keyword("address-search","searching","address-search/searching",-177718722))], null):null),((((cljs.core.not(loading_QMARK_)) && (((cljs.core.empty_QMARK_(addresses)) && (cljs.core.seq(search_term))))))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"12px",new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center",new cljs.core.Keyword(null,"color","color",1011675173),"#666"], null)], null),translations.core.tr(new cljs.core.Keyword("address-search","no-results","address-search/no-results",1995157051))], null):null),(function (){var iter__5503__auto__ = (function ui$address_search$address_search_dropdown_$_iter__28350(s__28351){
 return (new cljs.core.LazySeq(null,(function (){
-var s__16246__$1 = s__16246;
+var s__28351__$1 = s__28351;
 while(true){
-var temp__5823__auto__ = cljs.core.seq(s__16246__$1);
+var temp__5823__auto__ = cljs.core.seq(s__28351__$1);
 if(temp__5823__auto__){
-var s__16246__$2 = temp__5823__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__16246__$2)){
-var c__5501__auto__ = cljs.core.chunk_first(s__16246__$2);
+var s__28351__$2 = temp__5823__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__28351__$2)){
+var c__5501__auto__ = cljs.core.chunk_first(s__28351__$2);
 var size__5502__auto__ = cljs.core.count(c__5501__auto__);
-var b__16248 = cljs.core.chunk_buffer(size__5502__auto__);
-if((function (){var i__16247 = (0);
+var b__28353 = cljs.core.chunk_buffer(size__5502__auto__);
+if((function (){var i__28352 = (0);
 while(true){
-if((i__16247 < size__5502__auto__)){
-var address = cljs.core._nth(c__5501__auto__,i__16247);
-cljs.core.chunk_append(b__16248,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address),new cljs.core.Keyword(null,"class","class",-2030961996),"address-option",new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (i__16247,address,c__5501__auto__,size__5502__auto__,b__16248,s__16246__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__16236,map__16236__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__16233,map__16233__$1,component_id,workspace_id,value,on_select,placeholder,disabled){
+if((i__28352 < size__5502__auto__)){
+var address = cljs.core._nth(c__5501__auto__,i__28352);
+cljs.core.chunk_append(b__28353,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address),new cljs.core.Keyword(null,"class","class",-2030961996),"address-option",new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (i__28352,address,c__5501__auto__,size__5502__auto__,b__28353,s__28351__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__28349,map__28349__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__28347,map__28347__$1,component_id,workspace_id,value,on_select,placeholder,disabled){
 return (function (_){
 re_frame.core.dispatch(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("ui","address-search-update","ui/address-search-update",1967522077),component_id__$1,new cljs.core.Keyword(null,"selected-address","selected-address",763318752),address], null));
 
@@ -212,11 +212,11 @@ return (on_select__$1.cljs$core$IFn$_invoke$arity$1 ? on_select__$1.cljs$core$IF
 } else {
 return null;
 }
-});})(i__16247,address,c__5501__auto__,size__5502__auto__,b__16248,s__16246__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__16236,map__16236__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__16233,map__16233__$1,component_id,workspace_id,value,on_select,placeholder,disabled))
+});})(i__28352,address,c__5501__auto__,size__5502__auto__,b__28353,s__28351__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__28349,map__28349__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__28347,map__28347__$1,component_id,workspace_id,value,on_select,placeholder,disabled))
 ,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"8px 12px",new cljs.core.Keyword(null,"cursor","cursor",1011937484),"pointer",new cljs.core.Keyword(null,"border-bottom","border-bottom",2110948415),"1px solid #eee"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),new cljs.core.Keyword("address","name","address/name",848026653).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"12px",new cljs.core.Keyword(null,"color","color",1011675173),"#666"], null)], null),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("address","address-line1","address/address-line1",-1206418180).cljs$core$IFn$_invoke$arity$1(address)),", ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("address","city","address/city",-1506334306).cljs$core$IFn$_invoke$arity$1(address))].join('')], null)], null));
 
-var G__16291 = (i__16247 + (1));
-i__16247 = G__16291;
+var G__28355 = (i__28352 + (1));
+i__28352 = G__28355;
 continue;
 } else {
 return true;
@@ -224,13 +224,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__16248),ui$address_search$address_search_dropdown_$_iter__16245(cljs.core.chunk_rest(s__16246__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__28353),ui$address_search$address_search_dropdown_$_iter__28350(cljs.core.chunk_rest(s__28351__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__16248),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__28353),null);
 }
 } else {
-var address = cljs.core.first(s__16246__$2);
-return cljs.core.cons(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address),new cljs.core.Keyword(null,"class","class",-2030961996),"address-option",new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (address,s__16246__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__16236,map__16236__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__16233,map__16233__$1,component_id,workspace_id,value,on_select,placeholder,disabled){
+var address = cljs.core.first(s__28351__$2);
+return cljs.core.cons(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address),new cljs.core.Keyword(null,"class","class",-2030961996),"address-option",new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (address,s__28351__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__28349,map__28349__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__28347,map__28347__$1,component_id,workspace_id,value,on_select,placeholder,disabled){
 return (function (_){
 re_frame.core.dispatch(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("ui","address-search-update","ui/address-search-update",1967522077),component_id__$1,new cljs.core.Keyword(null,"selected-address","selected-address",763318752),address], null));
 
@@ -243,8 +243,8 @@ return (on_select__$1.cljs$core$IFn$_invoke$arity$1 ? on_select__$1.cljs$core$IF
 } else {
 return null;
 }
-});})(address,s__16246__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__16236,map__16236__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__16233,map__16233__$1,component_id,workspace_id,value,on_select,placeholder,disabled))
-,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"8px 12px",new cljs.core.Keyword(null,"cursor","cursor",1011937484),"pointer",new cljs.core.Keyword(null,"border-bottom","border-bottom",2110948415),"1px solid #eee"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),new cljs.core.Keyword("address","name","address/name",848026653).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"12px",new cljs.core.Keyword(null,"color","color",1011675173),"#666"], null)], null),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("address","address-line1","address/address-line1",-1206418180).cljs$core$IFn$_invoke$arity$1(address)),", ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("address","city","address/city",-1506334306).cljs$core$IFn$_invoke$arity$1(address))].join('')], null)], null),ui$address_search$address_search_dropdown_$_iter__16245(cljs.core.rest(s__16246__$2)));
+});})(address,s__28351__$2,temp__5823__auto__,state,search_term,addresses,loading_QMARK_,show_dropdown_QMARK_,selected_address,map__28349,map__28349__$1,component_id__$1,workspace_id__$1,value__$1,on_select__$1,placeholder__$1,disabled__$1,map__28347,map__28347__$1,component_id,workspace_id,value,on_select,placeholder,disabled))
+,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"8px 12px",new cljs.core.Keyword(null,"cursor","cursor",1011937484),"pointer",new cljs.core.Keyword(null,"border-bottom","border-bottom",2110948415),"1px solid #eee"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),new cljs.core.Keyword("address","name","address/name",848026653).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"12px",new cljs.core.Keyword(null,"color","color",1011675173),"#666"], null)], null),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("address","address-line1","address/address-line1",-1206418180).cljs$core$IFn$_invoke$arity$1(address)),", ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("address","city","address/city",-1506334306).cljs$core$IFn$_invoke$arity$1(address))].join('')], null)], null),ui$address_search$address_search_dropdown_$_iter__28350(cljs.core.rest(s__28351__$2)));
 }
 } else {
 return null;

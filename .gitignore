@@ -1,0 +1,128 @@
+# Clojure/ClojureScript compilation artifacts
+target/
+.cpcache/
+.nrepl-port
+.shadow-cljs/
+.lein-repl-history
+.lein-failures
+.lein-plugins/
+.lein-env
+.lein-classpath
+.lein-deps-sum
+.calva/
+.portal/
+
+# Shadow-CLJS artifacts
+node_modules/
+package-lock.json
+.shadow-cljs/
+out/
+resources/public/js/
+
+# Development logs and temporary files
+log.txt
+nohup.out
+*.log
+*.tmp
+*.swp
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.metadata/
+*.sublime-*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker and container files
+.dockerignore
+docker-compose.override.yml
+
+# Database files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# Build artifacts
+*.jar
+*.war
+*.class
+*.jar.asc
+
+# Environment and secrets
+.env
+.env.local
+.env.production
+.env.development
+secrets.edn
+config/secrets.edn
+
+# Backup files
+*~
+*.bak
+*.backup
+
+# Testing artifacts
+.test-output/
+
+# Documentation build artifacts
+docs/_build/
+docs/build/
+
+# Profiling and benchmarking
+*.hprof
+*.prof
+
+# Git submodules (if any)
+hairdresser-site
+
+# Temporary patches
+*.patch
+*.diff
+
+# Node.js dependencies (if using npm alongside)
+yarn.lock
+yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+[Dd]esktop.ini
+
+# Windows shortcuts
+*.lnk
+
+# Linux
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*

@@ -21,6 +21,6 @@ echo "Generating MD5 checksums..."
    project/resources/public/js/core/app.js || handle_error "MD5 checksum generation" $?
 
 echo "Building JAR file..."
-clj -X:prod :jar expert-lift.jar :main-class app.backend.main || handle_error "JAR build" $?
+clj -X:prod :jar colormecrazy.jar :main-class app.backend.main || handle_error "JAR build" $?
 
-echo "✅ Production build complete. JAR file: expert-lift.jar"
+echo "✅ Production build complete. JAR file: colormecrazy.jar"

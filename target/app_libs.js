@@ -3,7 +3,6 @@
 
 var ALL = {};
 ALL["react-dom/client"] = require("react-dom/client");
-ALL["react-signature-canvas"] = require("react-signature-canvas");
 ALL["react-dom"] = require("react-dom");
 ALL["react"] = require("react");
 global.shadow$bridge = function shadow$bridge(name) {

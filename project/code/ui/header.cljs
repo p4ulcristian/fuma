@@ -53,13 +53,6 @@
     (router/navigate! {:path (str "/app/" workspace-id)})))
 
 ;; Event handlers
-(defn handle-logout []
-  "Handle user logout"
-  (parquery/send-queries
-    {:queries {:users/logout {}}
-     :callback (fn [response]
-                 (:success (:users/logout response)))}))
-
 (defn handle-language-toggle [current-language]
   "Toggle language between en and hu"
   (let [new-language (if (= current-language :en) :hu :en)]
@@ -108,12 +101,7 @@
      [:span.brand-name (tr/tr :header/brand)]]
     [:div.header-right
      [theme-toggle]
-     [language-toggle]
-     [button/view
-      {:type :secondary
-       :on-click handle-logout
-       :class "logout-btn"}
-      @(rf/subscribe [:translate :header/logout])]]]])
+     [language-toggle]]]])
 
 (defn view
   "Header component view function"

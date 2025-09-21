@@ -40,8 +40,8 @@ return parquery.frontend.request.send_queries(new cljs.core.PersistentArrayMap(n
 if(cljs.core.truth_(new cljs.core.Keyword(null,"success","success",1890645906).cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$2(response,query_type)))){
 cljs.core.reset_BANG_(modal_worksheet,null);
 
-var G__35986 = cljs.core.PersistentArrayMap.EMPTY;
-return (load_worksheets.cljs$core$IFn$_invoke$arity$1 ? load_worksheets.cljs$core$IFn$_invoke$arity$1(G__35986) : load_worksheets.call(null,G__35986));
+var G__38865 = cljs.core.PersistentArrayMap.EMPTY;
+return (load_worksheets.cljs$core$IFn$_invoke$arity$1 ? load_worksheets.cljs$core$IFn$_invoke$arity$1(G__38865) : load_worksheets.call(null,G__38865));
 } else {
 return alert(["Error: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"error","error",-978969032).cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$2(response,query_type)))].join(''));
 }
@@ -81,15 +81,15 @@ var work_description = new cljs.core.Keyword("worksheet","work-description","wor
 var work_type = new cljs.core.Keyword("worksheet","work-type","worksheet/work-type",-125111308).cljs$core$IFn$_invoke$arity$1(worksheet);
 var service_type = new cljs.core.Keyword("worksheet","service-type","worksheet/service-type",1790337972).cljs$core$IFn$_invoke$arity$1(worksheet);
 var status = new cljs.core.Keyword("worksheet","status","worksheet/status",-980424991).cljs$core$IFn$_invoke$arity$1(worksheet);
-var G__35987 = errors;
-var G__35987__$1 = ((features.app.worksheets.frontend.view.validate_work_description(work_description))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__35987,new cljs.core.Keyword("worksheet","work-description","worksheet/work-description",-1977458257),"Work description is required (min 5 characters)"):G__35987);
-var G__35987__$2 = ((cljs.core.empty_QMARK_(work_type))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__35987__$1,new cljs.core.Keyword("worksheet","work-type","worksheet/work-type",-125111308),"Work type is required"):G__35987__$1);
-var G__35987__$3 = ((cljs.core.empty_QMARK_(service_type))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__35987__$2,new cljs.core.Keyword("worksheet","service-type","worksheet/service-type",1790337972),"Service type is required"):G__35987__$2);
-var G__35987__$4 = ((cljs.core.empty_QMARK_(status))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__35987__$3,new cljs.core.Keyword("worksheet","status","worksheet/status",-980424991),"Status is required"):G__35987__$3);
+var G__38878 = errors;
+var G__38878__$1 = ((features.app.worksheets.frontend.view.validate_work_description(work_description))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__38878,new cljs.core.Keyword("worksheet","work-description","worksheet/work-description",-1977458257),"Work description is required (min 5 characters)"):G__38878);
+var G__38878__$2 = ((cljs.core.empty_QMARK_(work_type))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__38878__$1,new cljs.core.Keyword("worksheet","work-type","worksheet/work-type",-125111308),"Work type is required"):G__38878__$1);
+var G__38878__$3 = ((cljs.core.empty_QMARK_(service_type))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__38878__$2,new cljs.core.Keyword("worksheet","service-type","worksheet/service-type",1790337972),"Service type is required"):G__38878__$2);
+var G__38878__$4 = ((cljs.core.empty_QMARK_(status))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__38878__$3,new cljs.core.Keyword("worksheet","status","worksheet/status",-980424991),"Status is required"):G__38878__$3);
 if(cljs.core.empty_QMARK_(new cljs.core.Keyword("worksheet","address-id","worksheet/address-id",1959286906).cljs$core$IFn$_invoke$arity$1(worksheet))){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__35987__$4,new cljs.core.Keyword("worksheet","address-id","worksheet/address-id",1959286906),"Address is required");
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__38878__$4,new cljs.core.Keyword("worksheet","address-id","worksheet/address-id",1959286906),"Address is required");
 } else {
-return G__35987__$4;
+return G__38878__$4;
 }
 });
 /**
@@ -117,13 +117,13 @@ return Math.ceil(diff_hours);
 } else {
 return null;
 }
-}catch (e35988){if((e35988 instanceof Error)){
-var e = e35988;
+}catch (e38882){if((e38882 instanceof Error)){
+var e = e38882;
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["Error calculating duration:",e], 0));
 
 return null;
 } else {
-throw e35988;
+throw e38882;
 
 }
 }} else {
@@ -131,8 +131,8 @@ return null;
 }
 });
 features.app.worksheets.frontend.view.field_label = (function features$app$worksheets$frontend$view$field_label(label,field_key,has_error_QMARK_){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"letter-spacing","letter-spacing",-948993767),"0.025em",new cljs.core.Keyword(null,"color","color",1011675173),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#374151")], null)], null),label,(cljs.core.truth_((function (){var fexpr__36002 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword("worksheet","status","worksheet/status",-980424991),null,new cljs.core.Keyword("worksheet","work-description","worksheet/work-description",-1977458257),null,new cljs.core.Keyword("worksheet","service-type","worksheet/service-type",1790337972),null,new cljs.core.Keyword("worksheet","work-type","worksheet/work-type",-125111308),null], null), null);
-return (fexpr__36002.cljs$core$IFn$_invoke$arity$1 ? fexpr__36002.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__36002.call(null,field_key));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"letter-spacing","letter-spacing",-948993767),"0.025em",new cljs.core.Keyword(null,"color","color",1011675173),(cljs.core.truth_(has_error_QMARK_)?"#dc3545":"#374151")], null)], null),label,(cljs.core.truth_((function (){var fexpr__38883 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword("worksheet","status","worksheet/status",-980424991),null,new cljs.core.Keyword("worksheet","work-description","worksheet/work-description",-1977458257),null,new cljs.core.Keyword("worksheet","service-type","worksheet/service-type",1790337972),null,new cljs.core.Keyword("worksheet","work-type","worksheet/work-type",-125111308),null], null), null);
+return (fexpr__38883.cljs$core$IFn$_invoke$arity$1 ? fexpr__38883.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__38883.call(null,field_key));
 })())?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"color","color",1011675173),"#ef4444",new cljs.core.Keyword(null,"margin-left","margin-left",2015598377),"0.25rem"], null)], null),"*"], null):null)], null);
 });
 /**
@@ -153,13 +153,13 @@ var day = cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.str.cljs$core$IF
 var hours = cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.str.cljs$core$IFn$_invoke$arity$1(date.getHours()).padStart((2),"0"));
 var minutes = cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.str.cljs$core$IFn$_invoke$arity$1(date.getMinutes()).padStart((2),"0"));
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(year),"-",month,"-",day,"T",hours,":",minutes].join('');
-}catch (e36016){if((e36016 instanceof Error)){
-var e = e36016;
+}catch (e38886){if((e38886 instanceof Error)){
+var e = e38886;
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["Error formatting datetime:",e], 0));
 
 return "";
 } else {
-throw e36016;
+throw e38886;
 
 }
 }} else {
@@ -170,11 +170,11 @@ return null;
  * Base properties for input fields
  */
 features.app.worksheets.frontend.view.input_base_props = (function features$app$worksheets$frontend$view$input_base_props(field_key,has_error_QMARK_,attrs){
-var is_time_field_QMARK_ = (function (){var fexpr__36044 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("worksheet","arrival-time","worksheet/arrival-time",35764672),null,new cljs.core.Keyword("worksheet","departure-time","worksheet/departure-time",398170674),null], null), null);
-return (fexpr__36044.cljs$core$IFn$_invoke$arity$1 ? fexpr__36044.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__36044.call(null,field_key));
+var is_time_field_QMARK_ = (function (){var fexpr__38895 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword("worksheet","arrival-time","worksheet/arrival-time",35764672),null,new cljs.core.Keyword("worksheet","departure-time","worksheet/departure-time",398170674),null], null), null);
+return (fexpr__38895.cljs$core$IFn$_invoke$arity$1 ? fexpr__38895.cljs$core$IFn$_invoke$arity$1(field_key) : fexpr__38895.call(null,field_key));
 })();
-var form_data_sub = cljs.core.deref((function (){var G__36045 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36045) : zero.frontend.re_frame.subscribe.call(null,G__36045));
+var form_data_sub = cljs.core.deref((function (){var G__38897 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__38897) : zero.frontend.re_frame.subscribe.call(null,G__38897));
 })());
 var form_data = (function (){var or__5025__auto__ = form_data_sub;
 if(cljs.core.truth_(or__5025__auto__)){
@@ -198,8 +198,8 @@ cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$c
 
 var base_change_handler = (function (e){
 var value = e.target.value;
-var G__36049_36717 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-modal-form-field","worksheets/update-modal-form-field",-1340480069),field_key,value], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36049_36717) : zero.frontend.re_frame.dispatch.call(null,G__36049_36717));
+var G__38991_39472 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-modal-form-field","worksheets/update-modal-form-field",-1340480069),field_key,value], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__38991_39472) : zero.frontend.re_frame.dispatch.call(null,G__38991_39472));
 
 if(cljs.core.truth_(is_time_field_QMARK_)){
 var updated_data = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(form_data,field_key,value);
@@ -207,8 +207,8 @@ var arrival = new cljs.core.Keyword("worksheet","arrival-time","worksheet/arriva
 var departure = new cljs.core.Keyword("worksheet","departure-time","worksheet/departure-time",398170674).cljs$core$IFn$_invoke$arity$1(updated_data);
 var calculated_duration = features.app.worksheets.frontend.view.calculate_work_duration(arrival,departure);
 if(cljs.core.truth_(calculated_duration)){
-var G__36053 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-modal-form-field","worksheets/update-modal-form-field",-1340480069),new cljs.core.Keyword("worksheet","work-duration-hours","worksheet/work-duration-hours",1767415900),calculated_duration], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36053) : zero.frontend.re_frame.dispatch.call(null,G__36053));
+var G__38995 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-modal-form-field","worksheets/update-modal-form-field",-1340480069),new cljs.core.Keyword("worksheet","work-duration-hours","worksheet/work-duration-hours",1767415900),calculated_duration], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__38995) : zero.frontend.re_frame.dispatch.call(null,G__38995));
 } else {
 return null;
 }
@@ -234,27 +234,27 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  * Render select input
  */
 features.app.worksheets.frontend.view.render_select = (function features$app$worksheets$frontend$view$render_select(field_key,has_error_QMARK_,attrs,options){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"select","select",1147833503),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([features.app.worksheets.frontend.view.input_base_props(field_key,has_error_QMARK_,attrs),cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(attrs,new cljs.core.Keyword(null,"options","options",99638489))], 0)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),""], null),"Select..."], null),(function (){var iter__5503__auto__ = (function features$app$worksheets$frontend$view$render_select_$_iter__36063(s__36064){
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"select","select",1147833503),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([features.app.worksheets.frontend.view.input_base_props(field_key,has_error_QMARK_,attrs),cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(attrs,new cljs.core.Keyword(null,"options","options",99638489))], 0)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),""], null),"Select..."], null),(function (){var iter__5503__auto__ = (function features$app$worksheets$frontend$view$render_select_$_iter__39033(s__39034){
 return (new cljs.core.LazySeq(null,(function (){
-var s__36064__$1 = s__36064;
+var s__39034__$1 = s__39034;
 while(true){
-var temp__5823__auto__ = cljs.core.seq(s__36064__$1);
+var temp__5823__auto__ = cljs.core.seq(s__39034__$1);
 if(temp__5823__auto__){
-var s__36064__$2 = temp__5823__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__36064__$2)){
-var c__5501__auto__ = cljs.core.chunk_first(s__36064__$2);
+var s__39034__$2 = temp__5823__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__39034__$2)){
+var c__5501__auto__ = cljs.core.chunk_first(s__39034__$2);
 var size__5502__auto__ = cljs.core.count(c__5501__auto__);
-var b__36066 = cljs.core.chunk_buffer(size__5502__auto__);
-if((function (){var i__36065 = (0);
+var b__39038 = cljs.core.chunk_buffer(size__5502__auto__);
+if((function (){var i__39037 = (0);
 while(true){
-if((i__36065 < size__5502__auto__)){
-var vec__36069 = cljs.core._nth(c__5501__auto__,i__36065);
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36069,(0),null);
-var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36069,(1),null);
-cljs.core.chunk_append(b__36066,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),value], null),label], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),value], null)));
+if((i__39037 < size__5502__auto__)){
+var vec__39178 = cljs.core._nth(c__5501__auto__,i__39037);
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39178,(0),null);
+var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39178,(1),null);
+cljs.core.chunk_append(b__39038,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),value], null),label], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),value], null)));
 
-var G__36718 = (i__36065 + (1));
-i__36065 = G__36718;
+var G__39473 = (i__39037 + (1));
+i__39037 = G__39473;
 continue;
 } else {
 return true;
@@ -262,15 +262,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__36066),features$app$worksheets$frontend$view$render_select_$_iter__36063(cljs.core.chunk_rest(s__36064__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__39038),features$app$worksheets$frontend$view$render_select_$_iter__39033(cljs.core.chunk_rest(s__39034__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__36066),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__39038),null);
 }
 } else {
-var vec__36073 = cljs.core.first(s__36064__$2);
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36073,(0),null);
-var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36073,(1),null);
-return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),value], null),label], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),value], null)),features$app$worksheets$frontend$view$render_select_$_iter__36063(cljs.core.rest(s__36064__$2)));
+var vec__39182 = cljs.core.first(s__39034__$2);
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39182,(0),null);
+var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39182,(1),null);
+return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),value], null),label], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),value], null)),features$app$worksheets$frontend$view$render_select_$_iter__39033(cljs.core.rest(s__39034__$2)));
 }
 } else {
 return null;
@@ -304,25 +304,25 @@ return cljs.core.reset_BANG_(addresses,addr_list);
 }
 
 return (function (field_key__$1,has_error_QMARK___$1,attrs__$1){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"select","select",1147833503),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([features.app.worksheets.frontend.view.input_base_props(field_key__$1,has_error_QMARK___$1,attrs__$1),cljs.core.dissoc.cljs$core$IFn$_invoke$arity$variadic(attrs__$1,new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"current-value","current-value",2066017989)], 0))], 0)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),""], null),(cljs.core.truth_(cljs.core.deref(loading_QMARK_))?"Loading addresses...":"Select address...")], null),(function (){var iter__5503__auto__ = (function features$app$worksheets$frontend$view$render_address_select_$_iter__36086(s__36087){
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"select","select",1147833503),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([features.app.worksheets.frontend.view.input_base_props(field_key__$1,has_error_QMARK___$1,attrs__$1),cljs.core.dissoc.cljs$core$IFn$_invoke$arity$variadic(attrs__$1,new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"current-value","current-value",2066017989)], 0))], 0)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),""], null),(cljs.core.truth_(cljs.core.deref(loading_QMARK_))?"Loading addresses...":"Select address...")], null),(function (){var iter__5503__auto__ = (function features$app$worksheets$frontend$view$render_address_select_$_iter__39186(s__39187){
 return (new cljs.core.LazySeq(null,(function (){
-var s__36087__$1 = s__36087;
+var s__39187__$1 = s__39187;
 while(true){
-var temp__5823__auto__ = cljs.core.seq(s__36087__$1);
+var temp__5823__auto__ = cljs.core.seq(s__39187__$1);
 if(temp__5823__auto__){
-var s__36087__$2 = temp__5823__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__36087__$2)){
-var c__5501__auto__ = cljs.core.chunk_first(s__36087__$2);
+var s__39187__$2 = temp__5823__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__39187__$2)){
+var c__5501__auto__ = cljs.core.chunk_first(s__39187__$2);
 var size__5502__auto__ = cljs.core.count(c__5501__auto__);
-var b__36089 = cljs.core.chunk_buffer(size__5502__auto__);
-if((function (){var i__36088 = (0);
+var b__39189 = cljs.core.chunk_buffer(size__5502__auto__);
+if((function (){var i__39188 = (0);
 while(true){
-if((i__36088 < size__5502__auto__)){
-var address = cljs.core._nth(c__5501__auto__,i__36088);
-cljs.core.chunk_append(b__36089,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.Keyword("address","name","address/name",848026653).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null)));
+if((i__39188 < size__5502__auto__)){
+var address = cljs.core._nth(c__5501__auto__,i__39188);
+cljs.core.chunk_append(b__39189,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.Keyword("address","name","address/name",848026653).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null)));
 
-var G__36719 = (i__36088 + (1));
-i__36088 = G__36719;
+var G__39474 = (i__39188 + (1));
+i__39188 = G__39474;
 continue;
 } else {
 return true;
@@ -330,13 +330,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__36089),features$app$worksheets$frontend$view$render_address_select_$_iter__36086(cljs.core.chunk_rest(s__36087__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__39189),features$app$worksheets$frontend$view$render_address_select_$_iter__39186(cljs.core.chunk_rest(s__39187__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__36089),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__39189),null);
 }
 } else {
-var address = cljs.core.first(s__36087__$2);
-return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.Keyword("address","name","address/name",848026653).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null)),features$app$worksheets$frontend$view$render_address_select_$_iter__36086(cljs.core.rest(s__36087__$2)));
+var address = cljs.core.first(s__39187__$2);
+return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.Keyword("address","name","address/name",848026653).cljs$core$IFn$_invoke$arity$1(address)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("address","id","address/id",-555725248).cljs$core$IFn$_invoke$arity$1(address)], null)),features$app$worksheets$frontend$view$render_address_select_$_iter__39186(cljs.core.rest(s__39187__$2)));
 }
 } else {
 return null;
@@ -386,8 +386,8 @@ return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMP
  * All form input fields
  */
 features.app.worksheets.frontend.view.form_fields = (function features$app$worksheets$frontend$view$form_fields(){
-var errors_sub = cljs.core.deref((function (){var G__36146 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-errors","worksheets/modal-form-errors",765459709)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36146) : zero.frontend.re_frame.subscribe.call(null,G__36146));
+var errors_sub = cljs.core.deref((function (){var G__39190 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-errors","worksheets/modal-form-errors",765459709)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39190) : zero.frontend.re_frame.subscribe.call(null,G__39190));
 })());
 var errors = (function (){var or__5025__auto__ = errors_sub;
 if(cljs.core.truth_(or__5025__auto__)){
@@ -404,26 +404,26 @@ return new cljs.core.PersistentVector(null, 12, 5, cljs.core.PersistentVector.EM
  * Handle save button click with validation
  */
 features.app.worksheets.frontend.view.handle_save_click = (function features$app$worksheets$frontend$view$handle_save_click(on_save){
-var form_data = cljs.core.deref((function (){var G__36166 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36166) : zero.frontend.re_frame.subscribe.call(null,G__36166));
+var form_data = cljs.core.deref((function (){var G__39193 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39193) : zero.frontend.re_frame.subscribe.call(null,G__39193));
 })());
 var validation_errors = features.app.worksheets.frontend.view.validate_worksheet(form_data);
 if(cljs.core.empty_QMARK_(validation_errors)){
-var G__36167_36720 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),true], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36167_36720) : zero.frontend.re_frame.dispatch.call(null,G__36167_36720));
+var G__39194_39475 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),true], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39194_39475) : zero.frontend.re_frame.dispatch.call(null,G__39194_39475));
 
-var G__36168_36721 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),cljs.core.PersistentArrayMap.EMPTY], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36168_36721) : zero.frontend.re_frame.dispatch.call(null,G__36168_36721));
+var G__39195_39476 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),cljs.core.PersistentArrayMap.EMPTY], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39195_39476) : zero.frontend.re_frame.dispatch.call(null,G__39195_39476));
 
-var G__36170 = form_data;
-var G__36171 = (function (){
-var G__36172 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),false], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36172) : zero.frontend.re_frame.dispatch.call(null,G__36172));
+var G__39196 = form_data;
+var G__39197 = (function (){
+var G__39198 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),false], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39198) : zero.frontend.re_frame.dispatch.call(null,G__39198));
 });
-return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__36170,G__36171) : on_save.call(null,G__36170,G__36171));
+return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__39196,G__39197) : on_save.call(null,G__39196,G__39197));
 } else {
-var G__36173 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),validation_errors], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36173) : zero.frontend.re_frame.dispatch.call(null,G__36173));
+var G__39199 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),validation_errors], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39199) : zero.frontend.re_frame.dispatch.call(null,G__39199));
 }
 });
 /**
@@ -433,8 +433,8 @@ features.app.worksheets.frontend.view.modal_close_handler = (function features$a
 return (function (){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["Modal closing..."], 0));
 
-var G__36177_36722 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","clear-modal-form","worksheets/clear-modal-form",-2006886094)], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36177_36722) : zero.frontend.re_frame.dispatch.call(null,G__36177_36722));
+var G__39227_39477 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","clear-modal-form","worksheets/clear-modal-form",-2006886094)], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39227_39477) : zero.frontend.re_frame.dispatch.call(null,G__39227_39477));
 
 if(cljs.core.truth_(on_cancel)){
 return (on_cancel.cljs$core$IFn$_invoke$arity$0 ? on_cancel.cljs$core$IFn$_invoke$arity$0() : on_cancel.call(null));
@@ -459,8 +459,8 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
  * Render address selection field
  */
 features.app.worksheets.frontend.view.address_form_field = (function features$app$worksheets$frontend$view$address_form_field(errors){
-var form_data = cljs.core.deref((function (){var G__36186 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36186) : zero.frontend.re_frame.subscribe.call(null,G__36186));
+var form_data = cljs.core.deref((function (){var G__39233 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39233) : zero.frontend.re_frame.subscribe.call(null,G__39233));
 })());
 var workspace_id = features.app.worksheets.frontend.view.get_workspace_id();
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.form_field,"Address",new cljs.core.Keyword("worksheet","address-id","worksheet/address-id",1959286906),errors,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"address-select",new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435),workspace_id,new cljs.core.Keyword(null,"current-value","current-value",2066017989),new cljs.core.Keyword("worksheet","address-id","worksheet/address-id",1959286906).cljs$core$IFn$_invoke$arity$1(form_data)], null)], null);
@@ -488,8 +488,8 @@ return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMP
  */
 features.app.worksheets.frontend.view.material_item_display = (function features$app$worksheets$frontend$view$material_item_display(idx,material){
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"key","key",-1516042587),idx,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"flex",new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),"space-between",new cljs.core.Keyword(null,"align-items","align-items",-267946462),"center",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.25rem 0",new cljs.core.Keyword(null,"border-bottom","border-bottom",2110948415),"1px solid #f3f4f6"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem"], null)], null),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(material))," - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"quantity","quantity",-1929050694).cljs$core$IFn$_invoke$arity$1(material))," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"unit","unit",375175175).cljs$core$IFn$_invoke$arity$1(material))].join('')], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__36243 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","remove-material","worksheets/remove-material",2021952215),idx], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36243) : zero.frontend.re_frame.dispatch.call(null,G__36243));
+var G__39236 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","remove-material","worksheets/remove-material",2021952215),idx], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39236) : zero.frontend.re_frame.dispatch.call(null,G__39236));
 }),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"background","background",-863952629),"#ef4444",new cljs.core.Keyword(null,"color","color",1011675173),"white",new cljs.core.Keyword(null,"border","border",1444987323),"none",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"4px",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.25rem 0.5rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"cursor","cursor",1011937484),"pointer"], null)], null),"Remove"], null)], null);
 });
 /**
@@ -506,81 +506,81 @@ return null;
  * Render material template selection form
  */
 features.app.worksheets.frontend.view.template_material_selector = (function features$app$worksheets$frontend$view$template_material_selector(material_templates,selected_template_id){
-return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"display","display",242065432),"grid",new cljs.core.Keyword(null,"grid-template-columns","grid-template-columns",-594112133),"2fr 1fr auto",new cljs.core.Keyword(null,"gap","gap",80255254),"0.5rem",new cljs.core.Keyword(null,"align-items","align-items",-267946462),"end"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Select Material"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"select","select",1147833503),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),selected_template_id,new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__36272_SHARP_){
-var G__36280 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","select-material-template","worksheets/select-material-template",2018700083),p1__36272_SHARP_.target.value], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36280) : zero.frontend.re_frame.dispatch.call(null,G__36280));
+return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"display","display",242065432),"grid",new cljs.core.Keyword(null,"grid-template-columns","grid-template-columns",-594112133),"2fr 1fr auto",new cljs.core.Keyword(null,"gap","gap",80255254),"0.5rem",new cljs.core.Keyword(null,"align-items","align-items",-267946462),"end"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Select Material"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"select","select",1147833503),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"value","value",305978217),selected_template_id,new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__39237_SHARP_){
+var G__39239 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","select-material-template","worksheets/select-material-template",2018700083),p1__39237_SHARP_.target.value], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39239) : zero.frontend.re_frame.dispatch.call(null,G__39239));
 }),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),""], null),"Choose material..."], null),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (template){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("material-template","id","material-template/id",1625256948).cljs$core$IFn$_invoke$arity$1(template),new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword("material-template","id","material-template/id",1625256948).cljs$core$IFn$_invoke$arity$1(template)], null),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("material-template","name","material-template/name",-1467705719).cljs$core$IFn$_invoke$arity$1(template))," (",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("material-template","unit","material-template/unit",1417436647).cljs$core$IFn$_invoke$arity$1(template)),")"].join('')], null);
-}),cljs.core.sort_by.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("material-template","name","material-template/name",-1467705719),material_templates))], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Quantity"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36283 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36283) : zero.frontend.re_frame.subscribe.call(null,G__36283));
-})()),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__36274_SHARP_){
-var G__36284 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),p1__36274_SHARP_.target.value], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36284) : zero.frontend.re_frame.dispatch.call(null,G__36284));
+}),cljs.core.sort_by.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("material-template","name","material-template/name",-1467705719),material_templates))], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Quantity"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39240 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39240) : zero.frontend.re_frame.subscribe.call(null,G__39240));
+})()),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__39238_SHARP_){
+var G__39241 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),p1__39238_SHARP_.target.value], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39241) : zero.frontend.re_frame.dispatch.call(null,G__39241));
 }),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"5",new cljs.core.Keyword(null,"disabled","disabled",-1529784218),cljs.core.empty_QMARK_(selected_template_id),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"opacity","opacity",397153780),((cljs.core.empty_QMARK_(selected_template_id))?0.5:(1))], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__36285 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","add-selected-material","worksheets/add-selected-material",-1720139211)], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36285) : zero.frontend.re_frame.dispatch.call(null,G__36285));
-}),new cljs.core.Keyword(null,"disabled","disabled",-1529784218),((cljs.core.empty_QMARK_(selected_template_id)) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36288 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36288) : zero.frontend.re_frame.subscribe.call(null,G__36288));
-})()),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),""))))),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"background","background",-863952629),((((cljs.core.empty_QMARK_(selected_template_id)) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36293 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36293) : zero.frontend.re_frame.subscribe.call(null,G__36293));
-})()),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),""))))))?"#9ca3af":"#10b981"),new cljs.core.Keyword(null,"color","color",1011675173),"white",new cljs.core.Keyword(null,"border","border",1444987323),"none",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem 1rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"cursor","cursor",1011937484),((((cljs.core.empty_QMARK_(selected_template_id)) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36303 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36303) : zero.frontend.re_frame.subscribe.call(null,G__36303));
+var G__39242 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","add-selected-material","worksheets/add-selected-material",-1720139211)], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39242) : zero.frontend.re_frame.dispatch.call(null,G__39242));
+}),new cljs.core.Keyword(null,"disabled","disabled",-1529784218),((cljs.core.empty_QMARK_(selected_template_id)) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39244 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39244) : zero.frontend.re_frame.subscribe.call(null,G__39244));
+})()),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),""))))),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"background","background",-863952629),((((cljs.core.empty_QMARK_(selected_template_id)) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39246 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39246) : zero.frontend.re_frame.subscribe.call(null,G__39246));
+})()),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),""))))))?"#9ca3af":"#10b981"),new cljs.core.Keyword(null,"color","color",1011675173),"white",new cljs.core.Keyword(null,"border","border",1444987323),"none",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem 1rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"cursor","cursor",1011937484),((((cljs.core.empty_QMARK_(selected_template_id)) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39248 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39248) : zero.frontend.re_frame.subscribe.call(null,G__39248));
 })()),new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952),""))))))?"not-allowed":"pointer"),new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),"Add"], null)], null);
 });
 /**
  * Render custom material input form
  */
 features.app.worksheets.frontend.view.custom_material_inputs = (function features$app$worksheets$frontend$view$custom_material_inputs(){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"margin-top","margin-top",392161226),"1rem",new cljs.core.Keyword(null,"padding-top","padding-top",1929675955),"1rem",new cljs.core.Keyword(null,"border-top","border-top",-158897573),"1px solid #e5e7eb"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.9rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Add Custom Material:"], null),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"display","display",242065432),"grid",new cljs.core.Keyword(null,"grid-template-columns","grid-template-columns",-594112133),"2fr 1fr 1fr auto",new cljs.core.Keyword(null,"gap","gap",80255254),"0.5rem",new cljs.core.Keyword(null,"align-items","align-items",-267946462),"end"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Custom Material Name"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36348 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36348) : zero.frontend.re_frame.subscribe.call(null,G__36348));
-})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__36330_SHARP_){
-var G__36351 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),p1__36330_SHARP_.target.value], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36351) : zero.frontend.re_frame.dispatch.call(null,G__36351));
-}),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"Enter material name...",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem"], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Unit"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36357 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36357) : zero.frontend.re_frame.subscribe.call(null,G__36357));
-})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__36334_SHARP_){
-var G__36358 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),p1__36334_SHARP_.target.value], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36358) : zero.frontend.re_frame.dispatch.call(null,G__36358));
-}),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"pcs, kg, m...",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem"], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Quantity"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36362 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36362) : zero.frontend.re_frame.subscribe.call(null,G__36362));
-})()),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__36335_SHARP_){
-var G__36363 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),p1__36335_SHARP_.target.value], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36363) : zero.frontend.re_frame.dispatch.call(null,G__36363));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"margin-top","margin-top",392161226),"1rem",new cljs.core.Keyword(null,"padding-top","padding-top",1929675955),"1rem",new cljs.core.Keyword(null,"border-top","border-top",-158897573),"1px solid #e5e7eb"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.9rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Add Custom Material:"], null),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"display","display",242065432),"grid",new cljs.core.Keyword(null,"grid-template-columns","grid-template-columns",-594112133),"2fr 1fr 1fr auto",new cljs.core.Keyword(null,"gap","gap",80255254),"0.5rem",new cljs.core.Keyword(null,"align-items","align-items",-267946462),"end"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Custom Material Name"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39252 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39252) : zero.frontend.re_frame.subscribe.call(null,G__39252));
+})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__39249_SHARP_){
+var G__39253 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),p1__39249_SHARP_.target.value], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39253) : zero.frontend.re_frame.dispatch.call(null,G__39253));
+}),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"Enter material name...",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem"], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Unit"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39254 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39254) : zero.frontend.re_frame.subscribe.call(null,G__39254));
+})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__39250_SHARP_){
+var G__39255 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),p1__39250_SHARP_.target.value], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39255) : zero.frontend.re_frame.dispatch.call(null,G__39255));
+}),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"pcs, kg, m...",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem"], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.25rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Quantity"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39256 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39256) : zero.frontend.re_frame.subscribe.call(null,G__39256));
+})()),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),""),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__39251_SHARP_){
+var G__39257 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),p1__39251_SHARP_.target.value], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39257) : zero.frontend.re_frame.dispatch.call(null,G__39257));
 }),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"5",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem"], null)], null)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__36364 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","add-custom-material","worksheets/add-custom-material",43114298)], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36364) : zero.frontend.re_frame.dispatch.call(null,G__36364));
-}),new cljs.core.Keyword(null,"disabled","disabled",-1529784218),((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36366 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36366) : zero.frontend.re_frame.subscribe.call(null,G__36366));
-})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),"")))) || (((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36370 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36370) : zero.frontend.re_frame.subscribe.call(null,G__36370));
-})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),"")))) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36380 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36380) : zero.frontend.re_frame.subscribe.call(null,G__36380));
-})()),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),""))))))),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"background","background",-863952629),((((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36386 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36386) : zero.frontend.re_frame.subscribe.call(null,G__36386));
-})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),"")))) || (((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36393 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36393) : zero.frontend.re_frame.subscribe.call(null,G__36393));
-})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),"")))) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36395 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36395) : zero.frontend.re_frame.subscribe.call(null,G__36395));
-})()),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),""))))))))?"#9ca3af":"#2563eb"),new cljs.core.Keyword(null,"color","color",1011675173),"white",new cljs.core.Keyword(null,"border","border",1444987323),"none",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem 1rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"cursor","cursor",1011937484),((((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36399 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36399) : zero.frontend.re_frame.subscribe.call(null,G__36399));
-})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),"")))) || (((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36403 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36403) : zero.frontend.re_frame.subscribe.call(null,G__36403));
-})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),"")))) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36405 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36405) : zero.frontend.re_frame.subscribe.call(null,G__36405));
+var G__39258 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","add-custom-material","worksheets/add-custom-material",43114298)], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39258) : zero.frontend.re_frame.dispatch.call(null,G__39258));
+}),new cljs.core.Keyword(null,"disabled","disabled",-1529784218),((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39260 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39260) : zero.frontend.re_frame.subscribe.call(null,G__39260));
+})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),"")))) || (((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39262 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39262) : zero.frontend.re_frame.subscribe.call(null,G__39262));
+})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),"")))) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39264 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39264) : zero.frontend.re_frame.subscribe.call(null,G__39264));
+})()),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),""))))))),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"background","background",-863952629),((((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39266 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39266) : zero.frontend.re_frame.subscribe.call(null,G__39266));
+})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),"")))) || (((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39268 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39268) : zero.frontend.re_frame.subscribe.call(null,G__39268));
+})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),"")))) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39270 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39270) : zero.frontend.re_frame.subscribe.call(null,G__39270));
+})()),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),""))))))))?"#9ca3af":"#2563eb"),new cljs.core.Keyword(null,"color","color",1011675173),"white",new cljs.core.Keyword(null,"border","border",1444987323),"none",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"padding","padding",1660304693),"0.5rem 1rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"cursor","cursor",1011937484),((((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39272 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39272) : zero.frontend.re_frame.subscribe.call(null,G__39272));
+})()),new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271),"")))) || (((cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39274 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39274) : zero.frontend.re_frame.subscribe.call(null,G__39274));
+})()),new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402),"")))) || (cljs.core.empty_QMARK_(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39276 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39276) : zero.frontend.re_frame.subscribe.call(null,G__39276));
 })()),new cljs.core.Keyword("worksheet","custom-material-quantity","worksheet/custom-material-quantity",892931214),""))))))))?"not-allowed":"pointer"),new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),"Add"], null)], null)], null);
 });
 /**
  * Render complete materials section
  */
 features.app.worksheets.frontend.view.materials_section = (function features$app$worksheets$frontend$view$materials_section(){
-var materials = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36409 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36409) : zero.frontend.re_frame.subscribe.call(null,G__36409));
+var materials = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39277 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39277) : zero.frontend.re_frame.subscribe.call(null,G__39277));
 })()),new cljs.core.Keyword("worksheet","material-usage","worksheet/material-usage",-250420820),cljs.core.PersistentVector.EMPTY);
-var material_templates = cljs.core.deref((function (){var G__36410 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("material-templates","all","material-templates/all",-1081828415)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36410) : zero.frontend.re_frame.subscribe.call(null,G__36410));
+var material_templates = cljs.core.deref((function (){var G__39278 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("material-templates","all","material-templates/all",-1081828415)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39278) : zero.frontend.re_frame.subscribe.call(null,G__39278));
 })());
-var selected_template_id = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__36412 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36412) : zero.frontend.re_frame.subscribe.call(null,G__36412));
+var selected_template_id = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.deref((function (){var G__39279 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39279) : zero.frontend.re_frame.subscribe.call(null,G__39279));
 })()),new cljs.core.Keyword("worksheet","selected-material-template","worksheet/selected-material-template",-1913890066),"");
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"1.5rem"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3","h3",2067611163),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"1rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"1.125rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),"Materials Used"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.existing_materials_list,materials], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.template_material_selector,material_templates,selected_template_id], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.custom_material_inputs], null)], null)], null);
 });
@@ -588,15 +588,15 @@ return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMP
  * Render signature as clickable display (non-active)
  */
 features.app.worksheets.frontend.view.signature_display = (function features$app$worksheets$frontend$view$signature_display(ref_dispatch_key,label){
-var form_data = cljs.core.deref((function (){var G__36418 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36418) : zero.frontend.re_frame.subscribe.call(null,G__36418));
+var form_data = cljs.core.deref((function (){var G__39280 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39280) : zero.frontend.re_frame.subscribe.call(null,G__39280));
 })());
 var signature_data = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(ref_dispatch_key,new cljs.core.Keyword("worksheets","set-maintainer-signature-ref","worksheets/set-maintainer-signature-ref",-10495886)))?new cljs.core.Keyword("worksheet","maintainer-signature","worksheet/maintainer-signature",-1178730749).cljs$core$IFn$_invoke$arity$1(form_data):new cljs.core.Keyword("worksheet","customer-signature","worksheet/customer-signature",748703556).cljs$core$IFn$_invoke$arity$1(form_data));
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG signature-display:",label,"has signature data:",cljs.core.boolean$(signature_data)], 0));
 
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),label], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"width","width",-384071477),new cljs.core.Keyword(null,"background","background",-863952629),new cljs.core.Keyword(null,"cursor","cursor",1011937484),new cljs.core.Keyword(null,"max-width","max-width",-1939924051),new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"display","display",242065432),new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"border","border",1444987323),new cljs.core.Keyword(null,"border-radius","border-radius",419594011),new cljs.core.Keyword(null,"height","height",1025178622)],["center","100%","#ffffff","pointer","300px","center","flex","relative","1px solid #d1d5db","8px","150px"]),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__36419 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","open-signature-zoom","worksheets/open-signature-zoom",430472591),label], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36419) : zero.frontend.re_frame.dispatch.call(null,G__36419));
+var G__39281 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","open-signature-zoom","worksheets/open-signature-zoom",430472591),label], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39281) : zero.frontend.re_frame.dispatch.call(null,G__39281));
 })], null),(cljs.core.truth_(signature_data)?(function (){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG signature-display: showing signature for",label], 0));
 
@@ -609,8 +609,8 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  */
 features.app.worksheets.frontend.view.signature_canvas = (function features$app$worksheets$frontend$view$signature_canvas(ref_dispatch_key,label){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"0.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),label], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),shadow.js.shim.module$react_signature_canvas.default,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"penColor","penColor",2068895082),"black",new cljs.core.Keyword(null,"canvasProps","canvasProps",702379401),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"width","width",-384071477),(300),new cljs.core.Keyword(null,"height","height",1025178622),(150),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"8px",new cljs.core.Keyword(null,"background","background",-863952629),"#ffffff",new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"max-width","max-width",-1939924051),"300px"], null)], null),new cljs.core.Keyword(null,"ref","ref",1289896967),(function (ref){
-var G__36427 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ref_dispatch_key,ref], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36427) : zero.frontend.re_frame.dispatch.call(null,G__36427));
+var G__39282 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ref_dispatch_key,ref], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39282) : zero.frontend.re_frame.dispatch.call(null,G__39282));
 })], null)], null)], null);
 });
 /**
@@ -618,8 +618,8 @@ return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.fro
  */
 features.app.worksheets.frontend.view.signature_clear_buttons = (function features$app$worksheets$frontend$view$signature_clear_buttons(){
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"display","display",242065432),"flex",new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),"space-between",new cljs.core.Keyword(null,"margin-top","margin-top",392161226),"0.5rem"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var temp__5823__auto__ = cljs.core.deref((function (){var G__36428 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","maintainer-signature-ref","worksheets/maintainer-signature-ref",1830931845)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36428) : zero.frontend.re_frame.subscribe.call(null,G__36428));
+var temp__5823__auto__ = cljs.core.deref((function (){var G__39283 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","maintainer-signature-ref","worksheets/maintainer-signature-ref",1830931845)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39283) : zero.frontend.re_frame.subscribe.call(null,G__39283));
 })());
 if(cljs.core.truth_(temp__5823__auto__)){
 var ref = temp__5823__auto__;
@@ -628,8 +628,8 @@ return ref.clear();
 return null;
 }
 }),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"padding","padding",1660304693),"0.25rem 0.75rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem",new cljs.core.Keyword(null,"color","color",1011675173),"#6b7280",new cljs.core.Keyword(null,"background","background",-863952629),"transparent",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"4px",new cljs.core.Keyword(null,"cursor","cursor",1011937484),"pointer"], null)], null),"Clear Maintainer"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var temp__5823__auto__ = cljs.core.deref((function (){var G__36429 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","customer-signature-ref","worksheets/customer-signature-ref",-405126404)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36429) : zero.frontend.re_frame.subscribe.call(null,G__36429));
+var temp__5823__auto__ = cljs.core.deref((function (){var G__39284 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","customer-signature-ref","worksheets/customer-signature-ref",-405126404)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39284) : zero.frontend.re_frame.subscribe.call(null,G__39284));
 })());
 if(cljs.core.truth_(temp__5823__auto__)){
 var ref = temp__5823__auto__;
@@ -643,25 +643,25 @@ return null;
  * Full-screen overlay for signature editing
  */
 features.app.worksheets.frontend.view.signature_zoom_overlay = (function features$app$worksheets$frontend$view$signature_zoom_overlay(){
-var zoom_data = cljs.core.deref((function (){var G__36431 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","signature-zoom-data","worksheets/signature-zoom-data",-1646668829)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36431) : zero.frontend.re_frame.subscribe.call(null,G__36431));
+var zoom_data = cljs.core.deref((function (){var G__39285 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","signature-zoom-data","worksheets/signature-zoom-data",-1646668829)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39285) : zero.frontend.re_frame.subscribe.call(null,G__39285));
 })());
 if(cljs.core.truth_(zoom_data)){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"top","top",-1856271961),new cljs.core.Keyword(null,"width","width",-384071477),new cljs.core.Keyword(null,"background","background",-863952629),new cljs.core.Keyword(null,"z-index","z-index",1892827090),new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"display","display",242065432),new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"height","height",1025178622),new cljs.core.Keyword(null,"left","left",-399115937)],["center",(0),"100vw","rgba(0, 0, 0, 0.8)",(9999),"center","flex","fixed","100vh",(0)]),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__36432 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406)], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36432) : zero.frontend.re_frame.dispatch.call(null,G__36432));
+var G__39286 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406)], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39286) : zero.frontend.re_frame.dispatch.call(null,G__39286));
 })], null),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"max-height","max-height",-612563804),new cljs.core.Keyword(null,"overflow","overflow",2058931880),new cljs.core.Keyword(null,"width","width",-384071477),new cljs.core.Keyword(null,"background","background",-863952629),new cljs.core.Keyword(null,"max-width","max-width",-1939924051),new cljs.core.Keyword(null,"padding","padding",1660304693),new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"border-radius","border-radius",419594011),new cljs.core.Keyword(null,"height","height",1025178622)],["80vh","auto","90vw","white","600px","2rem","relative","12px","auto"]),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (e){
 return e.stopPropagation();
 })], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"align-items","align-items",-267946462),new cljs.core.Keyword(null,"color","color",1011675173),new cljs.core.Keyword(null,"font-size","font-size",-1847940346),new cljs.core.Keyword(null,"top","top",-1856271961),new cljs.core.Keyword(null,"width","width",-384071477),new cljs.core.Keyword(null,"background","background",-863952629),new cljs.core.Keyword(null,"cursor","cursor",1011937484),new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"display","display",242065432),new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"border","border",1444987323),new cljs.core.Keyword(null,"height","height",1025178622)],["center","#6b7280","1.5rem","10px","30px","transparent","pointer","center","10px","flex","absolute","none","30px"]),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__36447 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406)], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36447) : zero.frontend.re_frame.dispatch.call(null,G__36447));
+var G__39287 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406)], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39287) : zero.frontend.re_frame.dispatch.call(null,G__39287));
 })], null),"\u00D7"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h2","h2",-372662728),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"margin","margin",-995903681),"0 0 1.5rem 0",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"1.5rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"600",new cljs.core.Keyword(null,"color","color",1011675173),"#374151"], null)], null),new cljs.core.Keyword(null,"label","label",1718410804).cljs$core$IFn$_invoke$arity$1(zoom_data)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"margin-bottom","margin-bottom",388334941),"1.5rem"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),shadow.js.shim.module$react_signature_canvas.default,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"penColor","penColor",2068895082),"black",new cljs.core.Keyword(null,"canvasProps","canvasProps",702379401),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"width","width",-384071477),(((window.innerWidth < (768)))?(window.innerWidth - (80)):(500)),new cljs.core.Keyword(null,"height","height",1025178622),(((window.innerWidth < (768)))?(250):(300)),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"border","border",1444987323),"2px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"8px",new cljs.core.Keyword(null,"background","background",-863952629),"#ffffff",new cljs.core.Keyword(null,"display","display",242065432),"block",new cljs.core.Keyword(null,"width","width",-384071477),"100%"], null)], null),new cljs.core.Keyword(null,"ref","ref",1289896967),(function (ref){
-var G__36452_36723 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-zoom-signature-ref","worksheets/set-zoom-signature-ref",250835679),ref], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36452_36723) : zero.frontend.re_frame.dispatch.call(null,G__36452_36723));
+var G__39288_39478 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-zoom-signature-ref","worksheets/set-zoom-signature-ref",250835679),ref], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39288_39478) : zero.frontend.re_frame.dispatch.call(null,G__39288_39478));
 
 if(cljs.core.truth_(ref)){
-var form_data = cljs.core.deref((function (){var G__36454 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36454) : zero.frontend.re_frame.subscribe.call(null,G__36454));
+var form_data = cljs.core.deref((function (){var G__39289 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39289) : zero.frontend.re_frame.subscribe.call(null,G__39289));
 })());
 var signature_data = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"ref-dispatch-key","ref-dispatch-key",-1958373712).cljs$core$IFn$_invoke$arity$1(zoom_data),new cljs.core.Keyword("worksheets","set-maintainer-signature-ref","worksheets/set-maintainer-signature-ref",-10495886)))?new cljs.core.Keyword("worksheet","maintainer-signature","worksheet/maintainer-signature",-1178730749).cljs$core$IFn$_invoke$arity$1(form_data):new cljs.core.Keyword("worksheet","customer-signature","worksheet/customer-signature",748703556).cljs$core$IFn$_invoke$arity$1(form_data));
 if(cljs.core.truth_(signature_data)){
@@ -675,8 +675,8 @@ return null;
 return null;
 }
 })], null)], null)], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"display","display",242065432),"flex",new cljs.core.Keyword(null,"justify-content","justify-content",-1990475787),"space-between",new cljs.core.Keyword(null,"gap","gap",80255254),"1rem"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var temp__5823__auto__ = cljs.core.deref((function (){var G__36455 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","zoom-signature-ref","worksheets/zoom-signature-ref",2027608775)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36455) : zero.frontend.re_frame.subscribe.call(null,G__36455));
+var temp__5823__auto__ = cljs.core.deref((function (){var G__39290 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","zoom-signature-ref","worksheets/zoom-signature-ref",2027608775)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39290) : zero.frontend.re_frame.subscribe.call(null,G__39290));
 })());
 if(cljs.core.truth_(temp__5823__auto__)){
 var ref = temp__5823__auto__;
@@ -685,8 +685,8 @@ return ref.clear();
 return null;
 }
 }),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"padding","padding",1660304693),"0.75rem 1.5rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"color","color",1011675173),"#6b7280",new cljs.core.Keyword(null,"background","background",-863952629),"transparent",new cljs.core.Keyword(null,"border","border",1444987323),"1px solid #d1d5db",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"cursor","cursor",1011937484),"pointer",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),"Clear"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"button",new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
-var G__36456 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406)], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36456) : zero.frontend.re_frame.dispatch.call(null,G__36456));
+var G__39291 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406)], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39291) : zero.frontend.re_frame.dispatch.call(null,G__39291));
 }),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"padding","padding",1660304693),"0.75rem 1.5rem",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"color","color",1011675173),"white",new cljs.core.Keyword(null,"background","background",-863952629),"#3b82f6",new cljs.core.Keyword(null,"border","border",1444987323),"none",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"6px",new cljs.core.Keyword(null,"cursor","cursor",1011937484),"pointer",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),"Done"], null)], null)], null)], null);
 } else {
 return null;
@@ -703,8 +703,8 @@ return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMP
  */
 features.app.worksheets.frontend.view.save_button_click_handler = (function features$app$worksheets$frontend$view$save_button_click_handler(on_save){
 return (function (){
-var form_data = cljs.core.deref((function (){var G__36473 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36473) : zero.frontend.re_frame.subscribe.call(null,G__36473));
+var form_data = cljs.core.deref((function (){var G__39292 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39292) : zero.frontend.re_frame.subscribe.call(null,G__39292));
 })());
 var maintainer_signature = new cljs.core.Keyword("worksheet","maintainer-signature","worksheet/maintainer-signature",-1178730749).cljs$core$IFn$_invoke$arity$1(form_data);
 var customer_signature = new cljs.core.Keyword("worksheet","customer-signature","worksheet/customer-signature",748703556).cljs$core$IFn$_invoke$arity$1(form_data);
@@ -720,21 +720,21 @@ cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$c
 
 var validation_errors = features.app.worksheets.frontend.view.validate_worksheet(form_data);
 if(cljs.core.empty_QMARK_(validation_errors)){
-var G__36480_36724 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),true], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36480_36724) : zero.frontend.re_frame.dispatch.call(null,G__36480_36724));
+var G__39293_39479 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),true], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39293_39479) : zero.frontend.re_frame.dispatch.call(null,G__39293_39479));
 
-var G__36483_36725 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),cljs.core.PersistentArrayMap.EMPTY], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36483_36725) : zero.frontend.re_frame.dispatch.call(null,G__36483_36725));
+var G__39294_39480 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),cljs.core.PersistentArrayMap.EMPTY], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39294_39480) : zero.frontend.re_frame.dispatch.call(null,G__39294_39480));
 
-var G__36484 = form_data;
-var G__36485 = (function (){
-var G__36486 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),false], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36486) : zero.frontend.re_frame.dispatch.call(null,G__36486));
+var G__39295 = form_data;
+var G__39296 = (function (){
+var G__39297 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),false], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39297) : zero.frontend.re_frame.dispatch.call(null,G__39297));
 });
-return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__36484,G__36485) : on_save.call(null,G__36484,G__36485));
+return (on_save.cljs$core$IFn$_invoke$arity$2 ? on_save.cljs$core$IFn$_invoke$arity$2(G__39295,G__39296) : on_save.call(null,G__39295,G__39296));
 } else {
-var G__36489 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),validation_errors], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36489) : zero.frontend.re_frame.dispatch.call(null,G__36489));
+var G__39298 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),validation_errors], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39298) : zero.frontend.re_frame.dispatch.call(null,G__39298));
 }
 });
 });
@@ -745,18 +745,18 @@ features.app.worksheets.frontend.view.modal_footer_buttons = (function features$
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal_footer,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.enhanced_button.enhanced_button,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"secondary","secondary",-669381460),new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["Cancel button clicked"], 0));
 
-var G__36490_36726 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","clear-modal-form","worksheets/clear-modal-form",-2006886094)], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36490_36726) : zero.frontend.re_frame.dispatch.call(null,G__36490_36726));
+var G__39299_39481 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","clear-modal-form","worksheets/clear-modal-form",-2006886094)], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39299_39481) : zero.frontend.re_frame.dispatch.call(null,G__39299_39481));
 
 if(cljs.core.truth_(on_cancel)){
 return (on_cancel.cljs$core$IFn$_invoke$arity$0 ? on_cancel.cljs$core$IFn$_invoke$arity$0() : on_cancel.call(null));
 } else {
 return null;
 }
-}),new cljs.core.Keyword(null,"text","text",-1790561697),translations.core.tr(new cljs.core.Keyword("worksheets","cancel","worksheets/cancel",-1971902189))], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.enhanced_button.enhanced_button,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"primary","primary",817773892),new cljs.core.Keyword(null,"loading?","loading?",1905707049),cljs.core.deref((function (){var G__36495 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-loading?","worksheets/modal-form-loading?",-1730442802)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36495) : zero.frontend.re_frame.subscribe.call(null,G__36495));
-})()),new cljs.core.Keyword(null,"on-click","on-click",1632826543),features.app.worksheets.frontend.view.save_button_click_handler(on_save),new cljs.core.Keyword(null,"text","text",-1790561697),(cljs.core.truth_(cljs.core.deref((function (){var G__36498 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-loading?","worksheets/modal-form-loading?",-1730442802)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36498) : zero.frontend.re_frame.subscribe.call(null,G__36498));
+}),new cljs.core.Keyword(null,"text","text",-1790561697),translations.core.tr(new cljs.core.Keyword("worksheets","cancel","worksheets/cancel",-1971902189))], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.enhanced_button.enhanced_button,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"variant","variant",-424354234),new cljs.core.Keyword(null,"primary","primary",817773892),new cljs.core.Keyword(null,"loading?","loading?",1905707049),cljs.core.deref((function (){var G__39300 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-loading?","worksheets/modal-form-loading?",-1730442802)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39300) : zero.frontend.re_frame.subscribe.call(null,G__39300));
+})()),new cljs.core.Keyword(null,"on-click","on-click",1632826543),features.app.worksheets.frontend.view.save_button_click_handler(on_save),new cljs.core.Keyword(null,"text","text",-1790561697),(cljs.core.truth_(cljs.core.deref((function (){var G__39301 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-loading?","worksheets/modal-form-loading?",-1730442802)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39301) : zero.frontend.re_frame.subscribe.call(null,G__39301));
 })()))?translations.core.tr(new cljs.core.Keyword("worksheets","saving","worksheets/saving",-627393474)):translations.core.tr(new cljs.core.Keyword("worksheets","save-worksheet","worksheets/save-worksheet",892576644)))], null)], null)], null);
 });
 /**
@@ -765,23 +765,23 @@ return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.fr
 features.app.worksheets.frontend.view.worksheet_modal = (function features$app$worksheets$frontend$view$worksheet_modal(worksheet_data,is_new_QMARK_,on_save,on_cancel){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["worksheet-modal called with is-new?:",is_new_QMARK_,"type:",cljs.core.type(is_new_QMARK_)], 0));
 
-var G__36513_36727 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-data","worksheets/set-modal-form-data",1545216742),worksheet_data], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36513_36727) : zero.frontend.re_frame.dispatch.call(null,G__36513_36727));
+var G__39302_39482 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-data","worksheets/set-modal-form-data",1545216742),worksheet_data], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39302_39482) : zero.frontend.re_frame.dispatch.call(null,G__39302_39482));
 
-var G__36518_36728 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),cljs.core.PersistentArrayMap.EMPTY], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36518_36728) : zero.frontend.re_frame.dispatch.call(null,G__36518_36728));
+var G__39303_39483 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486),cljs.core.PersistentArrayMap.EMPTY], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39303_39483) : zero.frontend.re_frame.dispatch.call(null,G__39303_39483));
 
-var G__36519_36729 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),false], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36519_36729) : zero.frontend.re_frame.dispatch.call(null,G__36519_36729));
+var G__39304_39484 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711),false], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39304_39484) : zero.frontend.re_frame.dispatch.call(null,G__39304_39484));
 
-var G__36522_36730 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("material-templates","load","material-templates/load",114241513),features.app.worksheets.frontend.view.get_workspace_id()], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36522_36730) : zero.frontend.re_frame.dispatch.call(null,G__36522_36730));
+var G__39305_39485 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("material-templates","load","material-templates/load",114241513),features.app.worksheets.frontend.view.get_workspace_id()], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39305_39485) : zero.frontend.re_frame.dispatch.call(null,G__39305_39485));
 
 return (function (worksheet_data__$1,is_new_QMARK___$1,on_save__$1,on_cancel__$1){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["worksheet-modal render function called"], 0));
 
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"on-close","on-close",-761178394),features.app.worksheets.frontend.view.modal_close_handler(on_cancel__$1),new cljs.core.Keyword(null,"close-on-backdrop?","close-on-backdrop?",313135575),true], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal_header,features.app.worksheets.frontend.view.modal_header_config(is_new_QMARK___$1)], null),(function (){var errors = cljs.core.deref((function (){var G__36530 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-errors","worksheets/modal-form-errors",765459709)], null);
-return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__36530) : zero.frontend.re_frame.subscribe.call(null,G__36530));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"on-close","on-close",-761178394),features.app.worksheets.frontend.view.modal_close_handler(on_cancel__$1),new cljs.core.Keyword(null,"close-on-backdrop?","close-on-backdrop?",313135575),true], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [ui.modal.modal_header,features.app.worksheets.frontend.view.modal_header_config(is_new_QMARK___$1)], null),(function (){var errors = cljs.core.deref((function (){var G__39306 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","modal-form-errors","worksheets/modal-form-errors",765459709)], null);
+return (zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.subscribe.cljs$core$IFn$_invoke$arity$1(G__39306) : zero.frontend.re_frame.subscribe.call(null,G__39306));
 })());
 return new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"padding","padding",1660304693),"20px"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.basic_form_fields,errors], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.address_form_field,errors], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.work_info_form_fields,errors], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.time_tracking_form_fields,errors], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.notes_form_field,errors], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.materials_section], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.signatures_section], null)], null);
 })(),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.modal_footer_buttons,on_cancel__$1,on_save__$1], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [features.app.worksheets.frontend.view.signature_zoom_overlay], null)], null);
@@ -819,96 +819,96 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 features.app.worksheets.frontend.view.assigned_to_render = (function features$app$worksheets$frontend$view$assigned_to_render(assigned_to_name,row){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(cljs.core.truth_(assigned_to_name)?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"color","color",1011675173),"#374151",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.875rem",new cljs.core.Keyword(null,"font-weight","font-weight",2085804583),"500"], null)], null),assigned_to_name], null):new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"color","color",1011675173),"#9ca3af",new cljs.core.Keyword(null,"font-style","font-style",-773672352),"italic",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"0.75rem"], null)], null),"Unassigned"], null))], null);
 });
-var G__36545_36731 = new cljs.core.Keyword("worksheets","data","worksheets/data",-258276356);
-var G__36546_36732 = (function (db,_){
+var G__39307_39486 = new cljs.core.Keyword("worksheets","data","worksheets/data",-258276356);
+var G__39308_39487 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"data","data",-232669377)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),cljs.core.PersistentVector.EMPTY,new cljs.core.Keyword(null,"pagination","pagination",-1553654604),cljs.core.PersistentArrayMap.EMPTY], null));
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36545_36731,G__36546_36732) : zero.frontend.re_frame.reg_sub.call(null,G__36545_36731,G__36546_36732));
-var G__36547_36733 = new cljs.core.Keyword("worksheets","loading?","worksheets/loading?",1912145270);
-var G__36548_36734 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39307_39486,G__39308_39487) : zero.frontend.re_frame.reg_sub.call(null,G__39307_39486,G__39308_39487));
+var G__39309_39488 = new cljs.core.Keyword("worksheets","loading?","worksheets/loading?",1912145270);
+var G__39310_39489 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),false);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36547_36733,G__36548_36734) : zero.frontend.re_frame.reg_sub.call(null,G__36547_36733,G__36548_36734));
-var G__36552_36735 = new cljs.core.Keyword("worksheets","modal-worksheet","worksheets/modal-worksheet",1961368085);
-var G__36553_36736 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39309_39488,G__39310_39489) : zero.frontend.re_frame.reg_sub.call(null,G__39309_39488,G__39310_39489));
+var G__39311_39490 = new cljs.core.Keyword("worksheets","modal-worksheet","worksheets/modal-worksheet",1961368085);
+var G__39312_39491 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-worksheet","modal-worksheet",1936942804)], null),null);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36552_36735,G__36553_36736) : zero.frontend.re_frame.reg_sub.call(null,G__36552_36735,G__36553_36736));
-var G__36554_36737 = new cljs.core.Keyword("worksheets","modal-is-new?","worksheets/modal-is-new?",-1501369569);
-var G__36555_36738 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39311_39490,G__39312_39491) : zero.frontend.re_frame.reg_sub.call(null,G__39311_39490,G__39312_39491));
+var G__39313_39492 = new cljs.core.Keyword("worksheets","modal-is-new?","worksheets/modal-is-new?",-1501369569);
+var G__39314_39493 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-is-new?","modal-is-new?",-1493686812)], null),false);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36554_36737,G__36555_36738) : zero.frontend.re_frame.reg_sub.call(null,G__36554_36737,G__36555_36738));
-var G__36556_36739 = new cljs.core.Keyword("worksheets","authenticated?","worksheets/authenticated?",-1980147982);
-var G__36557_36740 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39313_39492,G__39314_39493) : zero.frontend.re_frame.reg_sub.call(null,G__39313_39492,G__39314_39493));
+var G__39315_39494 = new cljs.core.Keyword("worksheets","authenticated?","worksheets/authenticated?",-1980147982);
+var G__39316_39495 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"authenticated?","authenticated?",-1988130123)], null),null);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36556_36739,G__36557_36740) : zero.frontend.re_frame.reg_sub.call(null,G__36556_36739,G__36557_36740));
-var G__36558_36741 = new cljs.core.Keyword("worksheets","set-loading","worksheets/set-loading",840467908);
-var G__36559_36742 = (function (db,p__36560){
-var vec__36561 = p__36560;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36561,(0),null);
-var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36561,(1),null);
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39315_39494,G__39316_39495) : zero.frontend.re_frame.reg_sub.call(null,G__39315_39494,G__39316_39495));
+var G__39317_39496 = new cljs.core.Keyword("worksheets","set-loading","worksheets/set-loading",840467908);
+var G__39318_39497 = (function (db,p__39319){
+var vec__39320 = p__39319;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39320,(0),null);
+var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39320,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),loading_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36558_36741,G__36559_36742) : zero.frontend.re_frame.reg_event_db.call(null,G__36558_36741,G__36559_36742));
-var G__36564_36743 = new cljs.core.Keyword("worksheets","set-data","worksheets/set-data",-185310645);
-var G__36565_36744 = (function (db,p__36566){
-var vec__36567 = p__36566;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36567,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36567,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39317_39496,G__39318_39497) : zero.frontend.re_frame.reg_event_db.call(null,G__39317_39496,G__39318_39497));
+var G__39323_39498 = new cljs.core.Keyword("worksheets","set-data","worksheets/set-data",-185310645);
+var G__39324_39499 = (function (db,p__39325){
+var vec__39326 = p__39325;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39326,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39326,(1),null);
 return cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"data","data",-232669377)], null),data),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"loading?","loading?",1905707049)], null),false);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36564_36743,G__36565_36744) : zero.frontend.re_frame.reg_event_db.call(null,G__36564_36743,G__36565_36744));
-var G__36574_36745 = new cljs.core.Keyword("worksheets","set-modal-worksheet","worksheets/set-modal-worksheet",24734804);
-var G__36575_36746 = (function (db,p__36576){
-var vec__36577 = p__36576;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36577,(0),null);
-var worksheet = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36577,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39323_39498,G__39324_39499) : zero.frontend.re_frame.reg_event_db.call(null,G__39323_39498,G__39324_39499));
+var G__39329_39500 = new cljs.core.Keyword("worksheets","set-modal-worksheet","worksheets/set-modal-worksheet",24734804);
+var G__39330_39501 = (function (db,p__39331){
+var vec__39332 = p__39331;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39332,(0),null);
+var worksheet = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39332,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-worksheet","modal-worksheet",1936942804)], null),worksheet);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36574_36745,G__36575_36746) : zero.frontend.re_frame.reg_event_db.call(null,G__36574_36745,G__36575_36746));
-var G__36580_36747 = new cljs.core.Keyword("worksheets","set-modal-is-new","worksheets/set-modal-is-new",-268632222);
-var G__36581_36748 = (function (db,p__36582){
-var vec__36583 = p__36582;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36583,(0),null);
-var is_new_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36583,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39329_39500,G__39330_39501) : zero.frontend.re_frame.reg_event_db.call(null,G__39329_39500,G__39330_39501));
+var G__39335_39502 = new cljs.core.Keyword("worksheets","set-modal-is-new","worksheets/set-modal-is-new",-268632222);
+var G__39336_39503 = (function (db,p__39337){
+var vec__39338 = p__39337;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39338,(0),null);
+var is_new_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39338,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-is-new?","modal-is-new?",-1493686812)], null),is_new_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36580_36747,G__36581_36748) : zero.frontend.re_frame.reg_event_db.call(null,G__36580_36747,G__36581_36748));
-var G__36586_36749 = new cljs.core.Keyword("worksheets","set-authenticated","worksheets/set-authenticated",-878336299);
-var G__36587_36750 = (function (db,p__36588){
-var vec__36589 = p__36588;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36589,(0),null);
-var authenticated_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36589,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39335_39502,G__39336_39503) : zero.frontend.re_frame.reg_event_db.call(null,G__39335_39502,G__39336_39503));
+var G__39341_39504 = new cljs.core.Keyword("worksheets","set-authenticated","worksheets/set-authenticated",-878336299);
+var G__39342_39505 = (function (db,p__39343){
+var vec__39344 = p__39343;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39344,(0),null);
+var authenticated_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39344,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"authenticated?","authenticated?",-1988130123)], null),authenticated_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36586_36749,G__36587_36750) : zero.frontend.re_frame.reg_event_db.call(null,G__36586_36749,G__36587_36750));
-var G__36592_36751 = new cljs.core.Keyword("worksheets","close-modal","worksheets/close-modal",-1908880740);
-var G__36593_36752 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39341_39504,G__39342_39505) : zero.frontend.re_frame.reg_event_db.call(null,G__39341_39504,G__39342_39505));
+var G__39347_39506 = new cljs.core.Keyword("worksheets","close-modal","worksheets/close-modal",-1908880740);
+var G__39348_39507 = (function (db,_){
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-worksheet","modal-worksheet",1936942804)], null),null);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36592_36751,G__36593_36752) : zero.frontend.re_frame.reg_event_db.call(null,G__36592_36751,G__36593_36752));
-var G__36594_36753 = new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626);
-var G__36595_36754 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39347_39506,G__39348_39507) : zero.frontend.re_frame.reg_event_db.call(null,G__39347_39506,G__39348_39507));
+var G__39349_39508 = new cljs.core.Keyword("worksheets","modal-form-data","worksheets/modal-form-data",-1854843626);
+var G__39350_39509 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105)], null),cljs.core.PersistentArrayMap.EMPTY);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36594_36753,G__36595_36754) : zero.frontend.re_frame.reg_sub.call(null,G__36594_36753,G__36595_36754));
-var G__36596_36755 = new cljs.core.Keyword("worksheets","modal-form-errors","worksheets/modal-form-errors",765459709);
-var G__36597_36756 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39349_39508,G__39350_39509) : zero.frontend.re_frame.reg_sub.call(null,G__39349_39508,G__39350_39509));
+var G__39351_39510 = new cljs.core.Keyword("worksheets","modal-form-errors","worksheets/modal-form-errors",765459709);
+var G__39352_39511 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-errors","modal-form-errors",773406658)], null),cljs.core.PersistentArrayMap.EMPTY);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36596_36755,G__36597_36756) : zero.frontend.re_frame.reg_sub.call(null,G__36596_36755,G__36597_36756));
-var G__36598_36757 = new cljs.core.Keyword("worksheets","modal-form-loading?","worksheets/modal-form-loading?",-1730442802);
-var G__36599_36758 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39351_39510,G__39352_39511) : zero.frontend.re_frame.reg_sub.call(null,G__39351_39510,G__39352_39511));
+var G__39353_39512 = new cljs.core.Keyword("worksheets","modal-form-loading?","worksheets/modal-form-loading?",-1730442802);
+var G__39354_39513 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-loading?","modal-form-loading?",-1738092783)], null),false);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36598_36757,G__36599_36758) : zero.frontend.re_frame.reg_sub.call(null,G__36598_36757,G__36599_36758));
-var G__36600_36759 = new cljs.core.Keyword("worksheets","set-modal-form-data","worksheets/set-modal-form-data",1545216742);
-var G__36601_36760 = (function (db,p__36602){
-var vec__36603 = p__36602;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36603,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36603,(1),null);
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39353_39512,G__39354_39513) : zero.frontend.re_frame.reg_sub.call(null,G__39353_39512,G__39354_39513));
+var G__39355_39514 = new cljs.core.Keyword("worksheets","set-modal-form-data","worksheets/set-modal-form-data",1545216742);
+var G__39356_39515 = (function (db,p__39357){
+var vec__39358 = p__39357;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39358,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39358,(1),null);
 var enhanced_data = (cljs.core.truth_((function (){var and__5023__auto__ = new cljs.core.Keyword("worksheet","address-id","worksheet/address-id",1959286906).cljs$core$IFn$_invoke$arity$1(data);
 if(cljs.core.truth_(and__5023__auto__)){
 return new cljs.core.Keyword("worksheet","address-name","worksheet/address-name",-320027248).cljs$core$IFn$_invoke$arity$1(data);
@@ -918,108 +918,108 @@ return and__5023__auto__;
 })())?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(data,new cljs.core.Keyword("worksheet","address","worksheet/address",-468394152),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("address","id","address/id",-555725248),new cljs.core.Keyword("worksheet","address-id","worksheet/address-id",1959286906).cljs$core$IFn$_invoke$arity$1(data),new cljs.core.Keyword("address","name","address/name",848026653),new cljs.core.Keyword("worksheet","address-name","worksheet/address-name",-320027248).cljs$core$IFn$_invoke$arity$1(data),new cljs.core.Keyword("address","display","address/display",-756696060),[cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("worksheet","address-name","worksheet/address-name",-320027248).cljs$core$IFn$_invoke$arity$1(data))," - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword("worksheet","address-city","worksheet/address-city",1474773955).cljs$core$IFn$_invoke$arity$1(data))].join('')], null)):data);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105)], null),enhanced_data);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36600_36759,G__36601_36760) : zero.frontend.re_frame.reg_event_db.call(null,G__36600_36759,G__36601_36760));
-var G__36606_36761 = new cljs.core.Keyword("worksheets","update-modal-form-field","worksheets/update-modal-form-field",-1340480069);
-var G__36607_36762 = (function (db,p__36608){
-var vec__36609 = p__36608;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36609,(0),null);
-var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36609,(1),null);
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36609,(2),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39355_39514,G__39356_39515) : zero.frontend.re_frame.reg_event_db.call(null,G__39355_39514,G__39356_39515));
+var G__39361_39516 = new cljs.core.Keyword("worksheets","update-modal-form-field","worksheets/update-modal-form-field",-1340480069);
+var G__39362_39517 = (function (db,p__39363){
+var vec__39364 = p__39363;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39364,(0),null);
+var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39364,(1),null);
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39364,(2),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105),field_key], null),value);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36606_36761,G__36607_36762) : zero.frontend.re_frame.reg_event_db.call(null,G__36606_36761,G__36607_36762));
-var G__36612_36763 = new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486);
-var G__36613_36764 = (function (db,p__36614){
-var vec__36615 = p__36614;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36615,(0),null);
-var errors = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36615,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39361_39516,G__39362_39517) : zero.frontend.re_frame.reg_event_db.call(null,G__39361_39516,G__39362_39517));
+var G__39367_39518 = new cljs.core.Keyword("worksheets","set-modal-form-errors","worksheets/set-modal-form-errors",2108177486);
+var G__39368_39519 = (function (db,p__39369){
+var vec__39370 = p__39369;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39370,(0),null);
+var errors = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39370,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-errors","modal-form-errors",773406658)], null),errors);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36612_36763,G__36613_36764) : zero.frontend.re_frame.reg_event_db.call(null,G__36612_36763,G__36613_36764));
-var G__36618_36765 = new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711);
-var G__36619_36766 = (function (db,p__36620){
-var vec__36621 = p__36620;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36621,(0),null);
-var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36621,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39367_39518,G__39368_39519) : zero.frontend.re_frame.reg_event_db.call(null,G__39367_39518,G__39368_39519));
+var G__39373_39520 = new cljs.core.Keyword("worksheets","set-modal-form-loading","worksheets/set-modal-form-loading",-448471711);
+var G__39374_39521 = (function (db,p__39375){
+var vec__39376 = p__39375;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39376,(0),null);
+var loading_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39376,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-loading?","modal-form-loading?",-1738092783)], null),loading_QMARK_);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36618_36765,G__36619_36766) : zero.frontend.re_frame.reg_event_db.call(null,G__36618_36765,G__36619_36766));
-var G__36624_36767 = new cljs.core.Keyword("worksheets","modal-form-set-field","worksheets/modal-form-set-field",40207790);
-var G__36625_36768 = (function (db,p__36626){
-var vec__36627 = p__36626;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36627,(0),null);
-var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36627,(1),null);
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36627,(2),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39373_39520,G__39374_39521) : zero.frontend.re_frame.reg_event_db.call(null,G__39373_39520,G__39374_39521));
+var G__39379_39522 = new cljs.core.Keyword("worksheets","modal-form-set-field","worksheets/modal-form-set-field",40207790);
+var G__39380_39523 = (function (db,p__39381){
+var vec__39382 = p__39381;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39382,(0),null);
+var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39382,(1),null);
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39382,(2),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105),field_key], null),value);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36624_36767,G__36625_36768) : zero.frontend.re_frame.reg_event_db.call(null,G__36624_36767,G__36625_36768));
-var G__36630_36769 = new cljs.core.Keyword("worksheets","modal-form-field","worksheets/modal-form-field",880637847);
-var G__36631_36770 = (function (db,p__36632){
-var vec__36633 = p__36632;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36633,(0),null);
-var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36633,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39379_39522,G__39380_39523) : zero.frontend.re_frame.reg_event_db.call(null,G__39379_39522,G__39380_39523));
+var G__39385_39524 = new cljs.core.Keyword("worksheets","modal-form-field","worksheets/modal-form-field",880637847);
+var G__39386_39525 = (function (db,p__39387){
+var vec__39388 = p__39387;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39388,(0),null);
+var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39388,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105),field_key], null),null);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36630_36769,G__36631_36770) : zero.frontend.re_frame.reg_sub.call(null,G__36630_36769,G__36631_36770));
-var G__36636_36771 = new cljs.core.Keyword("worksheets","clear-modal-form","worksheets/clear-modal-form",-2006886094);
-var G__36637_36772 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39385_39524,G__39386_39525) : zero.frontend.re_frame.reg_sub.call(null,G__39385_39524,G__39386_39525));
+var G__39391_39526 = new cljs.core.Keyword("worksheets","clear-modal-form","worksheets/clear-modal-form",-2006886094);
+var G__39392_39527 = (function (db,_){
 return cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105)], null),cljs.core.PersistentArrayMap.EMPTY),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-errors","modal-form-errors",773406658)], null),cljs.core.PersistentArrayMap.EMPTY),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-loading?","modal-form-loading?",-1738092783)], null),false),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"maintainer-signature-ref","maintainer-signature-ref",1839933392)], null),null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"customer-signature-ref","customer-signature-ref",-428835391)], null),null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"signature-zoom-data","signature-zoom-data",-1670178934)], null),null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"zoom-signature-ref","zoom-signature-ref",2003645442)], null),null);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36636_36771,G__36637_36772) : zero.frontend.re_frame.reg_event_db.call(null,G__36636_36771,G__36637_36772));
-var G__36638_36773 = new cljs.core.Keyword("worksheets","set-maintainer-signature-ref","worksheets/set-maintainer-signature-ref",-10495886);
-var G__36639_36774 = (function (db,p__36640){
-var vec__36641 = p__36640;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36641,(0),null);
-var ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36641,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39391_39526,G__39392_39527) : zero.frontend.re_frame.reg_event_db.call(null,G__39391_39526,G__39392_39527));
+var G__39393_39528 = new cljs.core.Keyword("worksheets","set-maintainer-signature-ref","worksheets/set-maintainer-signature-ref",-10495886);
+var G__39394_39529 = (function (db,p__39395){
+var vec__39396 = p__39395;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39396,(0),null);
+var ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39396,(1),null);
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG set-maintainer-signature-ref:",ref], 0));
 
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"maintainer-signature-ref","maintainer-signature-ref",1839933392)], null),ref);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36638_36773,G__36639_36774) : zero.frontend.re_frame.reg_event_db.call(null,G__36638_36773,G__36639_36774));
-var G__36644_36775 = new cljs.core.Keyword("worksheets","set-customer-signature-ref","worksheets/set-customer-signature-ref",-2045175946);
-var G__36645_36776 = (function (db,p__36646){
-var vec__36647 = p__36646;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36647,(0),null);
-var ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36647,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39393_39528,G__39394_39529) : zero.frontend.re_frame.reg_event_db.call(null,G__39393_39528,G__39394_39529));
+var G__39399_39530 = new cljs.core.Keyword("worksheets","set-customer-signature-ref","worksheets/set-customer-signature-ref",-2045175946);
+var G__39400_39531 = (function (db,p__39401){
+var vec__39402 = p__39401;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39402,(0),null);
+var ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39402,(1),null);
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG set-customer-signature-ref:",ref], 0));
 
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"customer-signature-ref","customer-signature-ref",-428835391)], null),ref);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36644_36775,G__36645_36776) : zero.frontend.re_frame.reg_event_db.call(null,G__36644_36775,G__36645_36776));
-var G__36650_36777 = new cljs.core.Keyword("worksheets","maintainer-signature-ref","worksheets/maintainer-signature-ref",1830931845);
-var G__36651_36778 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39399_39530,G__39400_39531) : zero.frontend.re_frame.reg_event_db.call(null,G__39399_39530,G__39400_39531));
+var G__39405_39532 = new cljs.core.Keyword("worksheets","maintainer-signature-ref","worksheets/maintainer-signature-ref",1830931845);
+var G__39406_39533 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"maintainer-signature-ref","maintainer-signature-ref",1839933392)], null));
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36650_36777,G__36651_36778) : zero.frontend.re_frame.reg_sub.call(null,G__36650_36777,G__36651_36778));
-var G__36652_36779 = new cljs.core.Keyword("worksheets","customer-signature-ref","worksheets/customer-signature-ref",-405126404);
-var G__36653_36780 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39405_39532,G__39406_39533) : zero.frontend.re_frame.reg_sub.call(null,G__39405_39532,G__39406_39533));
+var G__39407_39534 = new cljs.core.Keyword("worksheets","customer-signature-ref","worksheets/customer-signature-ref",-405126404);
+var G__39408_39535 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"customer-signature-ref","customer-signature-ref",-428835391)], null));
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36652_36779,G__36653_36780) : zero.frontend.re_frame.reg_sub.call(null,G__36652_36779,G__36653_36780));
-var G__36654_36781 = new cljs.core.Keyword("worksheets","signature-zoom-data","worksheets/signature-zoom-data",-1646668829);
-var G__36655_36782 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39407_39534,G__39408_39535) : zero.frontend.re_frame.reg_sub.call(null,G__39407_39534,G__39408_39535));
+var G__39409_39536 = new cljs.core.Keyword("worksheets","signature-zoom-data","worksheets/signature-zoom-data",-1646668829);
+var G__39410_39537 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"signature-zoom-data","signature-zoom-data",-1670178934)], null));
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36654_36781,G__36655_36782) : zero.frontend.re_frame.reg_sub.call(null,G__36654_36781,G__36655_36782));
-var G__36656_36783 = new cljs.core.Keyword("worksheets","zoom-signature-ref","worksheets/zoom-signature-ref",2027608775);
-var G__36657_36784 = (function (db,_){
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39409_39536,G__39410_39537) : zero.frontend.re_frame.reg_sub.call(null,G__39409_39536,G__39410_39537));
+var G__39411_39538 = new cljs.core.Keyword("worksheets","zoom-signature-ref","worksheets/zoom-signature-ref",2027608775);
+var G__39412_39539 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"zoom-signature-ref","zoom-signature-ref",2003645442)], null));
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36656_36783,G__36657_36784) : zero.frontend.re_frame.reg_sub.call(null,G__36656_36783,G__36657_36784));
-var G__36658_36785 = new cljs.core.Keyword("worksheets","open-signature-zoom","worksheets/open-signature-zoom",430472591);
-var G__36659_36786 = (function (db,p__36660){
-var vec__36661 = p__36660;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36661,(0),null);
-var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36661,(1),null);
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39411_39538,G__39412_39539) : zero.frontend.re_frame.reg_sub.call(null,G__39411_39538,G__39412_39539));
+var G__39413_39540 = new cljs.core.Keyword("worksheets","open-signature-zoom","worksheets/open-signature-zoom",430472591);
+var G__39414_39541 = (function (db,p__39415){
+var vec__39416 = p__39415;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39416,(0),null);
+var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39416,(1),null);
 var ref_dispatch_key = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(label,"Maintainer Signature"))?new cljs.core.Keyword("worksheets","set-maintainer-signature-ref","worksheets/set-maintainer-signature-ref",-10495886):new cljs.core.Keyword("worksheets","set-customer-signature-ref","worksheets/set-customer-signature-ref",-2045175946));
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"signature-zoom-data","signature-zoom-data",-1670178934)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"label","label",1718410804),label,new cljs.core.Keyword(null,"ref-dispatch-key","ref-dispatch-key",-1958373712),ref_dispatch_key], null));
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36658_36785,G__36659_36786) : zero.frontend.re_frame.reg_event_db.call(null,G__36658_36785,G__36659_36786));
-var G__36664_36787 = new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406);
-var G__36665_36788 = (function (p__36666,_){
-var map__36667 = p__36666;
-var map__36667__$1 = cljs.core.__destructure_map(map__36667);
-var db = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36667__$1,new cljs.core.Keyword(null,"db","db",993250759));
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39413_39540,G__39414_39541) : zero.frontend.re_frame.reg_event_db.call(null,G__39413_39540,G__39414_39541));
+var G__39419_39542 = new cljs.core.Keyword("worksheets","close-signature-zoom","worksheets/close-signature-zoom",-92779406);
+var G__39420_39543 = (function (p__39421,_){
+var map__39422 = p__39421;
+var map__39422__$1 = cljs.core.__destructure_map(map__39422);
+var db = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__39422__$1,new cljs.core.Keyword(null,"db","db",993250759));
 var zoom_data = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"signature-zoom-data","signature-zoom-data",-1670178934)], null));
 var zoom_ref = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"zoom-signature-ref","zoom-signature-ref",2003645442)], null));
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["DEBUG close-signature-zoom: zoom-data:",zoom_data], 0));
@@ -1047,41 +1047,41 @@ return cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core
 })():cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"signature-zoom-data","signature-zoom-data",-1670178934)], null),null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"zoom-signature-ref","zoom-signature-ref",2003645442)], null),null));
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"db","db",993250759),new_db], null);
 });
-(zero.frontend.re_frame.reg_event_fx.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_fx.cljs$core$IFn$_invoke$arity$2(G__36664_36787,G__36665_36788) : zero.frontend.re_frame.reg_event_fx.call(null,G__36664_36787,G__36665_36788));
-var G__36668_36789 = new cljs.core.Keyword("worksheets","set-zoom-signature-ref","worksheets/set-zoom-signature-ref",250835679);
-var G__36669_36790 = (function (db,p__36670){
-var vec__36671 = p__36670;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36671,(0),null);
-var ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36671,(1),null);
+(zero.frontend.re_frame.reg_event_fx.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_fx.cljs$core$IFn$_invoke$arity$2(G__39419_39542,G__39420_39543) : zero.frontend.re_frame.reg_event_fx.call(null,G__39419_39542,G__39420_39543));
+var G__39423_39544 = new cljs.core.Keyword("worksheets","set-zoom-signature-ref","worksheets/set-zoom-signature-ref",250835679);
+var G__39424_39545 = (function (db,p__39425){
+var vec__39426 = p__39425;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39426,(0),null);
+var ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39426,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"zoom-signature-ref","zoom-signature-ref",2003645442)], null),ref);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36668_36789,G__36669_36790) : zero.frontend.re_frame.reg_event_db.call(null,G__36668_36789,G__36669_36790));
-var G__36674_36791 = new cljs.core.Keyword("material-templates","all","material-templates/all",-1081828415);
-var G__36675_36792 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39423_39544,G__39424_39545) : zero.frontend.re_frame.reg_event_db.call(null,G__39423_39544,G__39424_39545));
+var G__39429_39546 = new cljs.core.Keyword("material-templates","all","material-templates/all",-1081828415);
+var G__39430_39547 = (function (db,_){
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),new cljs.core.Keyword(null,"all","all",892129742)], null),cljs.core.PersistentVector.EMPTY);
 });
-(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__36674_36791,G__36675_36792) : zero.frontend.re_frame.reg_sub.call(null,G__36674_36791,G__36675_36792));
-var G__36676_36793 = new cljs.core.Keyword("material-templates","load","material-templates/load",114241513);
-var G__36677_36794 = (function (db,p__36678){
-var vec__36679 = p__36678;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36679,(0),null);
-var workspace_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36679,(1),null);
+(zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_sub.cljs$core$IFn$_invoke$arity$2(G__39429_39546,G__39430_39547) : zero.frontend.re_frame.reg_sub.call(null,G__39429_39546,G__39430_39547));
+var G__39431_39548 = new cljs.core.Keyword("material-templates","load","material-templates/load",114241513);
+var G__39432_39549 = (function (db,p__39433){
+var vec__39434 = p__39433;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39434,(0),null);
+var workspace_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39434,(1),null);
 if(cljs.core.truth_(workspace_id)){
 parquery.frontend.request.send_queries(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"queries","queries",1446291995),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("workspace-material-templates","get-all","workspace-material-templates/get-all",472341884),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435),workspace_id], null)], null),new cljs.core.Keyword("parquery","context","parquery/context",661391038),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"workspace-id","workspace-id",-196897435),workspace_id], null),new cljs.core.Keyword(null,"callback","callback",-705136228),(function (response){
-var G__36682 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("material-templates","loaded","material-templates/loaded",942418528),new cljs.core.Keyword("workspace-material-templates","get-all","workspace-material-templates/get-all",472341884).cljs$core$IFn$_invoke$arity$1(response)], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36682) : zero.frontend.re_frame.dispatch.call(null,G__36682));
+var G__39437 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("material-templates","loaded","material-templates/loaded",942418528),new cljs.core.Keyword("workspace-material-templates","get-all","workspace-material-templates/get-all",472341884).cljs$core$IFn$_invoke$arity$1(response)], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39437) : zero.frontend.re_frame.dispatch.call(null,G__39437));
 })], null));
 } else {
 }
 
 return db;
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36676_36793,G__36677_36794) : zero.frontend.re_frame.reg_event_db.call(null,G__36676_36793,G__36677_36794));
-var G__36683_36795 = new cljs.core.Keyword("material-templates","loaded","material-templates/loaded",942418528);
-var G__36684_36796 = (function (db,p__36685){
-var vec__36686 = p__36685;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36686,(0),null);
-var templates = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36686,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39431_39548,G__39432_39549) : zero.frontend.re_frame.reg_event_db.call(null,G__39431_39548,G__39432_39549));
+var G__39438_39550 = new cljs.core.Keyword("material-templates","loaded","material-templates/loaded",942418528);
+var G__39439_39551 = (function (db,p__39440){
+var vec__39441 = p__39440;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39441,(0),null);
+var templates = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39441,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"material-templates","material-templates",-314941478),new cljs.core.Keyword(null,"all","all",892129742)], null),(function (){var or__5025__auto__ = templates;
 if(cljs.core.truth_(or__5025__auto__)){
 return or__5025__auto__;
@@ -1090,26 +1090,26 @@ return cljs.core.PersistentVector.EMPTY;
 }
 })());
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36683_36795,G__36684_36796) : zero.frontend.re_frame.reg_event_db.call(null,G__36683_36795,G__36684_36796));
-var G__36689_36797 = new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231);
-var G__36690_36798 = (function (db,p__36691){
-var vec__36692 = p__36691;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36692,(0),null);
-var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36692,(1),null);
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36692,(2),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39438_39550,G__39439_39551) : zero.frontend.re_frame.reg_event_db.call(null,G__39438_39550,G__39439_39551));
+var G__39444_39552 = new cljs.core.Keyword("worksheets","update-form-field","worksheets/update-form-field",1488130231);
+var G__39445_39553 = (function (db,p__39446){
+var vec__39447 = p__39446;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39447,(0),null);
+var field_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39447,(1),null);
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39447,(2),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105),field_key], null),value);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36689_36797,G__36690_36798) : zero.frontend.re_frame.reg_event_db.call(null,G__36689_36797,G__36690_36798));
-var G__36695_36799 = new cljs.core.Keyword("worksheets","select-material-template","worksheets/select-material-template",2018700083);
-var G__36696_36800 = (function (db,p__36697){
-var vec__36698 = p__36697;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36698,(0),null);
-var template_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36698,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39444_39552,G__39445_39553) : zero.frontend.re_frame.reg_event_db.call(null,G__39444_39552,G__39445_39553));
+var G__39450_39554 = new cljs.core.Keyword("worksheets","select-material-template","worksheets/select-material-template",2018700083);
+var G__39451_39555 = (function (db,p__39452){
+var vec__39453 = p__39452;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39453,(0),null);
+var template_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39453,(1),null);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105),new cljs.core.Keyword("worksheet","selected-material-template","worksheet/selected-material-template",-1913890066)], null),template_id);
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36695_36799,G__36696_36800) : zero.frontend.re_frame.reg_event_db.call(null,G__36695_36799,G__36696_36800));
-var G__36702_36801 = new cljs.core.Keyword("worksheets","add-selected-material","worksheets/add-selected-material",-1720139211);
-var G__36703_36802 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39450_39554,G__39451_39555) : zero.frontend.re_frame.reg_event_db.call(null,G__39450_39554,G__39451_39555));
+var G__39457_39556 = new cljs.core.Keyword("worksheets","add-selected-material","worksheets/add-selected-material",-1720139211);
+var G__39458_39557 = (function (db,_){
 var form_data = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105)], null));
 var selected_template_id = new cljs.core.Keyword("worksheet","selected-material-template","worksheet/selected-material-template",-1913890066).cljs$core$IFn$_invoke$arity$1(form_data);
 var quantity = new cljs.core.Keyword("worksheet","new-material-quantity","worksheet/new-material-quantity",543620952).cljs$core$IFn$_invoke$arity$1(form_data);
@@ -1126,8 +1126,8 @@ return and__5023__auto____$1;
 return and__5023__auto__;
 }
 })())){
-var selected_template = cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__36701_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("material-template","id","material-template/id",1625256948).cljs$core$IFn$_invoke$arity$1(p1__36701_SHARP_),selected_template_id);
+var selected_template = cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__39456_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("material-template","id","material-template/id",1625256948).cljs$core$IFn$_invoke$arity$1(p1__39456_SHARP_),selected_template_id);
 }),templates));
 var new_material = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword("material-template","name","material-template/name",-1467705719).cljs$core$IFn$_invoke$arity$1(selected_template),new cljs.core.Keyword(null,"unit","unit",375175175),new cljs.core.Keyword("material-template","unit","material-template/unit",1417436647).cljs$core$IFn$_invoke$arity$1(selected_template),new cljs.core.Keyword(null,"quantity","quantity",-1929050694),cljs.core.str.cljs$core$IFn$_invoke$arity$1(quantity)], null);
 var current_materials = cljs.core.get.cljs$core$IFn$_invoke$arity$3(form_data,new cljs.core.Keyword("worksheet","material-usage","worksheet/material-usage",-250420820),cljs.core.PersistentVector.EMPTY);
@@ -1136,18 +1136,18 @@ return cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(db,new cljs.core
 return db;
 }
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36702_36801,G__36703_36802) : zero.frontend.re_frame.reg_event_db.call(null,G__36702_36801,G__36703_36802));
-var G__36704_36803 = new cljs.core.Keyword("worksheets","remove-material","worksheets/remove-material",2021952215);
-var G__36705_36804 = (function (db,p__36706){
-var vec__36707 = p__36706;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36707,(0),null);
-var idx = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__36707,(1),null);
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39457_39556,G__39458_39557) : zero.frontend.re_frame.reg_event_db.call(null,G__39457_39556,G__39458_39557));
+var G__39459_39558 = new cljs.core.Keyword("worksheets","remove-material","worksheets/remove-material",2021952215);
+var G__39460_39559 = (function (db,p__39461){
+var vec__39462 = p__39461;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39462,(0),null);
+var idx = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__39462,(1),null);
 var current_materials = cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105),new cljs.core.Keyword("worksheet","material-usage","worksheet/material-usage",-250420820)], null),cljs.core.PersistentVector.EMPTY);
 return cljs.core.assoc_in(db,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105),new cljs.core.Keyword("worksheet","material-usage","worksheet/material-usage",-250420820)], null),cljs.core.vec(cljs.core.concat.cljs$core$IFn$_invoke$arity$2(cljs.core.take.cljs$core$IFn$_invoke$arity$2(idx,current_materials),cljs.core.drop.cljs$core$IFn$_invoke$arity$2((idx + (1)),current_materials))));
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36704_36803,G__36705_36804) : zero.frontend.re_frame.reg_event_db.call(null,G__36704_36803,G__36705_36804));
-var G__36710_36805 = new cljs.core.Keyword("worksheets","add-custom-material","worksheets/add-custom-material",43114298);
-var G__36711_36806 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39459_39558,G__39460_39559) : zero.frontend.re_frame.reg_event_db.call(null,G__39459_39558,G__39460_39559));
+var G__39465_39560 = new cljs.core.Keyword("worksheets","add-custom-material","worksheets/add-custom-material",43114298);
+var G__39466_39561 = (function (db,_){
 var form_data = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"modal-form-data","modal-form-data",-1848107105)], null));
 var custom_name = new cljs.core.Keyword("worksheet","custom-material-name","worksheet/custom-material-name",259440271).cljs$core$IFn$_invoke$arity$1(form_data);
 var custom_unit = new cljs.core.Keyword("worksheet","custom-material-unit","worksheet/custom-material-unit",1622455402).cljs$core$IFn$_invoke$arity$1(form_data);
@@ -1176,9 +1176,9 @@ return cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_in(cljs.core.assoc_
 return db;
 }
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36710_36805,G__36711_36806) : zero.frontend.re_frame.reg_event_db.call(null,G__36710_36805,G__36711_36806));
-var G__36712_36807 = new cljs.core.Keyword("worksheets","check-authentication","worksheets/check-authentication",1508714346);
-var G__36713_36808 = (function (db,_){
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39465_39560,G__39466_39561) : zero.frontend.re_frame.reg_event_db.call(null,G__39465_39560,G__39466_39561));
+var G__39467_39562 = new cljs.core.Keyword("worksheets","check-authentication","worksheets/check-authentication",1508714346);
+var G__39468_39563 = (function (db,_){
 parquery.frontend.request.send_queries(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"queries","queries",1446291995),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("user","current","user/current",-1089426180),cljs.core.PersistentArrayMap.EMPTY], null),new cljs.core.Keyword("parquery","context","parquery/context",661391038),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"callback","callback",-705136228),(function (response){
 var user = new cljs.core.Keyword("user","current","user/current",-1089426180).cljs$core$IFn$_invoke$arity$1(response);
 if(cljs.core.truth_((function (){var and__5023__auto__ = user;
@@ -1188,24 +1188,24 @@ return new cljs.core.Keyword("user","id","user/id",-1375756663).cljs$core$IFn$_i
 return and__5023__auto__;
 }
 })())){
-var G__36714_36809 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-authenticated","worksheets/set-authenticated",-878336299),true], null);
-(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36714_36809) : zero.frontend.re_frame.dispatch.call(null,G__36714_36809));
+var G__39469_39564 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-authenticated","worksheets/set-authenticated",-878336299),true], null);
+(zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39469_39564) : zero.frontend.re_frame.dispatch.call(null,G__39469_39564));
 
 if(cljs.core.empty_QMARK_(new cljs.core.Keyword(null,"worksheets","worksheets",892970020).cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"worksheets","worksheets",892970020),new cljs.core.Keyword(null,"data","data",-232669377)], null)),cljs.core.PersistentVector.EMPTY))){
-var G__36715 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","load-data","worksheets/load-data",-1798600603),cljs.core.PersistentArrayMap.EMPTY], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36715) : zero.frontend.re_frame.dispatch.call(null,G__36715));
+var G__39470 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","load-data","worksheets/load-data",-1798600603),cljs.core.PersistentArrayMap.EMPTY], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39470) : zero.frontend.re_frame.dispatch.call(null,G__39470));
 } else {
 return null;
 }
 } else {
-var G__36716 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-authenticated","worksheets/set-authenticated",-878336299),false], null);
-return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__36716) : zero.frontend.re_frame.dispatch.call(null,G__36716));
+var G__39471 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("worksheets","set-authenticated","worksheets/set-authenticated",-878336299),false], null);
+return (zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1 ? zero.frontend.re_frame.dispatch.cljs$core$IFn$_invoke$arity$1(G__39471) : zero.frontend.re_frame.dispatch.call(null,G__39471));
 }
 })], null));
 
 return db;
 });
-(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__36712_36807,G__36713_36808) : zero.frontend.re_frame.reg_event_db.call(null,G__36712_36807,G__36713_36808));
+(zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2 ? zero.frontend.re_frame.reg_event_db.cljs$core$IFn$_invoke$arity$2(G__39467_39562,G__39468_39563) : zero.frontend.re_frame.reg_event_db.call(null,G__39467_39562,G__39468_39563));
 features.app.worksheets.frontend.view.view = (function features$app$worksheets$frontend$view$view(){
 var workspace_id = features.app.worksheets.frontend.view.get_workspace_id();
 var worksheets_data = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentVector.EMPTY);

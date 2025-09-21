@@ -95,15 +95,6 @@
        [pricing-category (tr/tr :pricing/coloring) (master-coloring) theme-colors]]
       theme-colors true]]]])
 
-(defn handle-language-toggle [current-language]
-  "Toggle language between en and hu"
-  (let [new-language (if (= current-language :en) :hu :en)]
-    (rf/dispatch [:header/set-language new-language])))
-
-(defn handle-theme-toggle [current-theme]
-  "Toggle theme between light and dark"
-  (let [new-theme (if (= current-theme :light) :dark :light)]
-    (rf/dispatch [:header/set-theme new-theme])))
 
 (defn hero-logo [theme-colors]
   [:div {:style {:width "200px" :height "200px" :border-radius "50%"
@@ -146,8 +137,16 @@
     [hero-title theme-colors]
     [hero-subtitle theme-colors]]
    [hero-description theme-colors]
-   [:div {:style {:margin-top "2rem"}}
-    [hero-button theme-colors]]])
+   [:div {:style {:margin-top "2rem" :display "flex" :gap "1rem" :justify-content "center" :flex-wrap "wrap"}}
+    [hero-button theme-colors]
+    [:a {:href "/the_team"
+         :style {:display "inline-block" :padding "12px 24px"
+                 :background "transparent"
+                 :color (get-in theme-colors [:accent :primary])
+                 :text-decoration "none" :border-radius "8px" :font-weight "600"
+                 :font-size "1.125rem" :transition "all 0.2s"
+                 :border (str "2px solid " (get-in theme-colors [:accent :primary]))}}
+     (tr/tr :homepage/meet-team-button)]]])
 
 (defn service-badge [text theme-colors]
   [:div {:style {:padding "0.5rem 1rem" :background (get-in theme-colors [:background :tertiary])
@@ -258,62 +257,6 @@
      [hours-location-section theme-colors]]
     [footer-bottom-bar theme-colors]]])
 
-(defn language-chooser
-  "Language chooser component for homepage"
-  []
-  (let [current-language @(rf/subscribe [:header/current-language])
-        current-theme @(rf/subscribe [:header/current-theme])
-        theme-colors (theme/get-theme-colors current-theme)]
-    [:div {:style {:position "absolute"
-                   :top "20px"
-                   :right "20px"
-                   :display "flex"
-                   :gap "10px"}}
-     ;; Theme toggle
-     [:button {:style {:padding "8px 16px"
-                       :border "none"
-                       :background (get-in theme-colors [:background :secondary])
-                       :color (get-in theme-colors [:text :primary])
-                       :border-radius "25px"
-                       :font-weight "600"
-                       :cursor "pointer"
-                       :transition "all 0.2s"
-                       :box-shadow (get-in theme-colors [:shadow :light])}
-               :on-click #(handle-theme-toggle current-theme)}
-      (if (= current-theme :light) "🌙" "☀️")]
-     ;; Language buttons
-     [:button {:style {:padding "8px 16px"
-                       :border "none"
-                       :background (if (= current-language :en)
-                                    (get-in theme-colors [:accent :gradient])
-                                    (get-in theme-colors [:background :secondary]))
-                       :color (if (= current-language :en)
-                               (get-in theme-colors [:text :primary])
-                               (get-in theme-colors [:accent :primary]))
-                       :border-radius "25px"
-                       :font-weight "600"
-                       :cursor "pointer"
-                       :transition "all 0.2s"
-                       :box-shadow (get-in theme-colors [:shadow :light])}
-               :on-click #(when (not= current-language :en)
-                           (handle-language-toggle current-language))}
-      "EN"]
-     [:button {:style {:padding "8px 16px"
-                       :border "none"
-                       :background (if (= current-language :hu)
-                                    (get-in theme-colors [:accent :gradient])
-                                    (get-in theme-colors [:background :secondary]))
-                       :color (if (= current-language :hu)
-                               (get-in theme-colors [:text :primary])
-                               (get-in theme-colors [:accent :primary]))
-                       :border-radius "25px"
-                       :font-weight "600"
-                       :cursor "pointer"
-                       :transition "all 0.2s"
-                       :box-shadow (get-in theme-colors [:shadow :light])}
-               :on-click #(when (not= current-language :hu)
-                           (handle-language-toggle current-language))}
-      "HU"]]))
 
 (defn view []
   (let [current-theme @(rf/subscribe [:header/current-theme])
@@ -322,7 +265,6 @@
     [:div {:style {:min-height "100vh" :background (get-in theme-colors [:background :primary])
                    :display "flex" :flex-direction "column" :align-items "center"
                    :justify-content "center" :position "relative"}}
-     [language-chooser]
      [hero-section theme-colors]
      [salon-section theme-colors]
      [pricing-section theme-colors]

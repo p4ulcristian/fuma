@@ -120,12 +120,8 @@
 (defn- features-grid [workspace-id]
   "Grid of feature cards"
   [:div {:style {:display "grid" :grid-template-columns "repeat(auto-fit, minmax(250px, 1fr))" :gap "2rem" :margin-top "3rem"}}
-   [feature-card "🏗️" (tr/tr :features/material-templates) (tr/tr :features/material-templates-desc) (str "/app/" workspace-id "/material-templates")]
-   [feature-card "📍" (tr/tr :features/addresses) (tr/tr :features/addresses-desc) (str "/app/" workspace-id "/addresses")]
-   [feature-card "👤" (tr/tr :features/customers) (tr/tr :features/customers-desc) (str "/app/" workspace-id "/customers")]
-   [feature-card "📋" (tr/tr :features/worksheets) (tr/tr :features/worksheets-desc) (str "/app/" workspace-id "/worksheets")]
-   [feature-card "⚙️" (tr/tr :features/settings) (tr/tr :features/settings-desc) (str "/app/" workspace-id "/settings")]
-   [feature-card "👥" (tr/tr :features/teams) (tr/tr :features/teams-desc) (str "/app/" workspace-id "/teams")]])
+   [feature-card "✨" (tr/tr :features/the-team) (tr/tr :features/the-team-desc) "/the_team"]
+   [feature-card "🏠" (tr/tr :features/homepage) (tr/tr :features/homepage-desc) "/"]])
 
 (defn- workspace-footer [workspace-id]
   "Footer with workspace ID"

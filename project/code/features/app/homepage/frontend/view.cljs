@@ -21,24 +21,26 @@
                    :display "flex"
                    :gap "10px"}}
      [:button {:style {:padding "8px 16px"
-                       :border "2px solid white"
-                       :background (if (= current-language :en) "white" "transparent")
-                       :color (if (= current-language :en) "#3b82f6" "white")
+                       :border "2px solid #3b82f6"
+                       :background (if (= current-language :en) "#3b82f6" "white")
+                       :color (if (= current-language :en) "white" "#3b82f6")
                        :border-radius "25px"
                        :font-weight "600"
                        :cursor "pointer"
-                       :transition "all 0.2s"}
+                       :transition "all 0.2s"
+                       :box-shadow "0 2px 4px rgba(0, 0, 0, 0.1)"}
                :on-click #(when (not= current-language :en)
                            (handle-language-toggle current-language))}
       "EN"]
      [:button {:style {:padding "8px 16px"
-                       :border "2px solid white"
-                       :background (if (= current-language :hu) "white" "transparent")
-                       :color (if (= current-language :hu) "#3b82f6" "white")
+                       :border "2px solid #3b82f6"
+                       :background (if (= current-language :hu) "#3b82f6" "white")
+                       :color (if (= current-language :hu) "white" "#3b82f6")
                        :border-radius "25px"
                        :font-weight "600"
                        :cursor "pointer"
-                       :transition "all 0.2s"}
+                       :transition "all 0.2s"
+                       :box-shadow "0 2px 4px rgba(0, 0, 0, 0.1)"}
                :on-click #(when (not= current-language :hu)
                            (handle-language-toggle current-language))}
       "HU"]]))
@@ -107,4 +109,56 @@
                   :font-weight "600"
                   :font-size "1.125rem"
                   :transition "background-color 0.2s"}}
-      (tr/tr :homepage/contact-button)]]]])
+      (tr/tr :homepage/contact-button)]]]
+
+   ;; New section with salon image
+   [:section {:style {:width "100%"
+                      :padding "4rem 2rem"
+                      :background "white"}}
+    [:div {:style {:max-width "1200px"
+                   :margin "0 auto"
+                   :display "grid"
+                   :grid-template-columns "1fr 1fr"
+                   :gap "3rem"
+                   :align-items "center"}}
+     [:div {:style {:order "1"}}
+      [:h2 {:style {:font-size "2.5rem"
+                    :font-weight "700"
+                    :color "#1f2937"
+                    :margin "0 0 1.5rem 0"
+                    :font-family "'Dancing Script', cursive"}}
+       "Professional Hair Styling"]
+      [:p {:style {:font-size "1.125rem"
+                   :color "#4b5563"
+                   :line-height "1.6"
+                   :margin "0 0 2rem 0"}}
+       "Experience the artistry of professional hair styling at our salon. Our skilled stylists create beautiful looks that enhance your natural beauty and boost your confidence."]
+      [:div {:style {:display "flex"
+                     :gap "1rem"
+                     :flex-wrap "wrap"}}
+       [:div {:style {:padding "0.5rem 1rem"
+                      :background "#f3f4f6"
+                      :border-radius "20px"
+                      :font-size "0.875rem"
+                      :color "#374151"}}
+        "Hair Styling"]
+       [:div {:style {:padding "0.5rem 1rem"
+                      :background "#f3f4f6"
+                      :border-radius "20px"
+                      :font-size "0.875rem"
+                      :color "#374151"}}
+        "Wedding Hair"]
+       [:div {:style {:padding "0.5rem 1rem"
+                      :background "#f3f4f6"
+                      :border-radius "20px"
+                      :font-size "0.875rem"
+                      :color "#374151"}}
+        "Special Events"]]]
+     [:div {:style {:order "2"}}
+      [:img {:src "/images/section.png"
+             :alt "Professional hair styling at Color Me Crazy salon"
+             :style {:width "100%"
+                     :height "400px"
+                     :object-fit "cover"
+                     :border-radius "12px"
+                     :box-shadow "0 10px 25px rgba(0, 0, 0, 0.15)"}}]]]]])

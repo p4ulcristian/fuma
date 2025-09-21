@@ -2,6 +2,7 @@
   (:require
    [features.app.homepage.routes :as homepage-routes]
    [features.app.the-team.routes :as the-team-routes]
+   [features.app.pricing.routes :as pricing-routes]
    [features.app.login.routes :as login-routes]
    [router.frontend.zero :as router]
    [zero.frontend.re-frame-viewer.view :as re-frame-viewer]
@@ -9,6 +10,7 @@
 
 (def routes (concat homepage-routes/routes
                     the-team-routes/routes
+                    pricing-routes/routes
                     login-routes/routes))
 
 (defn view []

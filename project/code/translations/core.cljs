@@ -71,7 +71,6 @@
         :homepage/subtitle "Hair Salon - Coming Soon"
         :homepage/description "Get ready to transform your look! Our amazing hair salon is coming soon to bring you the latest styles, vibrant colors, and professional care. Stay tuned for our grand opening!"
         :homepage/contact-button "Contact Us"
-        :homepage/meet-team-button "Meet Our Team"
 
         ;; Homepage Sections
         :homepage/section-title "Professional Hair Styling"
@@ -81,6 +80,12 @@
         :homepage/service-special-events "Special Events"
 
         ;; Pricing Section
+        :pricing/page-title "Pricing - Color Me Crazy"
+        :pricing/hero-title "Our Pricing"
+        :pricing/hero-subtitle "Professional hair services with transparent pricing. Choose from our experienced team or master hairdresser for the perfect style."
+        :pricing/back-to-home "Back to Home"
+        :pricing/view-full-pricing "View Full Pricing"
+        :pricing/homepage-description "Professional hair services starting from competitive prices. See our full pricing list for detailed information."
         :pricing/title "Our Prices"
         :pricing/subtitle "Professional hair services with transparent pricing"
         :pricing/employee-prices "Employee Prices"
@@ -158,6 +163,10 @@
         :team/mens-cuts "Men's Cuts"
         :team/beard-styling "Beard Styling"
         :team/classic-cuts "Classic Cuts"
+        :team/meet-our-team "Meet Our Team"
+        :team/homepage-description "Our talented team of experienced hairdressers and stylists is here to bring your vision to life with passion and expertise."
+        :team/meet-full-team "Meet the Full Team"
+        :team/junior-stylist "Junior Stylist"
 
         ;; Features
         :features/the-team "The Team"
@@ -452,7 +461,6 @@
         :homepage/subtitle "Fodrászszalon - Hamarosan"
         :homepage/description "Készülj fel a nagy változásra! Csodálatos fodrászszalonunk hamarosan megnyílik, hogy a legújabb stílusokat, élénk színeket és professzionális gondoskodást hozza neked. Maradj velünk a nagy nyitás bejelentéséért!"
         :homepage/contact-button "Kapcsolat"
-        :homepage/meet-team-button "Ismerje Meg Csapatunkat"
 
         ;; Homepage Sections
         :homepage/section-title "Professzionális Hajformázás"
@@ -462,6 +470,12 @@
         :homepage/service-special-events "Különleges Alkalmak"
 
         ;; Pricing Section
+        :pricing/page-title "Árak - Color Me Crazy"
+        :pricing/hero-title "Áraink"
+        :pricing/hero-subtitle "Professzionális hajszolgáltatások átlátható árazással. Válasszon tapasztalt csapatunkból vagy mesterfodrászunkból a tökéletes stílusért."
+        :pricing/back-to-home "Vissza a Főoldalra"
+        :pricing/view-full-pricing "Teljes Árlista Megtekintése"
+        :pricing/homepage-description "Professzionális hajszolgáltatások versenyképes áraktól kezdve. Tekintse meg teljes árlistánkat a részletes információkért."
         :pricing/title "Áraink"
         :pricing/subtitle "Professzionális hajszolgáltatások átlátható árazással"
         :pricing/employee-prices "Munkatársi Árak"
@@ -539,6 +553,10 @@
         :team/mens-cuts "Férfi Vágások"
         :team/beard-styling "Szakáll Formázás"
         :team/classic-cuts "Klasszikus Vágások"
+        :team/meet-our-team "Ismerje Meg Csapatunkat"
+        :team/homepage-description "Tehetséges, tapasztalt fodrász és stylista csapatunk szenvedéllyel és szakértelemmel valósítja meg az elképzeléseit."
+        :team/meet-full-team "Teljes Csapat Megismerése"
+        :team/junior-stylist "Kezdő Stylista"
 
         ;; Features
         :features/the-team "A Csapat"

@@ -1,5 +1,5 @@
 goog.provide('features.app.zero.frontend.zero');
-features.app.zero.frontend.zero.routes = cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(features.app.homepage.routes.routes,features.app.the_team.routes.routes,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([features.app.login.routes.routes], 0));
+features.app.zero.frontend.zero.routes = cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(features.app.homepage.routes.routes,features.app.the_team.routes.routes,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([features.app.pricing.routes.routes,features.app.login.routes.routes], 0));
 features.app.zero.frontend.zero.view = (function features$app$zero$frontend$zero$view(){
 var router_data = new cljs.core.Keyword(null,"data","data",-232669377).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(router.frontend.zero.state));
 var current_path = new cljs.core.Keyword(null,"path","path",-188191168).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(router.frontend.zero.state));

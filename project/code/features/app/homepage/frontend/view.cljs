@@ -7,93 +7,48 @@
    [translations.core :as tr]
    [zero.frontend.re-frame :as rf]))
 
-(defn pricing-row [label price theme-colors]
-  [:div {:style {:display "flex" :justify-content "space-between" :padding "0.5rem 0"}}
-   [:span {:style {:color (get-in theme-colors [:text :secondary])}} label]
-   [:span {:style {:font-weight "600" :color (get-in theme-colors [:text :primary])}} price]])
 
-(defn pricing-category [title items theme-colors]
-  [:div {:style {:margin-bottom "2rem"}}
-   [:h4 {:style {:font-size "1.125rem" :font-weight "600" :color (get-in theme-colors [:accent :primary]) :margin "0 0 1rem 0"}} title]
-   [:div {:style {:display "flex" :flex-direction "column" :gap "0.5rem"}}
-    (for [[label price] items]
-      ^{:key label} [pricing-row label price theme-colors])]])
 
-(defn pricing-column [title note? items theme-colors master?]
-  [:div {:style (merge {:background (get-in theme-colors [:background :secondary])
-                        :border-radius "12px" :padding "2rem" :box-shadow (get-in theme-colors [:shadow :medium])}
-                       (when master? {:border (str "2px solid " (get-in theme-colors [:accent :primary]))}))}
-   [:h3 {:style {:font-size "1.5rem" :font-weight "600" :color (get-in theme-colors [:text :primary])
-                 :margin "0 0 1.5rem 0" :text-align "center"}} title]
-   (when note?
-     [:p {:style {:font-size "0.875rem" :color (get-in theme-colors [:text :tertiary])
-                  :text-align "center" :margin "0 0 1.5rem 0"}} (tr/tr :pricing/note)])
-   items])
-
-(defn employee-womens-haircuts []
-  [[(tr/tr :pricing/short) "6,500 Ft"]
-   [(tr/tr :pricing/medium) "8,000 Ft"]
-   [(tr/tr :pricing/long) "9,000 Ft"]
-   [(tr/tr :pricing/extra-long) "10,000 Ft"]
-   [(tr/tr :pricing/dry-cut) "4,000 Ft"]])
-
-(defn employee-mens-haircuts []
-  [[(tr/tr :pricing/short-cut) "4,200 Ft"]
-   [(tr/tr :pricing/medium-cut) "5,000 Ft"]
-   [(tr/tr :pricing/long-cut) "5,500 Ft"]
-   [(tr/tr :pricing/clipper-only) "3,500 Ft"]
-   [(tr/tr :pricing/beard-trim) "2,800 Ft"]
-   [(tr/tr :pricing/wash) "1,500 Ft"]])
-
-(defn employee-coloring []
-  [[(tr/tr :pricing/root-bleach) "2,500 Ft"]
-   [(tr/tr :pricing/full-bleach) "3,500 Ft"]
-   [(tr/tr :pricing/balayage) "3,000 Ft"]
-   [(tr/tr :pricing/highlights) "3,000 Ft"]
-   [(tr/tr :pricing/correction) "4,000 Ft"]])
-
-(defn master-womens-haircuts []
-  [[(tr/tr :pricing/short) "9,500 Ft"]
-   [(tr/tr :pricing/medium) "11,000 Ft"]
-   [(tr/tr :pricing/long) "13,000 Ft"]
-   [(tr/tr :pricing/extra-long) "14,500 Ft"]
-   [(tr/tr :pricing/dry-cut) "5,000 Ft"]])
-
-(defn master-mens-haircuts []
-  [[(tr/tr :pricing/short-cut) "5,200 Ft"]
-   [(tr/tr :pricing/medium-cut) "6,000 Ft"]
-   [(tr/tr :pricing/long-cut) "7,500 Ft"]
-   [(tr/tr :pricing/clipper-only) "4,200 Ft"]
-   [(tr/tr :pricing/beard-trim) "2,800 Ft"]
-   [(tr/tr :pricing/wash) "1,500 Ft"]])
-
-(defn master-coloring []
-  [[(tr/tr :pricing/root-bleach) "3,500 Ft"]
-   [(tr/tr :pricing/full-bleach) "4,500 Ft"]
-   [(tr/tr :pricing/balayage) "4,500 Ft"]
-   [(tr/tr :pricing/highlights) "4,500 Ft"]
-   [(tr/tr :pricing/correction) "6,000 Ft"]])
+(defn pricing-preview-card [title price description theme-colors]
+  "Simple pricing preview card"
+  [:div {:style {:background (get-in theme-colors [:background :secondary])
+                 :border-radius "12px" :padding "1.5rem" :text-align "center"
+                 :box-shadow (get-in theme-colors [:shadow :light])
+                 :transition "transform 0.3s ease"
+                 :min-width "250px"}
+         :on-mouse-enter #(set! (.-transform (.-style (.-target %))) "translateY(-3px)")
+         :on-mouse-leave #(set! (.-transform (.-style (.-target %))) "translateY(0px)")}
+   [:h4 {:style {:font-size "1.125rem" :font-weight "600" :color (get-in theme-colors [:text :primary])
+                 :margin "0 0 0.5rem 0"}} title]
+   [:p {:style {:font-size "1.5rem" :font-weight "700" :color (get-in theme-colors [:accent :primary])
+                :margin "0 0 0.5rem 0"}} price]
+   [:p {:style {:font-size "0.875rem" :color (get-in theme-colors [:text :secondary])
+                :margin "0"}} description]])
 
 (defn pricing-section [theme-colors]
-  [:section {:style {:width "100%" :padding "4rem 2rem" :background (get-in theme-colors [:background :primary])}}
-   [:div {:style {:max-width "1200px" :margin "0 auto" :text-align "center"}}
+  "Pricing preview section for homepage"
+  [:section {:style {:width "100%" :padding "4rem 2rem" :text-align "center"
+                     :background (get-in theme-colors [:background :primary])}}
+   [:div {:style {:max-width "1200px" :margin "0 auto"}}
     [:h2 {:style {:font-size "2.5rem" :font-weight "700" :color (get-in theme-colors [:text :primary])
-                  :margin "0 0 1rem 0" :font-family "'Dancing Script', cursive"}} (tr/tr :pricing/title)]
+                  :margin "0 0 1rem 0" :font-family "'Dancing Script', cursive"}}
+     (tr/tr :pricing/title)]
     [:p {:style {:font-size "1.125rem" :color (get-in theme-colors [:text :secondary])
-                 :margin "0 0 3rem 0"}} (tr/tr :pricing/subtitle)]
-    [:div {:style {:display "grid" :grid-template-columns "1fr 1fr" :gap "3rem"}}
-     [pricing-column (tr/tr :pricing/employee-prices) false
-      [:<>
-       [pricing-category (tr/tr :pricing/womens-haircut) (employee-womens-haircuts) theme-colors]
-       [pricing-category (tr/tr :pricing/mens-haircut) (employee-mens-haircuts) theme-colors]
-       [pricing-category (tr/tr :pricing/coloring) (employee-coloring) theme-colors]]
-      theme-colors false]
-     [pricing-column (tr/tr :pricing/master-prices) true
-      [:<>
-       [pricing-category (tr/tr :pricing/womens-haircut) (master-womens-haircuts) theme-colors]
-       [pricing-category (tr/tr :pricing/mens-haircut) (master-mens-haircuts) theme-colors]
-       [pricing-category (tr/tr :pricing/coloring) (master-coloring) theme-colors]]
-      theme-colors true]]]])
+                 :margin "0 0 3rem 0" :max-width "600px" :margin-left "auto" :margin-right "auto"}}
+     (tr/tr :pricing/homepage-description)]
+    [:div {:style {:display "flex" :justify-content "center" :flex-wrap "wrap"
+                   :gap "1.5rem" :margin-bottom "3rem"}}
+     [pricing-preview-card "Women's Haircut" "6,500 - 14,500 Ft" "Starting prices, varies by length" theme-colors]
+     [pricing-preview-card "Men's Haircut" "3,500 - 7,500 Ft" "Includes wash and styling" theme-colors]
+     [pricing-preview-card "Hair Coloring" "2,500 - 6,000 Ft" "Professional color services" theme-colors]]
+    [:div {:style {:margin-top "2rem"}}
+     [:a {:href "/pricing"
+          :style {:display "inline-block" :padding "1rem 2rem"
+                  :background (get-in theme-colors [:accent :gradient])
+                  :color (get-in theme-colors [:text :primary]) :text-decoration "none"
+                  :border-radius "8px" :font-weight "600" :font-size "1.125rem"
+                  :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
+      (tr/tr :pricing/view-full-pricing)]]]])
 
 
 (defn hero-logo [theme-colors]
@@ -129,6 +84,58 @@
                :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
    (tr/tr :homepage/contact-button)])
 
+(defn team-preview-card [member theme-colors]
+  "Preview card for team member on homepage"
+  [:div {:style {:background (get-in theme-colors [:background :secondary])
+                 :border-radius "12px" :padding "1.5rem" :text-align "center"
+                 :box-shadow (get-in theme-colors [:shadow :light])
+                 :transition "transform 0.3s ease"
+                 :min-width "250px"}
+         :on-mouse-enter #(set! (.-transform (.-style (.-target %))) "translateY(-3px)")
+         :on-mouse-leave #(set! (.-transform (.-style (.-target %))) "translateY(0px)")}
+   [:div {:style {:width "80px" :height "80px" :border-radius "50%"
+                  :background (get-in theme-colors [:accent :gradient])
+                  :display "flex" :align-items "center" :justify-content "center"
+                  :margin "0 auto 1rem auto" :overflow "hidden"
+                  :border (str "3px solid " (get-in theme-colors [:accent :primary]))}}
+    [:div {:style {:font-size "2rem" :color (get-in theme-colors [:text :primary])}}
+     (:emoji member "👨‍🦲")]]
+   [:h4 {:style {:font-size "1.125rem" :font-weight "600" :color (get-in theme-colors [:text :primary])
+                 :margin "0 0 0.25rem 0"}} (:name member)]
+   [:p {:style {:color (get-in theme-colors [:accent :primary]) :font-weight "500"
+                :font-size "0.875rem" :margin "0"}} (:role member)]])
+
+(defn team-section [theme-colors]
+  "Team preview section for homepage"
+  [:section {:style {:width "100%" :padding "4rem 2rem" :text-align "center"
+                     :background (get-in theme-colors [:background :primary])}}
+   [:div {:style {:max-width "1200px" :margin "0 auto"}}
+    [:h2 {:style {:font-size "2.5rem" :font-weight "700" :color (get-in theme-colors [:text :primary])
+                  :margin "0 0 1rem 0" :text-align "center"}}
+     (tr/tr :team/meet-our-team)]
+    [:p {:style {:font-size "1.125rem" :color (get-in theme-colors [:text :secondary])
+                 :margin "0 0 3rem 0" :max-width "600px" :margin-left "auto" :margin-right "auto"}}
+     (tr/tr :team/homepage-description)]
+    [:div {:style {:display "flex" :justify-content "center" :flex-wrap "wrap"
+                   :gap "1.5rem" :margin-bottom "3rem"}}
+     [team-preview-card {:name "Pintér Felicia"
+                         :role (tr/tr :team/master-hairdresser)
+                         :emoji "👩‍🦰"} theme-colors]
+     [team-preview-card {:name "Anna Kovács"
+                         :role (tr/tr :team/senior-stylist)
+                         :emoji "💇‍♀️"} theme-colors]
+     [team-preview-card {:name "Szabó Péter"
+                         :role (tr/tr :team/junior-stylist)
+                         :emoji "✂️"} theme-colors]]
+    [:div {:style {:margin-top "2rem"}}
+     [:a {:href "/the_team"
+          :style {:display "inline-block" :padding "1rem 2rem"
+                  :background (get-in theme-colors [:accent :gradient])
+                  :color (get-in theme-colors [:text :primary]) :text-decoration "none"
+                  :border-radius "8px" :font-weight "600" :font-size "1.125rem"
+                  :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
+      (tr/tr :team/meet-full-team)]]]])
+
 (defn hero-section [theme-colors]
   [:div {:style {:max-width "600px" :margin "0 auto" :padding "2rem" :text-align "center"}}
    [:div {:style {:display "flex" :flex-direction "column" :align-items "center"
@@ -137,16 +144,8 @@
     [hero-title theme-colors]
     [hero-subtitle theme-colors]]
    [hero-description theme-colors]
-   [:div {:style {:margin-top "2rem" :display "flex" :gap "1rem" :justify-content "center" :flex-wrap "wrap"}}
-    [hero-button theme-colors]
-    [:a {:href "/the_team"
-         :style {:display "inline-block" :padding "12px 24px"
-                 :background "transparent"
-                 :color (get-in theme-colors [:accent :primary])
-                 :text-decoration "none" :border-radius "8px" :font-weight "600"
-                 :font-size "1.125rem" :transition "all 0.2s"
-                 :border (str "2px solid " (get-in theme-colors [:accent :primary]))}}
-     (tr/tr :homepage/meet-team-button)]]])
+   [:div {:style {:margin-top "2rem" :display "flex" :justify-content "center"}}
+    [hero-button theme-colors]]])
 
 (defn service-badge [text theme-colors]
   [:div {:style {:padding "0.5rem 1rem" :background (get-in theme-colors [:background :tertiary])
@@ -266,6 +265,7 @@
                    :display "flex" :flex-direction "column" :align-items "center"
                    :justify-content "center" :position "relative"}}
      [hero-section theme-colors]
+     [team-section theme-colors]
      [salon-section theme-colors]
      [pricing-section theme-colors]
      [footer-section theme-colors]]))

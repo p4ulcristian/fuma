@@ -25,30 +25,39 @@
    [:p {:style {:font-size "0.875rem" :color (get-in theme-colors [:text :secondary])
                 :margin "0"}} description]])
 
+(defn- pricing-header [theme-colors]
+  [:<>
+   [:h2 {:style {:font-size "2.5rem" :font-weight "700" :color (get-in theme-colors [:text :primary])
+                 :margin "0 0 1rem 0" :font-family "'Dancing Script', cursive"}}
+    (tr/tr :pricing/title)]
+   [:p {:style {:font-size "1.125rem" :color (get-in theme-colors [:text :secondary])
+                :margin "0 0 3rem 0" :max-width "600px" :margin-left "auto" :margin-right "auto"}}
+    (tr/tr :pricing/homepage-description)]])
+
+(defn- pricing-cards [theme-colors]
+  [:div {:style {:display "flex" :justify-content "center" :flex-wrap "wrap"
+                 :gap "1.5rem" :margin-bottom "3rem"}}
+   [pricing-preview-card "Women's Haircut" "6,500 - 14,500 Ft" "Starting prices, varies by length" theme-colors]
+   [pricing-preview-card "Men's Haircut" "3,500 - 7,500 Ft" "Includes wash and styling" theme-colors]
+   [pricing-preview-card "Hair Coloring" "2,500 - 6,000 Ft" "Professional color services" theme-colors]])
+
+(defn- pricing-button [theme-colors]
+  [:div {:style {:margin-top "2rem"}}
+   [:a {:href "/pricing"
+        :style {:display "inline-block" :padding "1rem 2rem"
+                :background (get-in theme-colors [:accent :gradient])
+                :color (get-in theme-colors [:text :primary]) :text-decoration "none"
+                :border-radius "8px" :font-weight "600" :font-size "1.125rem"
+                :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
+    (tr/tr :pricing/view-full-pricing)]])
+
 (defn pricing-section [theme-colors]
-  "Pricing preview section for homepage"
   [:section {:style {:width "100%" :padding "4rem 2rem" :text-align "center"
                      :background (get-in theme-colors [:background :primary])}}
    [:div {:style {:max-width "1200px" :margin "0 auto"}}
-    [:h2 {:style {:font-size "2.5rem" :font-weight "700" :color (get-in theme-colors [:text :primary])
-                  :margin "0 0 1rem 0" :font-family "'Dancing Script', cursive"}}
-     (tr/tr :pricing/title)]
-    [:p {:style {:font-size "1.125rem" :color (get-in theme-colors [:text :secondary])
-                 :margin "0 0 3rem 0" :max-width "600px" :margin-left "auto" :margin-right "auto"}}
-     (tr/tr :pricing/homepage-description)]
-    [:div {:style {:display "flex" :justify-content "center" :flex-wrap "wrap"
-                   :gap "1.5rem" :margin-bottom "3rem"}}
-     [pricing-preview-card "Women's Haircut" "6,500 - 14,500 Ft" "Starting prices, varies by length" theme-colors]
-     [pricing-preview-card "Men's Haircut" "3,500 - 7,500 Ft" "Includes wash and styling" theme-colors]
-     [pricing-preview-card "Hair Coloring" "2,500 - 6,000 Ft" "Professional color services" theme-colors]]
-    [:div {:style {:margin-top "2rem"}}
-     [:a {:href "/pricing"
-          :style {:display "inline-block" :padding "1rem 2rem"
-                  :background (get-in theme-colors [:accent :gradient])
-                  :color (get-in theme-colors [:text :primary]) :text-decoration "none"
-                  :border-radius "8px" :font-weight "600" :font-size "1.125rem"
-                  :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
-      (tr/tr :pricing/view-full-pricing)]]]])
+    [pricing-header theme-colors]
+    [pricing-cards theme-colors]
+    [pricing-button theme-colors]]])
 
 
 (defn hero-logo [theme-colors]
@@ -105,36 +114,40 @@
    [:p {:style {:color (get-in theme-colors [:accent :primary]) :font-weight "500"
                 :font-size "0.875rem" :margin "0"}} (:role member)]])
 
+(defn- team-header [theme-colors]
+  [:<>
+   [:h2 {:style {:font-size "2.5rem" :font-weight "700" :color (get-in theme-colors [:text :primary])
+                 :margin "0 0 1rem 0" :text-align "center"}}
+    (tr/tr :team/meet-our-team)]
+   [:p {:style {:font-size "1.125rem" :color (get-in theme-colors [:text :secondary])
+                :margin "0 0 3rem 0" :max-width "600px" :margin-left "auto" :margin-right "auto"}}
+    (tr/tr :team/homepage-description)]])
+
+(defn- team-cards [theme-colors]
+  [:div {:style {:display "flex" :justify-content "center" :flex-wrap "wrap"
+                 :gap "1.5rem" :margin-bottom "3rem"}}
+   [team-preview-card {:name "Balog Antal (AnTi)" :role "Master Stylist" :emoji "👨‍🦲"} theme-colors]
+   [team-preview-card {:name "Pintér Felicia" :role "Senior Stylist" :emoji "👩‍🦰"} theme-colors]
+   [team-preview-card {:name "Lilo" :role "Fablehair Stylist" :emoji "💇‍♀️"} theme-colors]
+   [team-preview-card {:name "Gitta" :role "HairCraft Specialist" :emoji "✂️"} theme-colors]])
+
+(defn- team-button [theme-colors]
+  [:div {:style {:margin-top "2rem"}}
+   [:a {:href "/the_team"
+        :style {:display "inline-block" :padding "1rem 2rem"
+                :background (get-in theme-colors [:accent :gradient])
+                :color (get-in theme-colors [:text :primary]) :text-decoration "none"
+                :border-radius "8px" :font-weight "600" :font-size "1.125rem"
+                :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
+    (tr/tr :team/meet-full-team)]])
+
 (defn team-section [theme-colors]
-  "Team preview section for homepage"
   [:section {:style {:width "100%" :padding "4rem 2rem" :text-align "center"
                      :background (get-in theme-colors [:background :primary])}}
    [:div {:style {:max-width "1200px" :margin "0 auto"}}
-    [:h2 {:style {:font-size "2.5rem" :font-weight "700" :color (get-in theme-colors [:text :primary])
-                  :margin "0 0 1rem 0" :text-align "center"}}
-     (tr/tr :team/meet-our-team)]
-    [:p {:style {:font-size "1.125rem" :color (get-in theme-colors [:text :secondary])
-                 :margin "0 0 3rem 0" :max-width "600px" :margin-left "auto" :margin-right "auto"}}
-     (tr/tr :team/homepage-description)]
-    [:div {:style {:display "flex" :justify-content "center" :flex-wrap "wrap"
-                   :gap "1.5rem" :margin-bottom "3rem"}}
-     [team-preview-card {:name "Pintér Felicia"
-                         :role (tr/tr :team/master-hairdresser)
-                         :emoji "👩‍🦰"} theme-colors]
-     [team-preview-card {:name "Anna Kovács"
-                         :role (tr/tr :team/senior-stylist)
-                         :emoji "💇‍♀️"} theme-colors]
-     [team-preview-card {:name "Szabó Péter"
-                         :role (tr/tr :team/junior-stylist)
-                         :emoji "✂️"} theme-colors]]
-    [:div {:style {:margin-top "2rem"}}
-     [:a {:href "/the_team"
-          :style {:display "inline-block" :padding "1rem 2rem"
-                  :background (get-in theme-colors [:accent :gradient])
-                  :color (get-in theme-colors [:text :primary]) :text-decoration "none"
-                  :border-radius "8px" :font-weight "600" :font-size "1.125rem"
-                  :transition "transform 0.2s" :box-shadow (get-in theme-colors [:shadow :medium])}}
-      (tr/tr :team/meet-full-team)]]]])
+    [team-header theme-colors]
+    [team-cards theme-colors]
+    [team-button theme-colors]]])
 
 (defn hero-section [theme-colors]
   [:div {:style {:max-width "600px" :margin "0 auto" :padding "2rem" :text-align "center"}}
@@ -192,13 +205,18 @@
    [:p {:style {:font-size "1rem" :color (get-in theme-colors [:footer :text-secondary])
                 :line-height "1.6" :margin "0 0 1rem 0"}}
     (tr/tr :footer/company-description)]
-   [:div {:style {:display "flex" :gap "1rem" :margin-top "1rem"}}
-    [:a {:href "tel:+1234567890" :style {:color (get-in theme-colors [:footer :accent])
+   [:div {:style {:display "flex" :flex-direction "column" :gap "0.5rem" :margin-top "1rem"}}
+    [:a {:href "tel:+36209237975" :style {:color (get-in theme-colors [:footer :accent])
                                          :text-decoration "none" :font-size "0.875rem" :transition "color 0.2s"}}
-     (str "📞 " (tr/tr :footer/phone))]
-    [:a {:href "mailto:info@colormecrazy.com" :style {:color (get-in theme-colors [:footer :accent])
+     "📞 +36 20 923 7975 (AnTi)"]
+    [:a {:href "tel:+36300894587" :style {:color (get-in theme-colors [:footer :accent])
+                                         :text-decoration "none" :font-size "0.875rem" :transition "color 0.2s"}}
+     "📞 +36 30 089 4587 (Felícia)"]
+    [:a {:href "https://www.instagram.com/colorme_c_hair/" :target "_blank" :style {:color (get-in theme-colors [:footer :accent])
                                                       :text-decoration "none" :font-size "0.875rem" :transition "color 0.2s"}}
-     (str "✉️ " (tr/tr :footer/email))]]])
+     "📱 @colorme_c_hair"]
+    [:p {:style {:color (get-in theme-colors [:footer :text-secondary]) :font-size "0.875rem" :margin "0.5rem 0 0 0"}}
+     "📍 Szeged, Hungary"]]])
 
 (defn service-link [text theme-colors]
   [:li {:style {:margin "0.5rem 0"}}

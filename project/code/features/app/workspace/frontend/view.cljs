@@ -99,7 +99,7 @@
      (:workspace/description workspace)]]])
 
 
-(defn- feature-card 
+(defn- feature-card
   ([icon title description]
    [feature-card icon title description nil])
   ([icon title description link-url]

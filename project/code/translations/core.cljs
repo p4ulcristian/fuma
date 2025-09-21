@@ -83,6 +83,33 @@
         :homepage/description "Get ready to transform your look! Our amazing hair salon is coming soon to bring you the latest styles, vibrant colors, and professional care. Stay tuned for our grand opening!"
         :homepage/contact-button "Contact Us"
 
+        ;; Homepage Sections
+        :homepage/section-title "Professional Hair Styling"
+        :homepage/section-description "Experience the artistry of professional hair styling at our salon. Our skilled stylists create beautiful looks that enhance your natural beauty and boost your confidence."
+        :homepage/service-hair-styling "Hair Styling"
+        :homepage/service-wedding-hair "Wedding Hair"
+        :homepage/service-special-events "Special Events"
+
+        ;; Footer
+        :footer/company-description "Professional hair styling and beauty services. Creating beautiful looks that enhance your natural beauty and boost your confidence."
+        :footer/phone "(123) 456-7890"
+        :footer/email "info@colormecrazy.com"
+        :footer/services-title "Our Services"
+        :footer/service-cutting "Hair Cutting & Styling"
+        :footer/service-coloring "Hair Coloring"
+        :footer/service-wedding "Wedding Hair"
+        :footer/service-events "Special Events"
+        :footer/service-treatments "Hair Treatments"
+        :footer/hours-location-title "Hours & Location"
+        :footer/address "123 Beauty Street, Salon City, SC 12345"
+        :footer/hours-weekday "Monday - Friday: 9:00 AM - 7:00 PM"
+        :footer/hours-saturday "Saturday: 9:00 AM - 5:00 PM"
+        :footer/hours-sunday "Sunday: Closed"
+        :footer/copyright "© 2025 Color Me Crazy. All rights reserved."
+        :footer/privacy-policy "Privacy Policy"
+        :footer/terms-service "Terms of Service"
+        :footer/staff-login "Staff Login"
+
         ;; Settings Page
         :settings/title "Settings"
         :settings/description "Configure your workspace settings and company details"
@@ -361,6 +388,33 @@
         :homepage/subtitle "Fodrászszalon - Hamarosan"
         :homepage/description "Készülj fel a nagy változásra! Csodálatos fodrászszalonunk hamarosan megnyílik, hogy a legújabb stílusokat, élénk színeket és professzionális gondoskodást hozza neked. Maradj velünk a nagy nyitás bejelentéséért!"
         :homepage/contact-button "Kapcsolat"
+
+        ;; Homepage Sections
+        :homepage/section-title "Professzionális Hajformázás"
+        :homepage/section-description "Tapasztald meg a professzionális hajformázás művészetét szalonunkban. Képzett stylistjaink gyönyörű frizurákat alkotnak, amelyek kiemelik természetes szépséged és növelik önbizalmad."
+        :homepage/service-hair-styling "Hajformázás"
+        :homepage/service-wedding-hair "Menyasszonyi Frizura"
+        :homepage/service-special-events "Különleges Alkalmak"
+
+        ;; Footer
+        :footer/company-description "Professzionális hajformázás és szépségápolási szolgáltatások. Gyönyörű frizurákat alkotunk, amelyek kiemelik természetes szépséged és növelik önbizalmad."
+        :footer/phone "(123) 456-7890"
+        :footer/email "info@colormecrazy.com"
+        :footer/services-title "Szolgáltatásaink"
+        :footer/service-cutting "Hajvágás és Formázás"
+        :footer/service-coloring "Hajfestés"
+        :footer/service-wedding "Menyasszonyi Frizura"
+        :footer/service-events "Különleges Alkalmak"
+        :footer/service-treatments "Hajkezelések"
+        :footer/hours-location-title "Nyitvatartás és Helyszín"
+        :footer/address "Szépség utca 123, Szalon város, SC 12345"
+        :footer/hours-weekday "Hétfő - Péntek: 9:00 - 19:00"
+        :footer/hours-saturday "Szombat: 9:00 - 17:00"
+        :footer/hours-sunday "Vasárnap: Zárva"
+        :footer/copyright "© 2025 Color Me Crazy. Minden jog fenntartva."
+        :footer/privacy-policy "Adatvédelmi Irányelvek"
+        :footer/terms-service "Felhasználási Feltételek"
+        :footer/staff-login "Személyzet Bejelentkezés"
 
         ;; Settings Page
         :settings/title "Beállítások"

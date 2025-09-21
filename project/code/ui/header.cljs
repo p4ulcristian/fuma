@@ -49,9 +49,8 @@
   (get-in @router/state [:parameters :path :workspace-id]))
 
 (defn handle-logo-click []
-  "Navigate to workspace dashboard when logo/title is clicked"
-  (when-let [workspace-id (get-workspace-id)]
-    (router/navigate! {:path (str "/app/" workspace-id)})))
+  "Navigate to homepage when logo/title is clicked"
+  (router/navigate! {:path "/"}))
 
 ;; Event handlers
 (defn handle-language-toggle [current-language]

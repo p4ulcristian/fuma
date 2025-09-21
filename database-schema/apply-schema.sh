@@ -1,0 +1,1 @@
+./atlas.sh schema apply --env dev --url $EXPERTLIFT_DB_URL

@@ -1,0 +1,21 @@
+=== Development server started at Sun Sep 21 18:16:07 CEST 2025 ===
+[SHADOW-CLJS] shadow-cljs - config: /Users/paul/projects/colormecrazy/shadow-cljs.edn
+[WEBPACK] [webpack-cli] Configuration with the name "flex" was not found. Configuration with the name "site" was not found. Configuration with the name "labs" was not found.
+[SHADOW-CLJS] shadow-cljs - updating dependencies
+[SHADOW-CLJS] shadow-cljs - dependencies updated
+[BACKEND] Downloading: org/clojure/clojure/maven-metadata.xml from central
+[SHADOW-CLJS] No config for build "flex" found.
+[SHADOW-CLJS] No config for build "site" found.
+[SHADOW-CLJS] No config for build "labs" found.
+[SHADOW-CLJS] Build id required.
+[BACKEND] nrepl port saved to 7888 -> ./.nrepl-port
+[BACKEND] WARNING: A restricted method in java.lang.System has been called
+[BACKEND] WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/Users/paul/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar)
+[BACKEND] WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+[BACKEND] WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+[BACKEND] 
+[BACKEND] Starting server...
+[BACKEND] [94m🚀 Server starting on port 3002[0m
+[CHROME] Failed to connect to Chrome DevTools Protocol
+[CHROME] Make sure Chrome is running with: --remote-debugging-port=9222
+[CHROME] Error: No inspectable targets

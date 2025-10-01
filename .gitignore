@@ -55,6 +55,9 @@ docker-compose.override.yml
 *.sqlite
 *.sqlite3
 
+# User data files (persisted via Railway volume)
+data/newsletter_subscriptions.edn
+
 # Build artifacts
 *.jar
 *.war
@@ -127,3 +130,6 @@ ehthumbs_vista.db
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*.lsp/
 .lsp/
+.shadow-cljs
+project/resources/public/js/core/cljs-runtime
+log.txt

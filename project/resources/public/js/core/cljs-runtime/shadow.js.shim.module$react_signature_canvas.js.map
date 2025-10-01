@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"shadow.js.shim.module$react_signature_canvas.js",
-"lineCount":5,
-"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,8CAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,qDAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,6BAAf,GAA+CH,MAAOC,CAAAA,EAAGG,CAAAA,cAAV,CAAyB,wBAAzB,CAA/C,GAAoGC,aAAA,CAAc,wBAAd,CAApG;AACAC,mDAAoDC,CAAAA,OAApD,GAA8DP,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,6BAA7E;;",
-"sources":["shadow.js.shim.module$react_signature_canvas.js"],
-"sourcesContent":["goog.provide(\"shadow.js.shim.module$react_signature_canvas\");\ngoog.provide(\"module$shadow_js_shim_module$react_signature_canvas\");\nshadow.js.shim.module$react_signature_canvas = shadow.js.nativeProvides[\"react-signature-canvas\"] = shadow$bridge(\"react-signature-canvas\");\nmodule$shadow_js_shim_module$react_signature_canvas.default = shadow.js.shim.module$react_signature_canvas;\n"],
-"names":["goog","provide","shadow","js","shim","module$react_signature_canvas","nativeProvides","shadow$bridge","module$shadow_js_shim_module$react_signature_canvas","default"]
-}

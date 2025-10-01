@@ -2,6 +2,7 @@
   (:require
    [users.backend.resolvers :as users]
    [users.backend.db :as user-db]
+   [features.app.homepage.backend.newsletter :as newsletter]
    [cheshire.core]))
 
 ;; Error handling helpers
@@ -52,7 +53,7 @@
 
 (def write-queries
   "Write operations - mapped to handler functions"
-  {})
+  {:newsletter/subscribe #'newsletter/subscribe-newsletter})
 
 (defn get-query-type
   "Returns query type based on config"

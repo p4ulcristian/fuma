@@ -4,18 +4,18 @@
    [features.app.homepage.frontend.components.section-wrapper :as section]))
 
 (def goals-data
-  [{:image "/images/egeszseg_es_vitalitas.png"
-    :title "Egészség és vitalitás"}
-   {:image "/images/kiegensulyozott_parkapcsolat.png"
+  [{:image "/images/kiegensulyozott_parkapcsolat.png"
     :title "Kiegyensúlyozott párkapcsolat"}
+   {:image "/images/egeszseg_es_vitalitas.png"
+    :title "Egészség és vitalitás (energia)"} 
+   {:image "/images/tethelyzeteken_felulemelkedes.png"
+    :title "Téthelyzeteken való felülemelkedés"}
    {:image "/images/penz_es_anyagi_biztonsag.png"
     :title "Pénz és anyagi biztonság"}
-   {:image "/images/onbizalom_es_kitartas.png"
-    :title "Önbizalom és kitartás"}
-   {:image "/images/tudatos_vezetoi_technikak.png"
-    :title "Tudatos vezetői technikák"}
    {:image "/images/harmonikus_szulo_gyerek_kapcsolat.png"
-    :title "Harmonikus szülő-gyerek kapcsolat"}])
+    :title "Harmonikus szülő-gyerek kapcsolat"} 
+   {:image "/images/onbizalom_es_kitartas.png"
+    :title "Önbizalom és kitartás"}])
 
 (defn goals-grid-section
   "Section showing life areas that can be improved"

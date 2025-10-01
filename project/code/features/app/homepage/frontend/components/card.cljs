@@ -8,12 +8,15 @@
                  :overflow "hidden"
                  :box-shadow "0 8px 20px rgba(0, 0, 0, 0.1)"
                  :transition "transform 0.3s ease"
-                 :cursor "pointer"}}
+                 :cursor "pointer"
+                 :min-height "450px"
+                 :display "flex"
+                 :flex-direction "column"}}
    [:img {:src image-src
           :alt title
           :style {:width "100%"
-                  :height "300px"
-                  :object-fit "cover"}}]
+                  :height "auto"
+                  :display "block"}}]
    [:div {:style {:position "absolute"
                   :bottom "0"
                   :left "0"

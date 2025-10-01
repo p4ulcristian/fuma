@@ -4,12 +4,12 @@
    [features.app.homepage.frontend.components.section-wrapper :as section]))
 
 (def audience-data
-  [{:image "/images/super_power_diakoknak.png"
-    :title "Diákoknak"
-    :description "Növeld a koncentrációdat és teljesítményedet a tanulásban"}
-   {:image "/images/sportolokent_jobban_teljesitenel.png"
+  [{:image "/images/sportolokent_jobban_teljesitenel.png"
     :title "Sportolóknak"
     :description "Fejleszd a mentális fókuszodat és állóképességedet"}
+   {:image "/images/super_power_diakoknak.png"
+    :title "Diákoknak"
+    :description "Növeld a koncentrációdat és teljesítményedet a tanulásban"}
    {:image "/images/szeretnel_olyan szulove_valni.png"
     :title "Szülőknek"
     :description "Találd meg az egyensúlyt és a nyugalmat a családi életben"}

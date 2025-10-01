@@ -61,9 +61,9 @@
                   :line-height "1.2"
                   :margin "0 0 20px 0"
                   :max-width "600px"}}
-     "A világ elsö személyre
+     "A világ első személyre
 szabható, többszáz
-megerösítést tartalmazó
+megerősítést tartalmazó
 applikációja"]
 
     ;; Subheadline

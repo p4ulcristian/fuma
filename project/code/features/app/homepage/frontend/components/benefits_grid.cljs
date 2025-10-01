@@ -33,7 +33,7 @@
   []
   [section/section {:background-color "#F8F7FF"}
    [section/section-title 
-    "Szerezd meg ezt az egyedülálló fejlesztést, és érj el érezhető eredménzeket rekord idő alatt!"]
+    "Szerezd meg ezt az egyedülálló fejlesztést, és érj el érezhető eredményeket rekord idő alatt!"]
    [section/section-subtitle "Ha céljaid vannak, érd el gyorsabban!"]
 
    [:div {:style {:display "grid"

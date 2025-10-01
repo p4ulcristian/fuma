@@ -5,30 +5,30 @@
 
 (def audience-data
   [{:image "/images/sportolokent_jobban_teljesitenel.png"
-    :title "Sportolóknak"
-    :description "Fejleszd a mentális fókuszodat és állóképességedet"}
+    :title "Sportolók jobban teljesítenél"
+    :description "Nem tudsz elaludni? Többszáz ember használja a FUMÁT a gyors elalváshoz."}
    {:image "/images/super_power_diakoknak.png"
-    :title "Diákoknak"
-    :description "Növeld a koncentrációdat és teljesítményedet a tanulásban"}
+    :title "Super-POWER diákoknak!"
+    :description "Sokszorozd meg tanulási képességeidet, tanulj gyorsabban és hatékonyabban, mint a társaid! A vizsgadrukk a múltté."}
    {:image "/images/szeretnel_olyan szulove_valni.png"
-    :title "Szülőknek"
-    :description "Találd meg az egyensúlyt és a nyugalmat a családi életben"}
+    :title "Szeretnél olyan szülővé válni, akinek jó a gyerekének lenni?"
+    :description "Sokszorozd meg a tanulási képességeidet, tanulj gyorsabban és hatékonyabban, mint a társaid! A vizsgadrukk a múltté."}
    {:image "/images/tudatos_stabil_jelenlet.png"
-    :title "Vezetőknek"
-    :description "Erősítsd a döntéshozatali képességeidet és vezető készségeidet"}
+    :title "Tudatos stabil jelenlét"
+    :description "Ebben a mesterségesen túlpörgetett, figyelemzavaros világban egyetlen dolog hoz valódi eredményt: A FÓKUSZ."}
+   {:image "/images/tudatos_vezetoi_technikak.png"
+    :title "Tudatos vezetői technikák!"
+    :description "Válj olyan vezetővé akit követnek!"}
    {:image "/images/tanarkent_edzokent_tarskent_segitenel.png"
-    :title "Tanároknak"
-    :description "Őrizd meg a nyugalmadat és energiádat a tanítás közben"}
-   {:image "/images/tethelyzeteken_felulemelkedes.png"
-    :title "Mindenkinek"
-    :description "Aki szeretne boldogabb és kiegyensúlyozottabb lenni"}])
+    :title "Tanárként, Edzőként, Társként segítenél?"
+    :description "Kutatások szerint az igazán nagy dolgok eléréséhez szükségünk van egy támogató személyre. Ha Te ilyen vagy, szuper!"}])
 
 (defn target-audience-section
   "Section showing who FUMA is for"
   []
   [section/section {:background-color "#ffffff"}
-   [section/section-title "Kinek szól a FÚMÁ?"]
-   [section/section-subtitle "Bárhol tartasz is az életedben, a FÚMÁ segít elérni a céljaidat"]
+   [section/section-title "Kinek szól a FUMA?"]
+   [section/section-subtitle "Nap mint nap támogat, bárhol is tartasz az utadon. Vezetőként, szülőként, sportolóként vagy tanulóként - itt a helyed."]
 
    [:div {:style {:display "grid"
                   :grid-template-columns "repeat(auto-fit, minmax(320px, 1fr))"

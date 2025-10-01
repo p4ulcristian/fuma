@@ -90,3 +90,32 @@
                 (println "Newsletter subscription successful:" email)
                 {:success true :message "Sikeres feliratkozás!"})
               {:success false :error "Nem sikerült menteni a feliratkozást. Kérlek próbáld újra!"})))))))
+
+(defn subscriptions-to-csv
+  "Convert subscriptions vector to CSV string"
+  [subscriptions]
+  (let [header "Email,Name\n"
+        rows (map (fn [[email name]]
+                    (str email "," name))
+                  subscriptions)]
+    (str header (str/join "\n" rows))))
+
+(defn export-csv-handler
+  "HTTP handler to export newsletter subscriptions as CSV"
+  [request]
+  (let [auth-key (get-in request [:params :key])
+        expected-key "fuma2025newsletter"]
+    (if (= auth-key expected-key)
+      (do
+        (println "CSV export requested - authentication successful")
+        (let [subscriptions (read-subscriptions)
+              csv-content (subscriptions-to-csv subscriptions)]
+          {:status 200
+           :headers {"Content-Type" "text/csv; charset=utf-8"
+                     "Content-Disposition" "attachment; filename=\"newsletter_subscriptions.csv\""}
+           :body csv-content}))
+      (do
+        (println "CSV export requested - authentication failed")
+        {:status 401
+         :headers {"Content-Type" "text/plain"}
+         :body "Unauthorized - Invalid key"}))))

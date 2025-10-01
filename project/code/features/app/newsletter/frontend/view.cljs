@@ -33,14 +33,37 @@
                      :padding "40px 20px"}}
 
        ;; Header
-       [:div {:style {:margin-bottom "40px"}}
-        [:h1 {:style {:font-size "2.5rem"
-                      :margin-bottom "10px"
-                      :color "#14b8a6"}}
-         "Newsletter Subscriptions"]
-        [:p {:style {:font-size "1.1rem"
-                     :color "#666"}}
-         "List of all newsletter subscribers"]]
+       [:div {:style {:display "flex"
+                      :justify-content "space-between"
+                      :align-items "center"
+                      :margin-bottom "40px"}}
+        [:div
+         [:h1 {:style {:font-size "2.5rem"
+                       :margin-bottom "10px"
+                       :color "#14b8a6"}}
+          "Newsletter Subscriptions"]
+         [:p {:style {:font-size "1.1rem"
+                      :color "#666"}}
+          "List of all newsletter subscribers"]]
+
+        ;; Download CSV button
+        [:a {:href "/api/newsletter/export?key=fuma2025newsletter"
+             :download "newsletter_subscriptions.csv"
+             :style {:display "inline-block"
+                     :padding "12px 24px"
+                     :background-color "#14b8a6"
+                     :color "white"
+                     :text-decoration "none"
+                     :border-radius "8px"
+                     :font-weight "600"
+                     :font-size "1rem"
+                     :transition "background-color 0.2s ease"
+                     :box-shadow "0 2px 4px rgba(0,0,0,0.1)"
+                     :cursor "pointer"
+                     :white-space "nowrap"}
+             :on-mouse-enter #(set! (-> % .-target .-style .-backgroundColor) "#0d9488")
+             :on-mouse-leave #(set! (-> % .-target .-style .-backgroundColor) "#14b8a6")}
+         "📥 Download CSV"]]
 
        ;; Loading state
        (when (:loading? @state)

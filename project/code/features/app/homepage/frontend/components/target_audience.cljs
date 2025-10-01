@@ -36,6 +36,6 @@
                   :margin-top "40px"}}
     (for [audience audience-data]
       ^{:key (:title audience)}
-      [card/photo-card {:image-src (:image audience)
-                        :title (:title audience)
-                        :description (:description audience)}])]])
+      [card/audience-card {:image-src (:image audience)
+                           :title (:title audience)
+                           :description (:description audience)}])]])

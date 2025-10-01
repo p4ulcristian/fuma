@@ -43,7 +43,7 @@
                  :text-align "center"}}
    [:img {:src image-src
           :alt title
-          :style {:width "120px" 
+          :style {:width "120px"
                   :margin-bottom "20px"}}]
    [:h3 {:style {:margin "0 0 12px 0"
                  :font-size "22px"
@@ -55,3 +55,28 @@
                 :line-height "1.6"
                 :color "#666666"}}
     description]])
+
+(defn audience-card
+  "Card with rounded image and title below"
+  [{:keys [image-src title description]}]
+  [:div {:style {:display "flex"
+                 :flex-direction "column"
+                 :cursor "pointer"
+                 :transition "transform 0.3s ease"}}
+   [:img {:src image-src
+          :alt title
+          :style {:width "100%"
+                  :height "auto"
+                  :border-radius "20px"
+                  :display "block"}}]
+   [:h3 {:style {:margin "20px 0 8px 0"
+                 :font-size "20px"
+                 :font-weight "600"
+                 :color "#2D2D2D"}}
+    title]
+   (when description
+     [:p {:style {:margin "0"
+                  :font-size "16px"
+                  :line-height "1.6"
+                  :color "#666666"}}
+      description])])

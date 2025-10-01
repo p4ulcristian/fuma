@@ -57,5 +57,7 @@ RUN         ./start-prod.sh
 FROM      openjdk:23-slim
 COPY      --from=compiler /root                  /root/
 WORKDIR   /root/
+# Create /data directory for persistent storage (newsletter subscriptions, etc.)
+RUN       mkdir -p /data
 # JAR is already built, just run it
 CMD       ["java", "-jar", "fuma.jar"]

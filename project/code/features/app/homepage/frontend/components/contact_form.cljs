@@ -20,24 +20,27 @@
                   :bottom "0"
                   :background "linear-gradient(135deg, rgba(91, 78, 196, 0.9) 0%, rgba(139, 127, 216, 0.9) 100%)"}}]
 
-   [:div {:style {:max-width "600px"
+   [:div {:style {:max-width "1200px"
                   :margin "0 auto"
                   :position "relative"
-                  :z-index "10"}}
+                  :z-index "10"
+                  :padding "0 20px"}}
 
-    [:h2 {:style {:color "#ffffff"
-                  :font-size "42px"
-                  :font-weight "700"
-                  :text-align "center"
-                  :margin "0 0 20px 0"}}
-     "Indítsd el még ma a fejlődést!"]
+    [:div {:style {:max-width "600px"}}
 
-    [:p {:style {:color "#ffffff"
-                 :font-size "18px"
-                 :text-align "center"
-                 :margin "0 0 40px 0"
-                 :opacity "0.95"}}
-     "Hagyd itt az email címedet, és értesítünk, amikor elérhető lesz a FÚMÁ!"]
+     [:h2 {:style {:color "#ffffff"
+                   :font-size "42px"
+                   :font-weight "700"
+                   :text-align "left"
+                   :margin "0 0 20px 0"}}
+      "Iratkozz fel ma!"]
+
+     [:p {:style {:color "#ffffff"
+                  :font-size "18px"
+                  :text-align "left"
+                  :margin "0 0 40px 0"
+                  :opacity "0.95"}}
+      "Hagyd itt az email címedet, és értesítünk, amikor elérhető lesz a FUMA!"]
 
     ;; Form
     [:form {:style {:display "flex"
@@ -60,16 +63,8 @@
                       :font-size "16px"
                       :background "#ffffff"}}]
 
-     [:textarea {:placeholder "Üzeneted (opcionális)"
-                 :rows "4"
-                 :style {:padding "16px 20px"
-                         :border "none"
-                         :border-radius "10px"
-                         :font-size "16px"
-                         :background "#ffffff"
-                         :resize "vertical"}}]
 
-     [:div {:style {:text-align "center"
-                    :margin-top "10px"}}
-      [button/primary-button {:text "Feliratkozom!"
-                              :on-click #(println "Form submitted")}]]]]])
+      [:div {:style {:text-align "left"
+                     :margin-top "10px"}}
+       [button/primary-button {:text "Feliratkozom!"
+                               :on-click #(println "Form submitted")}]]]]]])

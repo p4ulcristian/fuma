@@ -133,3 +133,4 @@ ehthumbs_vista.db
 .shadow-cljs
 project/resources/public/js/core/cljs-runtime
 log.txt
+.DS_Store

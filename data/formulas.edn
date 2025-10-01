@@ -1,7 +1,0 @@
-{:one-piece-rim-part-price-formula
- "([:quantity] * 
-   ([:look-cost] * [:size] * [:material] * [:condition]))",
-
- :three-piece-rim-part-price-formula
- "([:quantity] * 
-   ([:look-cost] * [:size] * [:material] * [:condition]))"} 

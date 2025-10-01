@@ -8,73 +8,46 @@
   [:div {:style {:background "#7B75E8"
                  :min-height "100vh"
                  :display "flex"
-                 :align-items "center"
-                 :justify-content "center"
+                 :flex-direction "column"
                  :position "relative"
                  :overflow "hidden"
-                 :border-bottom-left-radius "100px"
-                  :border-bottom-right-radius "100px"
-                 :padding "0 20px 40px 20px"}}
+                 :padding "0"}}
+   [:div {:class "hero-wrapper"}
 
-   ;; Header with logo - absolute positioned
-   [:header {:style {:position "absolute"
-                     :top "0"
-                     :left "0"
-                     :right "0"
-                     :z-index "100"
-                     :padding "0"}}
-    [:div {:style {:max-width "1200px"
-                   :margin "0 auto"
-                   :display "flex"
-                   :align-items "center"
-                   :justify-content "space-between"}}
-     [:img {:src "/images/fuma_logo_landing_page_fejlecbe.png"
-            :alt "FUMA"
-            :style {:height "150px"
-                    :width "auto"}}]]]
+    ;; Header with logo - relative positioned
+    [:header {:style {:position "relative"
+                      :width "100%"
+                      :z-index "100"
+                      :padding "0"}}
+     [:div {:style {:max-width "1200px"
+                    :margin "0 auto"
+                    :display "flex"
+                    :align-items "center"
+                    :justify-content "space-between"
+                    :padding "0 20px"}}
+      [:img {:src "/images/fuma_logo_landing_page_fejlecbe.png"
+             :alt "FUMA"
+             :class "hero-logo"}]]]
 
-   ;; Background illustration
-   [:img {:src "/images/fejleckep.png"
-          :alt "FUMA meditation illustration"
-          :style {:position "absolute"
-                  :right "0"
-                  :top "0"
-                  :height "100%"
-                  :width "auto"
-                  :object-fit "cover"
-                  :object-position "70% top"
-                  :opacity "0.95"}}]
+    ;; Background illustration
+    [:img {:src "/images/fejleckep.png"
+           :alt "FUMA meditation illustration"
+           :class "hero-background"}]
 
-   ;; Content container
-   [:div {:style {:max-width "1200px"
-                  :width "100%"
-                  :display "flex"
-                  :flex-direction "column"
-                  :align-items "flex-start"
-                  :z-index "10"
-                  :padding-left "5%"}}
+    ;; Content container
+    [:div {:class "hero-content"}
 
-    ;; Headline
-    [:h1 {:style {:color "#ffffff"
-                  :font-size "48px"
-                  :font-weight "700"
-                  :line-height "1.2"
-                  :margin "0 0 20px 0"
-                  :max-width "600px"}}
-     "A világ első személyre
+     ;; Headline
+     [:h1 {:class "hero-headline"}
+      "A világ első személyre
 szabható, többszáz
 megerősítést tartalmazó
 applikációja"]
 
-    ;; Subheadline
-    [:p {:style {:color "#ffffff"
-                 :font-size "20px"
-                 :line-height "1.6"
-                 :margin "0 0 40px 0"
-                 :max-width "600px"
-                 :opacity "0.95"}}
-     "Programozd hatékonyan a tudatalattidat az olimpikonok módszerével és érj el érezhető eredményeket a lehető leggyorsabban!"]
+     ;; Subheadline
+     [:p {:class "hero-subheadline"}
+      "Programozd hatékonyan a tudatalattidat az olimpikonok módszerével és érj el érezhető eredményeket a lehető leggyorsabban!"]
 
-    ;; CTA Button
-    [button/primary-button {:text "Feliratkozom" 
-                            :href "#contact"}]]])
+     ;; CTA Button
+     [button/primary-button {:text "Feliratkozom"
+                             :href "#contact"}]]]])

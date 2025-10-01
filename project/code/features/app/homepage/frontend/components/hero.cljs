@@ -12,6 +12,8 @@
                  :justify-content "center"
                  :position "relative"
                  :overflow "hidden"
+                 :border-bottom-left-radius "100px"
+                  :border-bottom-right-radius "100px"
                  :padding "0 20px 40px 20px"}}
 
    ;; Background illustration
@@ -57,5 +59,5 @@ applikációja"]
      "Programozd hatékonyan a tudatalattidat az olimpikonok módszerével és érj el érezhető eredményeket a lehető leggyorsabban!"]
 
     ;; CTA Button
-    [button/primary-button {:text "Kezdjük el!"
+    [button/primary-button {:text "Feliratkozom" 
                             :href "#contact"}]]])

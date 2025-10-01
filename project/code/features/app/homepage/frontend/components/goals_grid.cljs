@@ -21,8 +21,8 @@
   "Section showing life areas that can be improved"
   []
   [section/section {:background-color "#F8F7FF"}
-   [section/section-title "Mit érinthet el a FÚMÁ-val?"]
-   [section/section-subtitle "Válassz azok közül a területek közül, amelyeket szeretnél fejleszteni az életedben"]
+   [section/section-title "Mit érhetsz a FUMA-val?"]
+   [section/section-subtitle "az olimpikonok és profi sportolók és üzletemberek módszereivel"]
 
    [:div {:style {:display "grid"
                   :grid-template-columns "repeat(auto-fit, minmax(320px, 1fr))"

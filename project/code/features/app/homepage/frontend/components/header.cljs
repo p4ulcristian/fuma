@@ -1,13 +1,9 @@
 (ns features.app.homepage.frontend.components.header)
 
 (defn header
-  "Fixed header with FUMA logo"
+  "Header with FUMA logo"
   []
-  [:header {:style {:position "fixed"
-                    :top "0"
-                    :left "0"
-                    :right "0"
-                    :z-index "1000"
+  [:header {:style {:position "relative"
                     :padding "0"}}
    [:div {:style {:max-width "1200px"
                   :margin "0 auto"

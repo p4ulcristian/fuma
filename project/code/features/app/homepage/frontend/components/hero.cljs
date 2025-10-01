@@ -16,6 +16,23 @@
                   :border-bottom-right-radius "100px"
                  :padding "0 20px 40px 20px"}}
 
+   ;; Header with logo - absolute positioned
+   [:header {:style {:position "absolute"
+                     :top "0"
+                     :left "0"
+                     :right "0"
+                     :z-index "100"
+                     :padding "0"}}
+    [:div {:style {:max-width "1200px"
+                   :margin "0 auto"
+                   :display "flex"
+                   :align-items "center"
+                   :justify-content "space-between"}}
+     [:img {:src "/images/fuma_logo_landing_page_fejlecbe.png"
+            :alt "FUMA"
+            :style {:height "150px"
+                    :width "auto"}}]]]
+
    ;; Background illustration
    [:img {:src "/images/fejleckep.png"
           :alt "FUMA meditation illustration"

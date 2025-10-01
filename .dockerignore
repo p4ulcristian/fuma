@@ -85,6 +85,6 @@ target/
 # Node modules will be installed fresh in Docker
 node_modules/
 
-# Lock files that might cause version conflicts
-package-lock.json
+# Lock files - KEEP package-lock.json for reproducible builds
+# package-lock.json should NOT be excluded
 yarn.lock

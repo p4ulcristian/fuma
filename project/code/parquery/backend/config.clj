@@ -3,6 +3,7 @@
    [users.backend.resolvers :as users]
    [users.backend.db :as user-db]
    [features.app.homepage.backend.newsletter :as newsletter]
+   [features.app.newsletter.backend.newsletter :as newsletter-backend]
    [cheshire.core]))
 
 ;; Error handling helpers
@@ -49,7 +50,8 @@
 ;; Query mappings to functions
 (def read-queries
   "Read operations - mapped to handler functions"
-  {:user/current #'get-current-user})
+  {:user/current #'get-current-user
+   :newsletter/get-all-subscriptions #'newsletter-backend/get-all-subscriptions})
 
 (def write-queries
   "Write operations - mapped to handler functions"

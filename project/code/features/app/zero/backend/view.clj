@@ -6,8 +6,7 @@
 (defn loading []
   [:div {:style "height: 100vh; width: 100vw; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #f8f9fa; gap: 20px;"}
    [:div {:class "loading-brand-container"}
-    [:img {:class "loading-logo" :src "/logo/logo-256.webp" :alt "Logo"}] 
-    [:div {:class "loading-brand"} "Color Me Crazy"]]
+    [:img {:class "loading-logo" :src "/images/fuma_logo_landing_page_fejlecbe.png" :alt "Fuma Logo"}]]
    [:div {:class "loading-spinner"}]])
 
 (defn font-awesome-include []
@@ -22,7 +21,7 @@
    [:head
     [:meta {:charset "UTF-8"}]
     [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
-    [:title "ColorMeCrazy"]
+    [:title "Fuma"]
 
     ;; Favicons
     [:link {:rel "icon" :type "image/x-icon" :href "/favicon.ico"}]

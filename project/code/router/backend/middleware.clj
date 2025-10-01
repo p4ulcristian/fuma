@@ -5,6 +5,7 @@
    [ring.middleware.params               :refer [wrap-params]]
    [ring.middleware.transit              :refer [wrap-transit-params]]
    [ring.middleware.gzip                 :refer [wrap-gzip]]
+   [ring.middleware.basic-authentication :refer [wrap-basic-authentication]]
    [zero.backend.state.env :as env]))
 
 (defn wrap-require-authentication
@@ -25,6 +26,17 @@
           {:status 302
            :headers {"Location" "/login"}
            :body ""})))))
+
+(defn newsletter-auth-fn
+  "Authentication function for newsletter basic auth"
+  [username password]
+  (and (= username "NewFuma")
+       (= password "NewFuma2025@")))
+
+(defn wrap-newsletter-basic-auth
+  "Wrap handler with basic authentication for newsletter access"
+  [handler]
+  (wrap-basic-authentication handler newsletter-auth-fn))
 
 (defn middleware []
   {:middleware [;#(wrap-reload           % {:dirs ["/source-code"]});watched-dirs})  

@@ -8,8 +8,7 @@
                  :overflow "hidden"
                  :box-shadow "0 8px 20px rgba(0, 0, 0, 0.1)"
                  :transition "transform 0.3s ease"
-                 :cursor "pointer"
-                 :min-height "450px"
+                 :cursor "pointer" 
                  :display "flex"
                  :flex-direction "column"}}
    [:img {:src image-src

@@ -6,7 +6,7 @@
 (def audience-data
   [{:image "/images/sportolokent_jobban_teljesitenel.png"
     :title "Sportolóként jobban teljesítenél"
-    :description "Nem tudsz elaludni? Többszáz ember használja a FUMÁT a gyors elalváshoz."}
+    :description "Használd akár koncentrációra, energetizálásra, vagy regenerációra nagyobb sportteljesítményekért!"}
    {:image "/images/super_power_diakoknak.png"
     :title "Super-POWER diákoknak!"
     :description "Sokszorozd meg tanulási képességeidet, tanulj gyorsabban és hatékonyabban, mint a társaid! A vizsgadrukk a múltté."}

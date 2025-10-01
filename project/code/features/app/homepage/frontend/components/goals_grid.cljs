@@ -7,7 +7,7 @@
   [{:image "/images/kiegensulyozott_parkapcsolat.png"
     :title "Kiegyensúlyozott párkapcsolat"}
    {:image "/images/egeszseg_es_vitalitas.png"
-    :title "Egészség és vitalitás (energia)"} 
+    :title "Egészség és vitalitás"} 
    {:image "/images/tethelyzeteken_felulemelkedes.png"
     :title "Téthelyzeteken való felülemelkedés"}
    {:image "/images/penz_es_anyagi_biztonsag.png"

@@ -5,8 +5,8 @@
    [ring.middleware.params               :refer [wrap-params]]
    [ring.middleware.transit              :refer [wrap-transit-params]]
    [ring.middleware.gzip                 :refer [wrap-gzip]]
-   [ring.middleware.basic-authentication :refer [wrap-basic-authentication]]
-   [zero.backend.state.env :as env]))
+   [zero.backend.state.env :as env])
+  (:import [java.util Base64]))
 
 (defn wrap-require-authentication
   "Middleware that redirects to /login if user is not authenticated"
@@ -27,16 +27,30 @@
            :headers {"Location" "/login"}
            :body ""})))))
 
-(defn newsletter-auth-fn
-  "Authentication function for newsletter basic auth"
-  [username password]
-  (and (= username "NewFuma")
-       (= password "NewFuma2025@")))
+(defn decode-basic-auth
+  "Decode basic authentication header"
+  [auth-header]
+  (when auth-header
+    (when-let [[_ encoded] (re-matches #"Basic\s+(.+)" auth-header)]
+      (try
+        (let [decoded (String. (.decode (Base64/getDecoder) encoded))]
+          (when-let [[_ username password] (re-matches #"([^:]+):(.+)" decoded)]
+            [username password]))
+        (catch Exception _
+          nil)))))
 
 (defn wrap-newsletter-basic-auth
   "Wrap handler with basic authentication for newsletter access"
   [handler]
-  (wrap-basic-authentication handler newsletter-auth-fn))
+  (fn [request]
+    (let [auth-header (get-in request [:headers "authorization"])
+          [username password] (decode-basic-auth auth-header)]
+      (if (and (= username "NewFuma")
+               (= password "NewFuma2025@"))
+        (handler request)
+        {:status 401
+         :headers {"WWW-Authenticate" "Basic realm=\"Newsletter Access\""}
+         :body "Unauthorized"}))))
 
 (defn middleware []
   {:middleware [;#(wrap-reload           % {:dirs ["/source-code"]});watched-dirs})  

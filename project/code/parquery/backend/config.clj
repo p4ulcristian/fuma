@@ -4,7 +4,8 @@
    [users.backend.db :as user-db]
    [features.app.homepage.backend.newsletter :as newsletter]
    [features.app.newsletter.backend.newsletter :as newsletter-backend]
-   [cheshire.core]))
+   [cheshire.core])
+  (:import [java.util Base64]))
 
 ;; Error handling helpers
 (defn parse-db-error
@@ -25,6 +26,27 @@
   [request]
   (let [user-role (get-in request [:session :user-role])]
     (contains? #{"admin" "superadmin"} user-role)))
+
+;; Newsletter authentication helpers
+(defn decode-basic-auth
+  "Decode basic authentication header"
+  [auth-header]
+  (when auth-header
+    (when-let [[_ encoded] (re-matches #"Basic\s+(.+)" auth-header)]
+      (try
+        (let [decoded (String. (.decode (Base64/getDecoder) encoded))]
+          (when-let [[_ username password] (re-matches #"([^:]+):(.+)" decoded)]
+            [username password]))
+        (catch Exception _
+          nil)))))
+
+(defn check-newsletter-auth
+  "Check if request has valid newsletter authentication"
+  [request]
+  (let [auth-header (get-in request [:headers "authorization"])
+        [username password] (decode-basic-auth auth-header)]
+    (and (= username "NewFuma")
+         (= password "NewFuma2025@"))))
 
 ;; User handlers
 (defn get-current-user

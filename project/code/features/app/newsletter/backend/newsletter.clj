@@ -21,12 +21,33 @@
       (println "Error reading newsletter subscriptions:" (.getMessage e))
       [])))
 
+(defn check-newsletter-auth
+  "Check if request has valid newsletter authentication"
+  [request]
+  (let [auth-header (get-in request [:headers "authorization"])]
+    (when auth-header
+      (when-let [[_ encoded] (re-matches #"Basic\s+(.+)" auth-header)]
+        (try
+          (let [decoded (String. (.decode (java.util.Base64/getDecoder) encoded))]
+            (when-let [[_ username password] (re-matches #"([^:]+):(.+)" decoded)]
+              (and (= username "NewFuma")
+                   (= password "NewFuma2025@"))))
+          (catch Exception _
+            false))))))
+
 (defn get-all-subscriptions
-  "Get all newsletter subscriptions - ParQuery handler"
+  "Get all newsletter subscriptions - ParQuery handler with authentication"
   [{:parquery/keys [context request] :as params}]
-  (println "Fetching all newsletter subscriptions")
-  (let [subscriptions (read-subscriptions)]
-    (mapv (fn [[email name]]
-            {:newsletter/email email
-             :newsletter/name name})
-          subscriptions)))
+  (println "Newsletter subscriptions request - checking authentication")
+  (if (check-newsletter-auth request)
+    (do
+      (println "Authentication successful - fetching subscriptions")
+      (let [subscriptions (read-subscriptions)]
+        (mapv (fn [[email name]]
+                {:newsletter/email email
+                 :newsletter/name name})
+              subscriptions)))
+    (do
+      (println "Authentication failed - access denied")
+      {:error "Unauthorized - Newsletter access requires authentication"
+       :status 401})))

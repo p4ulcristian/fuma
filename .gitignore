@@ -3,6 +3,7 @@ target/
 .cpcache/
 .nrepl-port
 .shadow-cljs/
+.clj-kondo/.cache/
 .lein-repl-history
 .lein-failures
 .lein-plugins/

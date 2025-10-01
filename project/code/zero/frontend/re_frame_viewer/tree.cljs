@@ -1,6 +1,7 @@
 (ns zero.frontend.re-frame-viewer.tree
   (:require
    ["react" :as react]
+   [cljs.reader :as cljs.reader]
    [zero.frontend.re-frame :as r]))
 
 ;; LocalStorage helpers

@@ -3,26 +3,27 @@
    [features.app.homepage.frontend.components.button :as button]))
 
 (defn hero-section
-  "Main hero section with logo, headline, and CTA"
+  "Main hero section with headline and CTA"
   []
-  [:div {:style {:background "linear-gradient(135deg, #6B5DD3 0%, #8B7FD8 100%)"
+  [:div {:style {:background "#7B75E8"
                  :min-height "100vh"
                  :display "flex"
                  :align-items "center"
                  :justify-content "center"
                  :position "relative"
                  :overflow "hidden"
-                 :padding "40px 20px"}}
+                 :padding "0 20px 40px 20px"}}
 
    ;; Background illustration
    [:img {:src "/images/fejleckep.png"
           :alt "FUMA meditation illustration"
           :style {:position "absolute"
-                  :right "5%"
-                  :top "50%"
-                  :transform "translateY(-50%)"
-                  :max-width "50%"
-                  :height "auto"
+                  :right "0"
+                  :top "0"
+                  :height "100%"
+                  :width "auto"
+                  :object-fit "cover"
+                  :object-position "70% top"
                   :opacity "0.95"}}]
 
    ;; Content container
@@ -34,12 +35,6 @@
                   :z-index "10"
                   :padding-left "5%"}}
 
-    ;; Logo
-    [:img {:src "/images/fuma_logo_landing_page_fejlecbe.png"
-           :alt "FUMA Logo"
-           :style {:width "200px"
-                   :margin-bottom "40px"}}]
-
     ;; Headline
     [:h1 {:style {:color "#ffffff"
                   :font-size "48px"
@@ -47,7 +42,10 @@
                   :line-height "1.2"
                   :margin "0 0 20px 0"
                   :max-width "600px"}}
-     "A világ első személyre szabható, tudatosságot megjelenítő tartalmaz"]
+     "A világ elsö személyre
+szabható, többszáz
+megerösítést tartalmazó
+applikációja"]
 
     ;; Subheadline
     [:p {:style {:color "#ffffff"
@@ -56,7 +54,7 @@
                  :margin "0 0 40px 0"
                  :max-width "600px"
                  :opacity "0.95"}}
-     "Fedezd fel a tudatos jelenlét erejét mindennapi gyakorlatokkal, amelyek segítenek kiegyensúlyozottabb és boldogabb életet élni."]
+     "Programozd hatékonyan a tudatalattidat az olimpikonok módszerével és érj el érezhető eredményeket a lehető leggyorsabban!"]
 
     ;; CTA Button
     [button/primary-button {:text "Kezdjük el!"

@@ -1,5 +1,6 @@
 (ns features.app.homepage.frontend.view
   (:require
+   [features.app.homepage.frontend.components.header :as header]
    [features.app.homepage.frontend.components.hero :as hero]
    [features.app.homepage.frontend.components.goals-grid :as goals-grid]
    [features.app.homepage.frontend.components.target-audience :as target-audience]
@@ -14,6 +15,7 @@
   [:div {:style {:font-family "system-ui, -apple-system, sans-serif"
                  :margin "0"
                  :padding "0"}}
+   [header/header]
    [hero/hero-section]
    [goals-grid/goals-grid-section]
    [target-audience/target-audience-section]

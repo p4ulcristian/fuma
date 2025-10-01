@@ -4,8 +4,7 @@
    [reagent.core :as reagent.core]
    [reagent.dom.client  :as reagent.dom.client]
    [router.frontend.zero :as router]
-   [zero.frontend.re-frame-viewer.view :as re-frame-viewer]
-   [translations.core]))
+   [zero.frontend.re-frame-viewer.view :as re-frame-viewer]))
 
 (def functional-compiler
   (reagent.core/create-compiler {:function-components true}))

@@ -19,7 +19,7 @@
     :title "A világon egyedülálló személyre szabhatóság"
     :description "Többszáz professzionálisan kidolgozott megerősítésből állíthatod össze a saját meditációdat!"}
    {:image "/images/konnyed_pihenteto_gyakorlatok.png"
-    :title "Márhető, érezhető eredmények"
+    :title "Mérhető, érezhető eredmények"
     :description "céges és egyéni felhasználóknál is kimutatható változás koncentrációban, stresszkezelésben,
                         motivációban."}
    

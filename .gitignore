@@ -48,7 +48,6 @@ ehthumbs.db
 Thumbs.db
 
 # Docker and container files
-.dockerignore
 docker-compose.override.yml
 
 # Database files (if any)

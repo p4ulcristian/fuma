@@ -5,7 +5,7 @@
 
 (def audience-data
   [{:image "/images/sportolokent_jobban_teljesitenel.png"
-    :title "Sportolók jobban teljesítenél"
+    :title "Sportolóként jobban teljesítenél"
     :description "Nem tudsz elaludni? Többszáz ember használja a FUMÁT a gyors elalváshoz."}
    {:image "/images/super_power_diakoknak.png"
     :title "Super-POWER diákoknak!"

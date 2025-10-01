@@ -1,0 +1,90 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Development logs and temporary files
+log.txt
+nohup.out
+*.log
+*.tmp
+*.swp
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.metadata/
+*.sublime-*
+.calva/
+.portal/
+.lsp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+[Dd]esktop.ini
+*.lnk
+*~
+.directory
+.Trash-*
+.nfs*
+
+# Docker and container files
+docker-compose.override.yml
+Dockerfile
+.dockerignore
+
+# Environment and secrets (these should never be in the image)
+.env
+.env.local
+.env.production
+.env.development
+secrets.edn
+config/secrets.edn
+
+# Backup files
+*.bak
+*.backup
+
+# Testing artifacts
+.test-output/
+
+# Documentation that's not needed in production
+README.md
+CLAUDE.md
+docs/
+
+# Temporary patches
+*.patch
+*.diff
+
+# Build artifacts that will be regenerated
+.shadow-cljs/
+.cpcache/
+.clj-kondo/.cache/
+target/
+
+# Already built JAR files (we'll build fresh in Docker)
+*.jar
+*.war
+*.class
+
+# Node modules will be installed fresh in Docker
+node_modules/
+
+# Lock files that might cause version conflicts
+package-lock.json
+yarn.lock

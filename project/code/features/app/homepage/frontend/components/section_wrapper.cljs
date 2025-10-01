@@ -16,12 +16,15 @@
 (defn section-title
   "Section title styling"
   [text]
-  [:h2 {:style {:text-align "center"
-                :font-size "42px"
-                :font-weight "700"
-                :color "#2D2D2D"
-                :margin "0 0 20px 0"}}
-   text])
+  [:div {:style {:max-width "800px" 
+                 :margin "0 auto"}}
+   [:h2 {:style {:text-align "center"
+                 :font-size "42px"
+                 
+                 :font-weight "700"
+                 :color "#2402AA"
+                 :margin "0 0 20px 0"}}
+    text]])
 
 (defn section-subtitle
   "Section subtitle styling"

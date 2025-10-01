@@ -39,16 +39,11 @@
 (defn feature-card
   "Card for features with icon and text"
   [{:keys [image-src title description]}]
-  [:div {:style {:background "#ffffff"
-                 :border-radius "20px"
-                 :padding "30px"
-                 :text-align "center"
-                 :box-shadow "0 8px 20px rgba(0, 0, 0, 0.08)"
-                 :transition "transform 0.3s ease"}}
+  [:div {:style {:padding "30px"
+                 :text-align "center"}}
    [:img {:src image-src
           :alt title
-          :style {:width "120px"
-                  :height "120px"
+          :style {:width "120px" 
                   :margin-bottom "20px"}}]
    [:h3 {:style {:margin "0 0 12px 0"
                  :font-size "22px"

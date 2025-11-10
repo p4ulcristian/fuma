@@ -54,7 +54,7 @@ RUN         ./start-prod.sh
 #  Running project      #
 #########################
 
-FROM      openjdk:23-slim
+FROM      eclipse-temurin:23-jre
 COPY      --from=compiler /root                  /root/
 WORKDIR   /root/
 # Create /data directory for persistent storage (newsletter subscriptions, etc.)
